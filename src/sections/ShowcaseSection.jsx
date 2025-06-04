@@ -46,7 +46,12 @@ const ShowcaseSection = () => {
        {/* Left */}
        <div className='first-project-wrapper' ref={project1Ref}>
         <div className='image-wrapper'>
-         <img src="/images/project1.png" alt="VedLab" />
+         <img 
+           src="/images/project1.png" 
+           alt="VedLab" 
+           onClick={() => window.open('https://github.com/VEDANTDHAVAN/vedlab', '_blank')}
+           style={{ cursor: 'pointer' }}
+         />
         </div>
         <div className='text-content'>
          <h2>VedLab – Design smarter, together: a collaborative UI canvas powered by real-time magic.</h2>
@@ -85,7 +90,12 @@ const ShowcaseSection = () => {
        <div className='project-list-wrapper overflow-hidden'>
         <div className='project' ref={project2Ref}>
          <div className='image-wrapper bg-[#47e6ff]'>
-          <img src="/images/project2.png" alt="Ecommerce Store" />
+          <img 
+            src="/images/project2.png" 
+            alt="Ecommerce Store" 
+            onClick={() => window.open('https://github.com/VEDANTDHAVAN/ECOMMERCE_CLOTHING_STORE', '_blank')}
+            style={{ cursor: 'pointer' }}
+          />
          </div>
          <h2>Fabric Fusion - An E-Commerce Clothing Platform with 3D Shirt model to try different textures and Designs</h2>
          <div className="flex gap-4 mt-6">
@@ -104,7 +114,12 @@ const ShowcaseSection = () => {
         </div>
         <div className='project' ref={project3Ref}>
          <div className='image-wrapper bg-[#fc46ff]'>
-          <img src="/images/project3.png" alt="Therapy Booking Platform" />
+          <img 
+            src="/images/project3.png" 
+            alt="Therapy Booking Platform" 
+            onClick={() => window.open('https://github.com/VEDANTDHAVAN/Therapy_Website', '_blank')}
+            style={{ cursor: 'pointer' }}
+          />
          </div>
          <h2>HealSpace - A Therapy Booking Platform to connect people with their nearby Therapist.</h2>
          <div className="flex gap-4 mt-6">
@@ -129,7 +144,12 @@ const ShowcaseSection = () => {
        {/* Left */}
        <div className='first-project-wrapper' ref={project4Ref}>
         <div className='image-wrapper'>
-         <img src="/images/project4.jpg" alt="Consumer_Sentiment_Analysis" />
+         <img 
+           src="/images/project4.jpg" 
+           alt="Consumer_Sentiment_Analysis" 
+           onClick={() => window.open('https://github.com/VEDANTDHAVAN/Consumer_Sentiment_Analysis', '_blank')}
+           style={{ cursor: 'pointer' }}
+         />
         </div>
         <div className='text-content'>
          <h2>Consumer Sentiment Analysis of Amazon Product Reviews</h2>
@@ -158,7 +178,12 @@ const ShowcaseSection = () => {
        <div className='project-list-wrapper overflow-hidden'>
         <div className='project' ref={project5Ref}>
          <div className='image-wrapper bg-[#8aff47]'>
-          <img src="/images/project5.png" alt="Ecommerce Store" />
+          <img 
+            src="/images/project5.png" 
+            alt="Ecommerce Store" 
+            onClick={() => window.open('https://github.com/VEDANTDHAVAN/RAG_CHATBOT', '_blank')}
+            style={{ cursor: 'pointer' }}
+          />
          </div>
          <h2>ContextAI - A RAG (Retrieval-Augmented Generation) Chatbot built with Next.js and AI SDK</h2>
          <p className='text-white-50 md:text-xl'>
@@ -180,7 +205,12 @@ const ShowcaseSection = () => {
         </div>
         <div className='project' ref={project6Ref}>
          <div className='image-wrapper bg-[#edff4f]'>
-          <img src="/images/project6.png" alt="MCP Tool" />
+          <img 
+            src="/images/project6.png" 
+            alt="MCP Tool" 
+            onClick={() => window.open('https://github.com/VEDANTDHAVAN/MCP_TOOLS', '_blank')}
+            style={{ cursor: 'pointer' }}
+          />
          </div>
          <h2>MCP (Model Context Protocol) Tools</h2>
          <p>It is a custom app using Model Context Protocol (MCP) and Gemini API to automate social media posts. It lets a chatbot understand natural commands like "Post this on X" and publish directly to Twitter (X).</p>

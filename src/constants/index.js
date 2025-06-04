@@ -4,28 +4,28 @@ const navLinks = [
     link: "#work",
   },
   {
-    name: "Experience",
-    link: "#experience",
+    name: "Education",
+    link: "#education",
   },
   {
     name: "Skills",
     link: "#skills",
   },
   {
-    name: "Testimonials",
-    link: "#testimonials",
+    name: "Experience",
+    link: "#experience",
   },
 ];
 
 const words = [
-  { text: "Ideas", imgPath: "/images/ideas.svg" },
-  { text: "Concepts", imgPath: "/images/concepts.svg" },
-  { text: "Designs", imgPath: "/images/designs.svg" },
-  { text: "Code", imgPath: "/images/code.svg" },
-  { text: "Ideas", imgPath: "/images/ideas.svg" },
-  { text: "Concepts", imgPath: "/images/concepts.svg" },
-  { text: "Designs", imgPath: "/images/designs.svg" },
-  { text: "Code", imgPath: "/images/code.svg" },
+  { text: "Ideas", imgPath: "/images/ideas.svg", index: 0 },
+  { text: "Concepts", imgPath: "/images/concepts.svg", index: 1 },
+  { text: "Designs", imgPath: "/images/designs.svg", index: 2 },
+  { text: "Code", imgPath: "/images/code.svg", index: 3 },
+  { text: "Ideas", imgPath: "/images/ideas.svg", index: 4 },
+  { text: "Concepts", imgPath: "/images/concepts.svg", index: 5 },
+  { text: "Designs", imgPath: "/images/designs.svg", index: 6 },
+  { text: "Code", imgPath: "/images/code.svg", index: 7 },
 ];
 
 const counterItems = [
@@ -37,13 +37,13 @@ const counterItems = [
 
 const logoIconsList = [
   {
-    imgPath: "/images/logos/company-logo-1.png",
+    imgPath: "/images/logos/company-logo-1.jpg",
   },
   {
-    imgPath: "/images/logos/company-logo-2.png",
+    imgPath: "/images/logos/company-logo-2.jpg",
   },
   {
-    imgPath: "/images/logos/company-logo-3.png",
+    imgPath: "/images/logos/company-logo-3.jpg",
   },
   {
     imgPath: "/images/logos/company-logo-4.png",
@@ -58,7 +58,7 @@ const logoIconsList = [
     imgPath: "/images/logos/company-logo-7.png",
   },
   {
-    imgPath: "/images/logos/company-logo-8.png",
+    imgPath: "/images/logos/company-logo-8.jpg",
   },
   {
     imgPath: "/images/logos/company-logo-9.png",
@@ -67,25 +67,55 @@ const logoIconsList = [
     imgPath: "/images/logos/company-logo-10.png",
   },
   {
-    imgPath: "/images/logos/company-logo-11.png",
+    imgPath: "/images/logos/company-logo-11.jpg",
   },
 ];
 
 const abilities = [
   {
-    imgPath: "/images/seo.png",
-    title: "Quality Focus",
-    desc: "Delivering high-quality results while maintaining attention to every detail.",
+    imgPath: "/images/curious.png",
+    title: "🚀 Curious Learner",
+    desc: "Always exploring new tech like Web3, AI, and RAG to stay ahead in the game.",
   },
   {
-    imgPath: "/images/chat.png",
-    title: "Reliable Communication",
-    desc: "Keeping you updated at every step to ensure transparency and clarity.",
+    imgPath: "/images/fullstack.png",
+    title: "🌐 Full-Stack Developer",
+    desc: "Skilled in building robust apps using MERN stack, Next.js, and modern frameworks.",
   },
   {
-    imgPath: "/images/time.png",
-    title: "On-Time Delivery",
-    desc: "Making sure projects are completed on schedule, with quality & attention to detail.",
+    imgPath: "/images/mindset.png",
+    title: "🛠 Project-First Mindset",
+    desc: "I build real-world solutions through hands-on development.",
+  },
+  {
+    imgPath: "/images/hackathon.png",
+    title: "⚡ Hackathon Enthusiast",
+    desc: "Thrives in fast-paced environments, solving impactful problems with innovation.",
+  },
+  {
+    imgPath: "/images/uiux.png",
+    title: "🎨 Design-Aware Coder",
+    desc: "Focused on clean UI and smooth UX—loves bringing ideas to life beautifully.",
+  },
+  {
+    imgPath: "/images/tools.png",
+    title: "🧰 Tool-Savvy Engineer",
+    desc: "Proficient with cutting-edge tools.",
+  },
+  {
+    imgPath: "/images/crossplatform.png",
+    title: " 📱 Cross-Platform Creator",
+    desc: "Builds across web, mobile, and desktop.",
+  },
+  {
+    imgPath: "/images/growth.png",
+    title: " 🧠 Product-Driven Thinker",
+    desc: "Crafts solutions with user needs at the core.",
+  },
+  {
+    imgPath: "/images/ai.png",
+    title: " 🤖 AI-Integrated Builder",
+    desc: "Merges AI with real-world apps.",
   },
 ];
 
@@ -145,7 +175,7 @@ const techStackIcons = [
   },
 ];
 
-const expCards = [
+const eduCards = [
   {
     review: "Adrian brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.",
     imgPath: "/images/exp1.png",
@@ -268,7 +298,7 @@ export {
   abilities,
   logoIconsList,
   counterItems,
-  expCards,
+  eduCards,
   expLogos,
   testimonials,
   socialImgs,
