@@ -1,12 +1,29 @@
-# React + Vite
+# 🚀 Vedant's 3D Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An immersive 3D web portfolio built using React, Three.js, and GSAP. This interactive experience showcases my skills, projects, and creative vision through a visually engaging and responsive interface.
 
-Currently, two official plugins are available:
+## 🖼️ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🌐 Fully responsive and interactive 3D environment
+- 🎮 Built with `@react-three/fiber`, `drei`, and `postprocessing`
+- 🎨 Smooth animations powered by GSAP
+- 💡 Dynamic UI using `TailwindCSS`
+- 📊 Stats and counters with `react-countup`
+- ⚙️ Linting enabled for code consistency (`eslint`)
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Framework**: React 19, Vite
+- **3D Rendering**: Three.js, @react-three/fiber
+- **UI & Styling**: TailwindCSS
+- **Animation**: GSAP, @gsap/react
+- **Post Processing**: @react-three/postprocessing
+- **Responsive Design**: react-responsive
+- **Linting & Code Quality**: ESLint
+
+## 📦 Installation
+
+```bash
+git clone https://github.com/your-username/vedant_resume.git
+cd vedant_resume
+npm install
