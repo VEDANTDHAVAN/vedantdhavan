@@ -14,4 +14,14 @@ export default defineConfig({
       brotliSize: true,    // Show brotli sizes
     }),
   ],
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          vendor: ['three', '@react-three/fiber', '@react-three/drei'],
+        },
+      },
+    },
+    chunkSizeWarningLimit: 1000, 
+  },
 })
