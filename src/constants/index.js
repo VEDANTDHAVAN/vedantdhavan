@@ -176,41 +176,47 @@ const techStackIcons = [
 ];
 
 const eduCards = [
-  {
-    review: "Adrian brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.",
-    imgPath: "/images/exp1.png",
-    logoPath: "/images/logo1.png",
-    title: "Frontend Developer",
-    date: "January 2023 - Present",
-    responsibilities: [
-      "Developed and maintained user-facing features for the Hostinger website.",
-      "Collaborated closely with UI/UX designers to ensure seamless user experiences.",
-      "Optimized web applications for maximum speed and scalability.",
-    ],
+  { 
+    Institution: "Vidyavardhini's College of Engineering and Technology",
+    overview: "Currently pursuing a Bachelor's degree in Computer Engineering, focusing on software development, machine learning, and scalable system design.",
+    imgPath: "/images/edu1.jpg",
+    logoPath: "/images/logo1.jpg",
+    title: "Bachelor in Computer Engineering",
+    date: "2023 – 2027",
+    percentage: "8.54",
+    learnings: [
+      "Gained strong problem-solving and analytical thinking through subjects like Data Structures, Algorithms, and System Design.",
+      "Built real-world software projects using React, Next.js, MongoDB, and backend tools like Node.js & Express.",
+      "Explored emerging technologies like AI/ML, Blockchain, and RAG, developing practical knowledge in LLMs and scalable architecture.",
+    ]
   },
-  {
-    review: "Adrian’s contributions to Docker's web applications have been outstanding. He approaches challenges with a problem-solving mindset.",
-    imgPath: "/images/exp2.png",
-    logoPath: "/images/logo2.png",
-    title: "Full Stack Developer",
-    date: "June 2020 - December 2023",
-    responsibilities: [
-      "Led the development of Docker's web applications, focusing on scalability.",
-      "Worked with backend engineers to integrate APIs seamlessly with the frontend.",
-      "Contributed to open-source projects that were used with the Docker ecosystem.",
-    ],
+  { 
+    Institution: "Mithibai College of Science and Commerce",
+    overview: "Completed higher secondary education in the science stream with a foundation in Physics, Chemistry, and Mathematics, preparing for engineering studies.",
+    imgPath: "/images/edu2.jpg",
+    logoPath: "/images/logo2.jpg",
+    title: "11th and 12th in Science Stream",
+    date: "2021 – 2023",
+    percentage: "75.5%",
+    learnings: [
+      "Strengthened core foundations in Physics, Chemistry, and Mathematics essential for engineering logic.",
+      "Developed time management and conceptual clarity while preparing for competitive entrance exams.",
+      "Initiated self-learning in programming and tech fundamentals outside the curriculum.",
+    ]
   },
-  {
-    review: "Adrian’s work on Appwrite’s mobile app brought a high level of quality and efficiency. He delivered solutions that enhanced our mobile experience & meet our product goals.",
-    imgPath: "/images/exp3.png",
-    logoPath: "/images/logo3.png",
-    title: "React Native Developer",
-    date: "March 2019 - May 2020",
-    responsibilities: [
-      "Built cross-platform mobile apps using React Native, integrating with Appwrite's backend services.",
-      "Improved app performance and user experience through code optimization and testing.",
-      "Coordinated with the product team to implement features based on feedback.",
-    ],
+  { 
+    Institution: "Oxford International School",
+    overview: "Completed schooling under the ICSE board, building strong fundamentals in Mathematics, Science, English, and Logical Reasoning.",
+    imgPath: "/images/edu3.jpg",
+    logoPath: "/images/logo3.jpg",
+    title: "ICSE Schooling till 10th Grade",
+    date: "2011 – 2021",
+    percentage: "95.5%",
+    learnings: [
+      "Built a solid base in English communication, Science, Mathematics, and Logical Reasoning.",
+      "Participated in co-curricular activities that shaped creativity, discipline, and team spirit.",
+      "Learned basic programming logic and digital literacy, which sparked an early interest in software development.",
+    ]
   },
 ];
 
