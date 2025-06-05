@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://VEDANTDHAVAN.github.io/vedantdhavanresume",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -14,7 +15,8 @@
     "type-check": "tsc --noEmit",
     "clean": "rimraf dist",
     "prebuild": "npm run clean",
-    "analyze": "vite build --mode analyze"
+    "analyze": "vite build --mode analyze",
+    "deploy": "npm run build && gh-pages -d dist"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
@@ -46,6 +48,7 @@
     "rimraf": "^5.0.5",
     "rollup-plugin-visualizer": "^6.0.1",
     "typescript": "^5.3.3",
-    "vite": "^6.3.5"
+    "vite": "^6.3.5",
+    "gh-pages": "^5.0.0"
   }
 }
