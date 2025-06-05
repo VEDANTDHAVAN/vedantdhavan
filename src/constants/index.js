@@ -268,19 +268,23 @@ const Experience = [
 
 const socialImgs = [
   {
+    name: "github",
+    url: "https://github.com/VEDANTDHAVAN",
+    imgPath: "/images/github.png",
+  },
+  {
     name: "insta",
+    url: "https://www.instagram.com/dhavanvedant_2006",
     imgPath: "/images/insta.png",
   },
   {
-    name: "fb",
-    imgPath: "/images/fb.png",
-  },
-  {
     name: "x",
+    url: "https://x.com/w35y4y",
     imgPath: "/images/x.png",
   },
   {
     name: "linkedin",
+    url: "https://www.linkedin.com/in/vedant-dhavan-5930ba2a3/",
     imgPath: "/images/linkedin.png",
   },
 ];
