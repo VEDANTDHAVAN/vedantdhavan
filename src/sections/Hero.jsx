@@ -31,8 +31,8 @@ const Hero = () => {
       {/*Left: Hero Content */}
       <header className="flex flex-col justify-center md:w-full w-screen md:px-20 px-5">
        <div className="flex flex-col gap-7">
-       <p className='text-white-50 md:text-xl relative z-10 pointer-events-none'>
-       <h3>Hi, I'm Vedant Dhavan, a 👨‍💻 Software Developer from India.</h3></p>
+       <p className='text-white-50 md:text-3xl text-[20px] relative z-10 pointer-events-none'>
+       Hi, I'm Vedant Dhavan, a 👨‍💻 Software Developer from India.</p>
         <div className='hero-text'>
          <h1>Shaping 
           <span className='slide'>
@@ -54,7 +54,7 @@ const Hero = () => {
        </div>
       </header>
       {/*Right: 3D Model */}
-      <figure>
+      <figure className='cursor-pointer'>
         <div className='hero-3d-layout'>
          <HeroExperience />
         </div>

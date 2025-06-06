@@ -1,6 +1,6 @@
 import { OrbitControls } from '@react-three/drei'
 import { Canvas } from '@react-three/fiber'
-import React from 'react'
+import React, { Suspense } from 'react'
 import { useMediaQuery } from 'react-responsive';
 import { Room1 } from '../HeroModels/Room1';
 import HeroLights from './HeroLights';
@@ -12,14 +12,24 @@ const HeroExperience = () => {
 
   return (
     <Canvas camera={{position: [0,0,16], fov: 45}}>
+     <Suspense fallback={null}>
      <HeroLights />
      <Particles count={100}/>
-     <OrbitControls enablePan={false} enableZoom={!isTablet} maxDistance={25} 
-     minDistance={5} minPolarAngle={Math.PI/5} maxPolarAngle={Math.PI/2} />
+     <OrbitControls 
+       enablePan={false} 
+       enableZoom={!isTablet} 
+       maxDistance={25} 
+       minDistance={5} 
+       minPolarAngle={Math.PI/5} 
+       maxPolarAngle={Math.PI/2}
+       enableDamping={true}
+       dampingFactor={0.05}
+     />
 
      <group scale={isMobile? 0.7 : 1} position={[0, -3.5, 0]} rotation={[0, -Math.PI/4, 0]}>
      <Room1 />
      </group>
+     </Suspense>
     </Canvas>
   )
 }
