@@ -145,7 +145,7 @@ const techStackImgs = [
 const techStackIcons = [
   {
     name: "React Developer",
-    modelPath: "/models/next_react.glb",
+    modelPath: "/models/next_react-transformed.glb",
     scale: 1,
     rotation: [-Math.PI/2, Math.PI, -Math.PI],
   },
@@ -175,7 +175,7 @@ const techStackIcons = [
   },
   {
     name: "AI/ML Enthusiast",
-    modelPath: "/models/robo_face.glb",
+    modelPath: "/models/robo_face-transformed.glb",
     scale: 10,
     rotation: [0, -Math.PI / 4, 0],
   },

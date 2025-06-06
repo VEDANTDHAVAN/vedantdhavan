@@ -5,6 +5,7 @@ import { useMediaQuery } from 'react-responsive';
 import { Room1 } from '../HeroModels/Room1';
 import HeroLights from './HeroLights';
 import Particles from './Particles';
+import * as THREE from 'three';
 
 const HeroExperience = () => {
   const isTablet = useMediaQuery({query: '(max-width: 1024px)'});
@@ -12,24 +13,31 @@ const HeroExperience = () => {
 
   return (
     <Canvas camera={{position: [0,0,16], fov: 45}}>
-     <Suspense fallback={null}>
-     <HeroLights />
-     <Particles count={100}/>
-     <OrbitControls 
-       enablePan={false} 
-       enableZoom={!isTablet} 
-       maxDistance={25} 
-       minDistance={5} 
-       minPolarAngle={Math.PI/5} 
-       maxPolarAngle={Math.PI/2}
-       enableDamping={true}
-       dampingFactor={0.05}
-     />
-
-     <group scale={isMobile? 0.7 : 1} position={[0, -3.5, 0]} rotation={[0, -Math.PI/4, 0]}>
-     <Room1 />
-     </group>
-     </Suspense>
+      <Suspense fallback={null}>
+        <HeroLights />
+        <Particles count={100}/>
+        <OrbitControls 
+          enablePan={false} 
+          enableZoom={!isTablet} 
+          maxDistance={25} 
+          minDistance={5} 
+          minPolarAngle={Math.PI/5} 
+          maxPolarAngle={Math.PI/2}
+          enableDamping={true}
+          dampingFactor={0.05}
+          makeDefault
+          rotateSpeed={0.5}
+          enableRotate={!isMobile}
+          mouseButtons={{
+            LEFT: THREE.MOUSE.ROTATE,
+            MIDDLE: THREE.MOUSE.DOLLY,
+            RIGHT: THREE.MOUSE.PAN
+          }}
+        />
+        <group scale={isMobile? 0.7 : 1} position={[0, -3.5, 0]} rotation={[0, -Math.PI/4, 0]}>
+          <Room1 />
+        </group>
+      </Suspense>
     </Canvas>
   )
 }

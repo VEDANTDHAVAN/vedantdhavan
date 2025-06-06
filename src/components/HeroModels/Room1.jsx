@@ -44,13 +44,20 @@ export function Room1(props) {
 
   return (
     <group {...props} dispose={null}>
+      <mesh
+        ref={screensRef}
+        geometry={nodes.emis_lambert1_0.geometry}
+        material={materials.lambert1}
+      />
       <EffectComposer>
         <SelectiveBloom
           selection={screensRef}
-          intensity={1} // Strength of the bloom
-          luminanceThreshold={0.2} // Minimum luminance needed
-          luminanceSmoothing={0.9} // Smooth transition
-          blendFunction={BlendFunction.ADD} // How it blends
+          intensity={1.5}
+          luminanceThreshold={0.1}
+          luminanceSmoothing={0.9}
+          blendFunction={BlendFunction.ADD}
+          mipmapBlur
+          radius={0.8}
         />
       </EffectComposer>
       <mesh
@@ -64,11 +71,6 @@ export function Room1(props) {
         material={chairMaterial}
       />
       <mesh geometry={nodes.comp_blinn1_0.geometry} material={compMaterial} />
-      <mesh
-        ref={screensRef}
-        geometry={nodes.emis_lambert1_0.geometry}
-        material={materials.lambert1}
-      />
       <mesh
         geometry={nodes.handls_blinn1_0.geometry}
         material={materials.blinn1}
