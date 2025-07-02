@@ -14,12 +14,15 @@ const ShowcaseSection = () => {
   const project4Ref = useRef(null);
   const project5Ref = useRef(null);
   const project6Ref = useRef(null);
+  const project7Ref = useRef(null);
+  const project8Ref = useRef(null);
 
   useGSAP(() => {
     const projects = [
         project1Ref.current, project2Ref.current,
         project3Ref.current, project4Ref.current,
-        project5Ref.current, project6Ref.current
+        project5Ref.current, project6Ref.current,
+        project7Ref.current, project8Ref.current
       ];
     
     projects.forEach((card, index) => {
@@ -142,7 +145,7 @@ const ShowcaseSection = () => {
       <h2 className='hero-text'>Generative AI Projects</h2>
       <div className='showcaselayout'>
        {/* Left */}
-       <div className='first-project-wrapper' ref={project1Ref}>
+       <div className='first-project-wrapper' ref={project7Ref}>
         <div className='image-wrapper'>
          <img 
            src="/images/project7.png" 
@@ -194,8 +197,9 @@ const ShowcaseSection = () => {
       <h2 className='hero-text'>Machine Learning Projects</h2>
       <div className='showcaselayout'>
        {/* Left */}
-       <div className='first-project-wrapper' ref={project4Ref}>
-        <div className='image-wrapper'>
+       <div className='project-list-wrapper overflow-hidden' >
+        <div className='project' ref={project7Ref}>
+        <div className='image-wrapper  bg-[#2531b0]'>
          <img 
            src="/images/project4.jpg" 
            alt="Consumer_Sentiment_Analysis" 
@@ -224,6 +228,36 @@ const ShowcaseSection = () => {
             GitHub
           </a>
          </div>
+        </div>
+        </div>
+        <div className='project' ref={project8Ref}>
+        <div className='image-wrapper  bg-[#abfcff]'>
+         <img 
+           src="/images/project8.png" 
+           alt="Web_Scraper_CLI_Tool" 
+           onClick={() => window.open('https://github.com/VEDANTDHAVAN/WEB_SCRAPER_TOOL', '_blank')}
+           style={{ cursor: 'pointer' }}
+         />
+        </div>
+        <div className='text-content'>
+         <h2>WEB SCRAPER CLI TOOL</h2>
+         <p className='text-white-50 md:text-xl'>
+         This Web Scraper Tool is a fast, customizable, and easy-to-use utility for extracting structured data from web pages. It supports both text and metadata extraction, and can handle basic to advanced scraping levels. The tool features a user-friendly FastAPI dashboard and CLI options to initiate scraping, view results, and download them as .txt or .csv files. Designed for scalability and modularity, it is ideal for automating data collection tasks for analysis or machine learning pipelines.
+         </p>
+         <div className="flex gap-4 mt-6">
+          <a 
+            href="https://github.com/VEDANTDHAVAN/WEB_SCRAPER_TOOL" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="px-6 py-3 bg-[#2a2a2a] hover:bg-[#ffffff] hover:text-black text-white rounded-lg transition-colors duration-300 flex items-center gap-2"
+          >
+            <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path fillRule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clipRule="evenodd" />
+            </svg>
+            GitHub
+          </a>
+         </div>
+        </div>
         </div>
        </div>
        {/* Right */} 
@@ -265,7 +299,7 @@ const ShowcaseSection = () => {
           />
          </div>
          <h2>MCP (Model Context Protocol) Tools</h2>
-         <p>It is a custom app using Model Context Protocol (MCP) and Gemini API to automate social media posts. It lets a chatbot understand natural commands like "Post this on X" and publish directly to Twitter (X).</p>
+         <p className='text-white-50 md:text-xl'>It is a custom app using Model Context Protocol (MCP) and Gemini API to automate social media posts. It lets a chatbot understand natural commands like "Post this on X" and publish directly to Twitter (X).</p>
          <div className="flex gap-4 mt-6">
           <a 
             href="https://github.com/VEDANTDHAVAN/MCP_TOOLS" 
