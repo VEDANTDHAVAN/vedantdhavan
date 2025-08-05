@@ -77,7 +77,7 @@ Check out my Portfolio -> 🔗 [Portfolio](vedantdhavan.vercel.app)
 
 ## 📫 Let's Connect
 
-- 🔗 [Portfolio](https://github.com/VEDANTDHAVAN/vedantdhavan)
+- 🔗 [Portfolio](https://vedantdhavan.vercel.app)
 - 📬 vedantdhavan.gmail.com
 - 💼 [LinkedIn](https://www.linkedin.com/in/vedant-dhavan-5930ba2a3/)
 - 💻 [GitHub](https://github.com/VEDANTDHAVAN)
