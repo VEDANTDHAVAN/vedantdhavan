@@ -84,6 +84,10 @@ Check out my Portfolio -> 🔗 [Portfolio](vedantdhavan.vercel.app)
 
 ---
 
+<img src="https://github-readme-stats.vercel.app/api?username=VEDANTDHAVAN&theme=tokyonight&show_icons=true&hide_border=true&count_private=true" alt="VEDANTDHAVAN's GitHub Stats" />
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=VEDANTDHAVAN&theme=tokyonight&show_icons=true&hide_border=true&layout=compact" alt="VEDANTDHAVAN's GitHub Stats" />
+<img src="https://streak-stats.demolab.com?user=VEDANTDHAVAN&theme=tokyonight&hide_border=true" alt="VEDANTDHAVAN's GitHub Stats" />
+
 ## 🧩 Fun Fact
 > I love building tools that blend **design, intelligence, and user experience**—whether it’s a sentiment analyzer or a 3D canvas powered by AI.
 
