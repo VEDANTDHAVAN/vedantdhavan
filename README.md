@@ -4,7 +4,7 @@
 🎓 BE in Computer Engineering @ Vidyavardhini’s College of Engineering & Tech
 🌍 Based in Mumbai (Borivali East)
 
-💡 I love building tools that blend **design, intelligence, and user experience** — whether it’s a **3D Canvas**, a **Prompt to Website Builder**, or an **AI-powered SaaS platform**.
+💡 I love building tools that blend **design, intelligence, and user experience** — whether it’s a **3D Canvas**, a **Prompt to Website Builder**, or a **RAG Agent**.
 
 ---
 
