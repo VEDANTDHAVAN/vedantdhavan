@@ -51,6 +51,6 @@
 
 ### 🧩 Fun Fact
 
-> I debug with coffee ☕, brainstorm in 3D 🎨, and dream about AI agents building websites on their own 🤖💡
+> I debug with coffee ☕, brainstorm in 3D 🎨, and dream about AI agents building anything you can think of. 🤖💡
 
 ---
