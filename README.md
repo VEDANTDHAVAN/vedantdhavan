@@ -87,26 +87,6 @@ Exploring immersive UI experiences using **Three.js + React Three Fiber**.
 
 ---
 
-# 📊 3D Contribution Graph
-
-<p align="center">
-
-<img src="https://github-profile-3d-contrib.vercel.app/api?username=VEDANTDHAVAN&theme=blue" />
-
-</p>
-
----
-
-# 🐍 Contribution Snake
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/VEDANTDHAVAN/VEDANTDHAVAN/blob/output/github-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://github.com/VEDANTDHAVAN/VEDANTDHAVAN/blob/output/github-snake.svg" />
-  <img alt="github-snake" src="https://github.com/VEDANTDHAVAN/VEDANTDHAVAN/blob/output/github-snake.svg" />
-</picture>
-
----
-
 # 🤝 Connect With Me
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-000?logo=vercel&logoColor=white)](https://vedantdhavan.vercel.app)
