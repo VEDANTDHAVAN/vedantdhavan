@@ -1,56 +1,124 @@
+<p align="center">
+
+<img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&size=28&duration=3000&color=00F7FF&center=true&vCenter=true&width=900&lines=Hi+I'm+Vedant+Dhavan;Full+Stack+Developer;AI+Systems+Builder;Generative+AI+Explorer;3D+Web+Enthusiast" />
+
+</p>
+
+---
+
 # 👋 Hey, I’m Vedant Dhavan
 
-🚀 **Full-Stack Developer | Generative AI Explorer | 3D Web Enthusiast**
-🎓 BE in Computer Engineering @ Vidyavardhini’s College of Engineering & Tech
-🌍 Based in Mumbai (Borivali East)
+🚀 **Full-Stack Developer | Generative AI Explorer | 3D Web Enthusiast**  
+🎓 **BE Computer Engineering**, Vidyavardhini’s College of Engineering & Technology  
+🌍 Mumbai, India  
 
-💡 I love building tools that blend **design, intelligence, and user experience** — whether it’s a **3D Canvas**, a **Prompt to Website Builder**, or a **RAG Agent**.
+I enjoy building systems where **AI, scalable backend architecture, and rich interfaces meet**.
 
----
+My interests revolve around:
 
-## ⚡ Tech Playground
-
-### 💻 Core Stacks
-
-`React` · `Next.js` · `Node.js` · `MongoDB` · `PostgreSQL` · `Flutter`
-
-### 🧠 AI/ML Stuff
-
-`PyTorch` · `Scikit-learn` · `Pandas` · `OpenAI API` · `Gemini API`
-
-### 🎨 Creative Coding
-
-`Three.js` · `@react-three/fiber` · `Blender` · `ShadCN UI`
-
-### 🔗 Blockchain
-
-`Ethers.js` · `Web3Modal` · `Smart Contracts` · `Python Blockchain`
-
-### 🛠️ Dev Tools
-
-`Vite` · `Firebase` · `JWT Auth` · `NextAuth.js` · `GitHub Actions`
+- 🤖 **AI Systems & Agents**
+- 🌐 **Full-Stack Applications**
+- 🎨 **Creative Web & 3D Interfaces**
+- ⚡ **Developer Automation Tools**
 
 ---
 
-## 📊 GitHub Vibes
+# ⚡ Tech Playground
 
-<img src="https://github-readme-stats.vercel.app/api?username=VEDANTDHAVAN&theme=blue-green&show_icons=true&hide_border=true&count_private=true" alt="VEDANTDHAVAN's GitHub Stats" />
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=VEDANTDHAVAN&theme=blue-green&show_icons=true&hide_border=true&layout=compact" alt="VEDANTDHAVAN's GitHub Stats" />
-<img src="https://streak-stats.demolab.com?user=VEDANTDHAVAN&theme=blue-green&hide_border=true" alt="VEDANTDHAVAN's GitHub Stats" /> 
+<p align="center">
 
----
+<img src="https://skillicons.dev/icons?i=react,nextjs,nodejs,mongodb,postgres,flutter,python,pytorch,pandas,threejs,blender,firebase,docker,git,github" />
 
-## 🤝 Let’s Connect!
-
-[![Portfolio](https://img.shields.io/badge/-Portfolio-000?logo=vercel\&logoColor=white)](https://vedantdhavan.vercel.app)
-[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0A66C2?logo=linkedin\&logoColor=white)](https://www.linkedin.com/in/vedant-dhavan-5930ba2a3/)
-[![GitHub](https://img.shields.io/badge/-GitHub-181717?logo=github\&logoColor=white)](https://github.com/VEDANTDHAVAN)
-📬 [Email Me](mailto:vedantdhavan@gmail.com)
+</p>
 
 ---
 
-### 🧩 Fun Fact
+# 🧠 Now Building
 
-> I debug with coffee ☕, brainstorm in 3D 🎨, and dream about AI agents building anything you can think of. 🤖💡
+Currently experimenting with **AI systems that automate real developer workflows.**
+
+🚀 **SecureIntent-Orchestrator**  
+AI-powered orchestration system for secure multi-agent workflows.
+
+⚙️ **MCP Automation Tools**  
+Building **Model Context Protocol servers** that allow AI agents to interact with real-world APIs.
+
+🌐 **Realtime Collaboration Platform**  
+Virtual workspaces with meetings, chat, and persistent user context.
+
+🎨 **3D Web Interfaces**  
+Exploring immersive UI experiences using **Three.js + React Three Fiber**.
 
 ---
+
+# 🚀 Areas I Love Building In
+
+🧠 **AI Applications**
+
+- RAG chatbots
+- Multi-agent systems
+- AI automation tools
+
+🌐 **Full-Stack Platforms**
+
+- Real-time collaboration apps
+- Prompt-to-website builders
+- Developer productivity tools
+
+🎨 **Creative Web**
+
+- Interactive 3D web interfaces
+- Immersive UI systems
+- Experimental WebGL projects
+
+---
+
+# 📊 GitHub Stats
+
+<p align="center">
+
+<img src="https://github-readme-stats.vercel.app/api?username=VEDANTDHAVAN&theme=blue-green&show_icons=true&hide_border=true&count_private=true" />
+
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=VEDANTDHAVAN&theme=blue-green&layout=compact&hide_border=true" />
+
+<img src="https://streak-stats.demolab.com?user=VEDANTDHAVAN&theme=blue-green&hide_border=true" />
+
+</p>
+
+---
+
+# 📊 3D Contribution Graph
+
+<p align="center">
+
+<img src="https://github-profile-3d-contrib.vercel.app/api?username=VEDANTDHAVAN&theme=blue" />
+
+</p>
+
+---
+
+# 🐍 Contribution Snake
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/VEDANTDHAVAN/VEDANTDHAVAN/blob/output/github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://github.com/VEDANTDHAVAN/VEDANTDHAVAN/blob/output/github-snake.svg" />
+  <img alt="github-snake" src="https://github.com/VEDANTDHAVAN/VEDANTDHAVAN/blob/output/github-snake.svg" />
+</picture>
+
+---
+
+# 🤝 Connect With Me
+
+[![Portfolio](https://img.shields.io/badge/Portfolio-000?logo=vercel&logoColor=white)](https://vedantdhavan.vercel.app)
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/vedant-dhavan-5930ba2a3/)
+
+[![GitHub](https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white)](https://github.com/VEDANTDHAVAN)
+
+📬 **Email:** vedantadhavan11@gmail.com
+
+---
+
+# ☕ Fun Fact
+
+> I debug with coffee ☕, prototype ideas rapidly ⚡, and enjoy building **AI systems that can automate real work.**
