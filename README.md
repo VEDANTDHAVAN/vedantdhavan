@@ -1,6 +1,6 @@
 <p align="center">
 
-<img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&size=28&duration=3000&color=00F7FF&center=true&vCenter=true&width=900&lines=Hi+I'm+Vedant+Dhavan;Full+Stack+Developer;AI+Systems+Builder;Generative+AI+Explorer;3D+Web+Enthusiast" />
+<img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&size=28&duration=3000&color=00F7FF&center=true&vCenter=true&width=900&lines=Hi+I'm+Vedant+Dhavan;Full+Stack+Developer;AI+Systems+Builder;Generative+AI+Engineer;3D+Web+Enthusiast" />
 
 </p>
 
@@ -8,22 +8,25 @@
 
 # 👋 Hey, I’m Vedant Dhavan
 
-🚀 **Full-Stack Developer | Generative AI Explorer | 3D Web Enthusiast**  
+🚀 **Full-Stack Developer | AI Systems Builder | Generative AI Engineer**  
 🎓 **BE Computer Engineering**, Vidyavardhini’s College of Engineering & Technology  
 🌍 Mumbai, India  
 
-I enjoy building systems where **AI, scalable backend architecture, and rich interfaces meet**.
-
-My interests revolve around:
-
-- 🤖 **AI Systems & Agents**
-- 🌐 **Full-Stack Applications**
-- 🎨 **Creative Web & 3D Interfaces**
-- ⚡ **Developer Automation Tools**
+I build **intelligent systems that automate real workflows** — combining  
+⚡ backend engineering, 🤖 AI agents, and 🎨 immersive interfaces.
 
 ---
 
-# ⚡ Tech Playground
+# 🧠 What I’m Focused On
+
+- Designing **AI agent systems with real-world tool integration**
+- Building **scalable backend architectures for AI apps**
+- Creating **interactive and 3D web experiences**
+- Automating **developer and business workflows**
+
+---
+
+# ⚡ Tech Stack
 
 <p align="center">
 
@@ -33,43 +36,60 @@ My interests revolve around:
 
 ---
 
-# 🧠 Now Building
+# 🚧 Now Building
 
-Currently experimenting with **AI systems that automate real developer workflows.**
+### 🔐 SecureIntent-Orchestrator  
+> Zero-trust AI orchestration system for secure multi-agent execution  
 
-🚀 **SecureIntent-Orchestrator**  
-AI-powered orchestration system for secure multi-agent workflows.
-
-⚙️ **MCP Automation Tools**  
-Building **Model Context Protocol servers** that allow AI agents to interact with real-world APIs.
-
-🌐 **Realtime Collaboration Platform**  
-Virtual workspaces with meetings, chat, and persistent user context.
-
-🎨 **3D Web Interfaces**  
-Exploring immersive UI experiences using **Three.js + React Three Fiber**.
+- Intent validation + policy enforcement  
+- Safe tool invocation (no prompt injection leaks)  
+- Stateful agent workflows  
 
 ---
 
-# 🚀 Areas I Love Building In
+### ⚙️ MCP Automation Layer  
+> Enabling AI agents to interact with real-world systems  
 
-🧠 **AI Applications**
+- Calendar, email, API integrations  
+- Structured tool interfaces (MCP servers)  
+- Human-in-the-loop checkpoints  
 
-- RAG chatbots
-- Multi-agent systems
-- AI automation tools
+---
 
-🌐 **Full-Stack Platforms**
+### 🌐 Smart Collaboration Platform  
+> Real-time virtual workspace with persistent context  
 
-- Real-time collaboration apps
-- Prompt-to-website builders
-- Developer productivity tools
+- Meetings + chat + shared memory  
+- User-aware AI assistance  
+- Scalable real-time infra  
 
-🎨 **Creative Web**
+---
 
-- Interactive 3D web interfaces
-- Immersive UI systems
-- Experimental WebGL projects
+### 🎨 3D Web Experiences  
+> Experimental interfaces blending UI + immersion  
+
+- Three.js + React Three Fiber  
+- Interactive product & UI demos  
+- Performance-optimized WebGL scenes  
+
+---
+
+# 🚀 Domains I Build In
+
+### 🤖 AI Systems
+- Multi-agent orchestration  
+- RAG pipelines  
+- Workflow automation  
+
+### 🌐 Full-Stack Systems
+- Real-time apps  
+- SaaS platforms  
+- Developer tools  
+
+### 🎨 Creative Tech
+- 3D UI/UX systems  
+- Interactive web apps  
+- Experimental interfaces  
 
 ---
 
@@ -87,6 +107,14 @@ Exploring immersive UI experiences using **Three.js + React Three Fiber**.
 
 ---
 
+# 🐍 Contribution Graph
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/VEDANTDHAVAN/VEDANTDHAVAN/output/github-snake-dark.svg" />
+</p>
+
+---
+
 # 🤝 Connect With Me
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-000?logo=vercel&logoColor=white)](https://vedantdhavan.vercel.app)
@@ -95,10 +123,10 @@ Exploring immersive UI experiences using **Three.js + React Three Fiber**.
 
 [![GitHub](https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white)](https://github.com/VEDANTDHAVAN)
 
-📬 **Email:** vedantadhavan11@gmail.com
+📬 **Email:** vedantadhavan11@gmail.com  
 
 ---
 
 # ☕ Fun Fact
 
-> I debug with coffee ☕, prototype ideas rapidly ⚡, and enjoy building **AI systems that can automate real work.**
+> I design systems first, code second — and automate anything repetitive.
