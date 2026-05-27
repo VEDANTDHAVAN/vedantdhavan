@@ -30,12 +30,15 @@ const Particles = ({ count = 200 }) => {
     mesh.current.geometry.attributes.position.needsUpdate = true;
   });
 
-  const positions = new Float32Array(count * 3);
-  particles.forEach((p, i) => {
-    positions[i * 3] = p.position[0];
-    positions[i * 3 + 1] = p.position[1];
-    positions[i * 3 + 2] = p.position[2];
-  });
+  const positions = useMemo(() => {
+    const nextPositions = new Float32Array(count * 3);
+    particles.forEach((p, i) => {
+      nextPositions[i * 3] = p.position[0];
+      nextPositions[i * 3 + 1] = p.position[1];
+      nextPositions[i * 3 + 2] = p.position[2];
+    });
+    return nextPositions;
+  }, [count, particles]);
 
   return (
     <points ref={mesh}>

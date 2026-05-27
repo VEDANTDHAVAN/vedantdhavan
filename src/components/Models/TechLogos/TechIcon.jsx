@@ -4,9 +4,7 @@ import { useEffect, Suspense } from "react";
 import * as THREE from "three";
 import PropTypes from "prop-types";
 import { Html } from "@react-three/drei";
-
-// Preload
-useGLTF.preload("/models/next_react-transformed.glb");
+import useInView from "../../../hooks/useInView";
 
 const Model = ({ path, scale, rotation, tweakMaterial }) => {
   const gltf = useGLTF(path);
@@ -21,18 +19,7 @@ const Model = ({ path, scale, rotation, tweakMaterial }) => {
       });
     }
 
-    return () => {
-      gltf.scene.traverse((child) => {
-        if (child.isMesh) {
-          child.geometry.dispose();
-          if (Array.isArray(child.material)) {
-            child.material.forEach((mat) => mat.dispose());
-          } else {
-            child.material.dispose();
-          }
-        }
-      });
-    };
+    return undefined;
   }, [gltf, tweakMaterial]);
 
   return (
@@ -45,35 +32,41 @@ const Model = ({ path, scale, rotation, tweakMaterial }) => {
 };
 
 const TechIcon = ({ model }) => {
-  return (
-    <Canvas
-      dpr={[1, 2]}
-      performance={{ min: 0.5 }}
-      gl={{
-        antialias: true,
-        alpha: true,
-        powerPreference: "high-performance",
-      }}
-    >
-      <ambientLight intensity={1} />
-      <directionalLight position={[5, 5, 5]} intensity={1} />
-      <Environment preset="city" />
-      <OrbitControls
-        enableZoom={false}
-        enablePan={false}
-        maxPolarAngle={Math.PI / 2}
-        minPolarAngle={Math.PI / 2}
-      />
+  const { ref, isVisible } = useInView();
 
-      <Suspense fallback={<Html center>Loading Model...</Html>}>
-        <Model
-          path={model.modelPath}
-          scale={model.scale}
-          rotation={model.rotation}
-          tweakMaterial={model.name === "Interactive Developer"}
-        />
-      </Suspense>
-    </Canvas>
+  return (
+    <div ref={ref} className="w-full h-full">
+      {isVisible && (
+        <Canvas
+          dpr={[1, 1.5]}
+          performance={{ min: 0.5 }}
+          gl={{
+            antialias: true,
+            alpha: true,
+            powerPreference: "default",
+          }}
+        >
+          <ambientLight intensity={1} />
+          <directionalLight position={[5, 5, 5]} intensity={1} />
+          <Environment preset="city" />
+          <OrbitControls
+            enableZoom={false}
+            enablePan={false}
+            maxPolarAngle={Math.PI / 2}
+            minPolarAngle={Math.PI / 2}
+          />
+
+          <Suspense fallback={<Html center>Loading Model...</Html>}>
+            <Model
+              path={model.modelPath}
+              scale={model.scale}
+              rotation={model.rotation}
+              tweakMaterial={model.name === "Interactive Developer"}
+            />
+          </Suspense>
+        </Canvas>
+      )}
+    </div>
   );
 };
 

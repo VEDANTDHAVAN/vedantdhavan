@@ -17,5 +17,3 @@ export function Computer(props) {
     </group>
   )
 }
-
-useGLTF.preload('/models/computer_compressed.glb')

@@ -19,6 +19,15 @@ section {
   width: 100dvw;
 }
 
+#work,
+#education,
+#skills,
+#experience,
+#contact {
+  content-visibility: auto;
+  contain-intrinsic-size: 1000px;
+}
+
 @theme {
   --font-sans: "Mona Sans", sans-serif;
   --color-white-50: #d9ecff;
@@ -155,50 +164,264 @@ section {
   }
 
   .app-showcase {
-    @apply w-full mt-20 px-5 md:px-20 py-10 md:py-20 flex items-center justify-center;
+    width: 100%;
+    margin-top: 5rem;
+    padding: 2.5rem 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-    .showcaselayout {
-      @apply flex xl:flex-row flex-col gap-10 justify-between;
+  .app-showcase .showcase-shell {
+    width: 100%;
+    max-width: 1500px;
+  }
+
+  .app-showcase .showcase-header {
+    max-width: 64rem;
+  }
+
+  .app-showcase .showcase-kicker {
+    margin-bottom: 0.75rem;
+    color: #d9ecff;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+  }
+
+  .app-showcase .showcase-intro {
+    max-width: 48rem;
+    margin-top: 1.25rem;
+    color: #d9ecff;
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  .app-showcase .project-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 2rem;
+  }
+
+  .app-showcase .project-filter {
+    border: 1px solid #1c1c21;
+    border-radius: 999px;
+    background: #0e0e10;
+    color: #d9ecff;
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+    transition: background-color 300ms ease, border-color 300ms ease, color 300ms ease, box-shadow 300ms ease;
+  }
+
+  .app-showcase .project-filter:hover,
+  .app-showcase .project-filter.active {
+    border-color: #00fcf8;
+    background: #00fcf8;
+    color: #000;
+    box-shadow: 0 0 28px rgba(0, 252, 248, 0.2);
+  }
+
+  .app-showcase .showcase-group {
+    margin-top: 3.5rem;
+  }
+
+  .app-showcase .showcase-group-heading {
+    margin-bottom: 1.5rem;
+  }
+
+  .app-showcase .showcase-group-heading p {
+    color: #d9ecff;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+  }
+
+  .app-showcase .showcase-group-heading h3 {
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  .app-showcase .featured-project-grid,
+  .app-showcase .project-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .app-showcase .project-card {
+    min-height: 520px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border: 1px solid #1c1c21;
+    border-radius: 0.5rem;
+    background: #0e0e10;
+    transition: transform 300ms ease, border-color 300ms ease, box-shadow 300ms ease;
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.02), 0 18px 50px rgba(0, 0, 0, 0.28);
+  }
+
+  .app-showcase .project-card:hover {
+    transform: translateY(-0.5rem);
+    border-color: #00fcf8;
+    box-shadow: 0 0 36px rgba(0, 252, 248, 0.13), 0 24px 70px rgba(0, 0, 0, 0.45);
+  }
+
+  .app-showcase .project-card.featured {
+    background: #282732;
+  }
+
+  .app-showcase .project-image {
+    position: relative;
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+    border-radius: 0.5rem 0.5rem 0 0;
+    background: #000;
+  }
+
+  .app-showcase .project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 500ms ease;
+  }
+
+  .app-showcase .project-card:hover .project-image img {
+    transform: scale(1.05);
+  }
+
+  .app-showcase .project-card-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 1.25rem;
+  }
+
+  .app-showcase .project-card-topline,
+  .app-showcase .project-tech-list,
+  .app-showcase .project-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .app-showcase .project-card-topline {
+    align-items: center;
+  }
+
+  .app-showcase .project-category {
+    border-radius: 999px;
+    background: #00fcf8;
+    color: #000;
+    padding: 0.25rem 0.75rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+  }
+
+  .app-showcase .project-domain {
+    color: #d9ecff;
+    font-size: 0.75rem;
+  }
+
+  .app-showcase .project-card h3 {
+    margin-top: 1rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+
+  .app-showcase .project-card p {
+    flex: 1;
+    margin-top: 0.75rem;
+    color: #d9ecff;
+    font-size: 1rem;
+    line-height: 1.65;
+  }
+
+  .app-showcase .project-tech-list {
+    margin-top: 1.25rem;
+  }
+
+  .app-showcase .project-tech-list li {
+    border: 1px solid #1c1c21;
+    border-radius: 999px;
+    background: #000;
+    color: #d9ecff;
+    padding: 0.25rem 0.75rem;
+    font-size: 0.75rem;
+  }
+
+  .app-showcase .project-actions {
+    margin-top: 1.5rem;
+  }
+
+  .app-showcase .project-link {
+    border-radius: 0.5rem;
+    padding: 0.75rem 1.25rem;
+    font-size: 0.875rem;
+    transition: background-color 300ms ease, color 300ms ease;
+  }
+
+  @media (min-width: 768px) {
+    .app-showcase {
+      padding: 5rem 5rem;
     }
 
-    .first-project-wrapper {
-      @apply h-full flex flex-col justify-between xl:w-[60%];
-
-      .image-wrapper {
-        @apply xl:h-[70vh] md:h-[50vh] h-96 relative;
-
-        img {
-          @apply w-full h-full object-cover rounded-xl absolute inset-0;
-        }
-      }
-
-      .text-content {
-        @apply space-y-5 mt-5;
-
-        .badges {
-          @apply flex gap-2 mb-4;
-        }
-
-        h2 {
-          @apply text-2xl md:text-3xl lg:text-4xl font-bold;
-        }
-      }
+    .app-showcase .showcase-intro {
+      font-size: 1.25rem;
     }
 
-    .project-list-wrapper {
-      @apply flex md:flex-row flex-col xl:flex-col gap-10 xl:w-[40%];
+    .app-showcase .project-filter {
+      font-size: 1rem;
+    }
 
-      .image-wrapper {
-        @apply xl:h-[37vh] md:h-52 lg:h-72 h-64 relative rounded-xl xl:px-5 2xl:px-12 py-0;
-      }
+    .app-showcase .showcase-group {
+      margin-top: 5rem;
+    }
 
-      img {
-        @apply w-full h-full object-contain rounded-xl;
-      }
+    .app-showcase .showcase-group-heading {
+      margin-bottom: 2rem;
+    }
 
-      h2 {
-        @apply text-lg md:text-xl lg:text-2xl font-semibold mt-5;
-      }
+    .app-showcase .showcase-group-heading h3 {
+      font-size: 2.25rem;
+    }
+
+    .app-showcase .project-grid,
+    .app-showcase .featured-project-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 2rem;
+    }
+
+    .app-showcase .project-card-body {
+      padding: 1.5rem;
+    }
+
+    .app-showcase .project-domain,
+    .app-showcase .project-tech-list li {
+      font-size: 0.875rem;
+    }
+
+    .app-showcase .project-card h3 {
+      font-size: 1.5rem;
+    }
+
+    .app-showcase .project-card p {
+      font-size: 1.125rem;
+    }
+
+    .app-showcase .project-link {
+      font-size: 1rem;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .app-showcase .project-grid,
+    .app-showcase .featured-project-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
     }
   }
 

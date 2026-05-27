@@ -10,11 +10,10 @@
     "lint:fix": "eslint . --fix",
     "lint:strict": "eslint . --max-warnings 0",
     "preview": "vite preview",
-    "clean": "rimraf dist",
+    "clean": "node -e \"require('fs').rmSync('dist',{recursive:true,force:true})\"",
     "prebuild": "npm run clean"
   },
   "dependencies": {
-    "@emailjs/browser": "^4.4.1",
     "@gsap/react": "^2.1.2",
     "@react-three/drei": "^10.1.2",
     "@react-three/fiber": "^9.1.2",
@@ -40,9 +39,17 @@
     "eslint-plugin-react-refresh": "^0.4.19",
     "globals": "^16.0.0",
     "prettier": "^3.2.5",
-    "rimraf": "^5.0.5",
     "rollup-plugin-visualizer": "^6.0.1",
     "typescript": "^5.3.3",
     "vite": "^6.3.5"
+  },
+  "overrides": {
+    "brace-expansion": "^1.1.13",
+    "flatted": "^3.4.2",
+    "js-yaml": "^4.1.1",
+    "picomatch": "^4.0.4",
+    "postcss": "^8.5.10",
+    "rollup": "^4.59.0",
+    "tar": "^7.5.11"
   }
 }
