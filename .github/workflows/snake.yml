@@ -8,6 +8,12 @@ on:
 permissions:
   contents: read
 
+env:
+  GIT_AUTHOR_NAME: github-actions[bot]
+  GIT_AUTHOR_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
+  GIT_COMMITTER_NAME: github-actions[bot]
+  GIT_COMMITTER_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
+
 concurrency:
   group: generate-snake
   cancel-in-progress: true
@@ -27,9 +33,14 @@ jobs:
             dist/github-snake.svg
             dist/github-snake-dark.svg?palette=github-dark
 
-      - uses: crazy-max/ghaction-github-pages@v3
-        with:
-          target_branch: output
-          build_dir: dist
+      - name: Publish generated SVGs to output branch
+        run: |
+          cd dist
+          git init
+          git checkout -b output
+          git add github-snake.svg github-snake-dark.svg
+          git commit -m "Generate contribution snake"
+          git remote add origin "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          git push --force origin output
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
