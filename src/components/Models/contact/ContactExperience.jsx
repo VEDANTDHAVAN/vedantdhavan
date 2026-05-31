@@ -1,4 +1,4 @@
-import { Environment, OrbitControls } from '@react-three/drei'
+import { OrbitControls } from '@react-three/drei'
 import { Canvas } from '@react-three/fiber'
 import React, { Suspense } from 'react'
 import { Computer } from './Computer'
@@ -18,9 +18,9 @@ const ContactExperience = () => {
           shadows
         >
           <ambientLight intensity={0.5} color="#fff4e6"/>
+          <hemisphereLight intensity={0.8} groundColor="#2a1608" />
           <directionalLight position={[5,5,3]} intensity={2.5} color="#ffd9b3"/>
           <directionalLight position={[5,9,1]} castShadow intensity={2.5} color="#ffd9b3"/>
-          <Environment preset='city' />
           <OrbitControls enableZoom={false} maxDistance={25}
           minDistance={5} minPolarAngle={Math.PI/5} maxPolarAngle={Math.PI/2} />
 

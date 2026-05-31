@@ -113,7 +113,7 @@ const abilities = [
     desc: "Crafts solutions with user needs at the core.",
   },
   {
-    imgPath: "/images/ai.png",
+    imgPath: "/images/icon.png",
     title: " 🤖 AI-Integrated Builder",
     desc: "Merges AI with real-world apps.",
   },

@@ -5,8 +5,6 @@ Command: npx gltfjsx@6.5.3 optimized-room.glb
 
 import React, { useEffect, useMemo, useRef } from "react";
 import { useGLTF, useTexture } from "@react-three/drei";
-import { EffectComposer, SelectiveBloom } from "@react-three/postprocessing";
-import { BlendFunction } from "postprocessing";
 import * as THREE from "three";
 
 export function Room1(props) {
@@ -50,17 +48,6 @@ export function Room1(props) {
         geometry={nodes.emis_lambert1_0.geometry}
         material={materials.lambert1}
       />
-      <EffectComposer>
-        <SelectiveBloom
-          selection={screensRef}
-          intensity={1.5}
-          luminanceThreshold={0.1}
-          luminanceSmoothing={0.9}
-          blendFunction={BlendFunction.ADD}
-          mipmapBlur
-          radius={0.8}
-        />
-      </EffectComposer>
       <mesh
         geometry={nodes._________6_blinn1_0.geometry}
         material={curtainMaterial}
@@ -176,5 +163,3 @@ export function Room1(props) {
     </group>
   );
 }
-
-useGLTF.preload("/models/optimized-room.glb");

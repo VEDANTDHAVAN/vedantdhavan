@@ -1,4 +1,4 @@
-import { Environment, Float, OrbitControls, useGLTF } from "@react-three/drei";
+import { Float, OrbitControls, useGLTF } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import { useEffect, Suspense } from "react";
 import * as THREE from "three";
@@ -47,8 +47,8 @@ const TechIcon = ({ model }) => {
           }}
         >
           <ambientLight intensity={1} />
+          <hemisphereLight intensity={0.8} groundColor="#111111" />
           <directionalLight position={[5, 5, 5]} intensity={1} />
-          <Environment preset="city" />
           <OrbitControls
             enableZoom={false}
             enablePan={false}

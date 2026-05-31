@@ -194,6 +194,19 @@ const projects = [
     description:
       "A modular scraping utility for extracting structured text and metadata, with CLI and dashboard workflows for data collection and analysis pipelines.",
   },
+  {
+  title: "Transaction Fraud Risk Platform",
+  category: "Machine Learning",
+  domain: "FinTech / Fraud Detection",
+  href: "https://github.com/VEDANTDHAVAN/TransactionFraud-Risk-Platform",
+  demoUrl: "https://transactionfraud-risk-detection.streamlit.app/",
+  image: "/images/project16.png",
+  imageClass: "bg-[#312e81]",
+  featured: true,
+  tech: ["Python","Pandas","Scikit-learn","XGBoost",
+    "SHAP","FastAPI","Streamlit","Docker","MLflow"],
+  description: "End-to-end fraud detection platform that predicts transaction risk using XGBoost, advanced feature engineering, SHAP explainability, FastAPI model serving, Streamlit dashboard, Docker deployment, and MLflow experiment tracking.",
+},
 ];
 
 const categories = ["All", ...Array.from(new Set(projects.map((project) => project.category)))];
