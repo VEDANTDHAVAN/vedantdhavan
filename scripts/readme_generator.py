@@ -31,15 +31,9 @@ def get_top_projects():
         ranked.append({
             "name": repo["name"],
             "url": repo["html_url"],
-            "description":
-                repo["description"] or
-                "No description",
-            "homepage":
-                repo["homepage"],
-            "score":
-                result["score"],
-            "reasons":
-                result["reasons"]
+            "description": repo["description"] or "No description",
+            "homepage": repo["homepage"],
+            "score": result,
         })
 
     ranked.sort(
@@ -157,7 +151,7 @@ def build_activity_section(events):
         )
 
         activity.append(
-            f"- {action} {repo.spilt('/')[-1]}"
+            f"- {action} {repo.split('/')[-1]}"
         )
 
     return "\n".join(activity[:5])
