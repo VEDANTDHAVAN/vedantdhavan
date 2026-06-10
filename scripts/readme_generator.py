@@ -60,11 +60,9 @@ def build_projects_markdown():
         output.append(
             f"### 🚀 {project['name']}\n"
             f"{project['description']}\n\n"
-            f"**Score:** {project['score']}\n"
         )
 
         if project["homepage"]:
-
             output.append(
                 f"🌐 Demo: {project['homepage']}\n"
             )
@@ -133,58 +131,50 @@ def build_focus_section(repos):
 
 def build_activity_section(events):
 
-    output = []
+    seen = set()
+    activity = []
 
-    for event in events[:10]:
-
+    for event in events:
         repo = event["repo"]["name"]
+        
+        if repo in seen:
+            continue
+
+        seen.add(repo)
 
         event_type = event["type"]
 
         mapping = {
-            "PushEvent":
-                "Updated",
-            "CreateEvent":
-                "Created",
-            "PullRequestEvent":
-                "Worked on PR",
-            "IssuesEvent":
-                "Updated issue"
+            "PushEvent": "Updated",
+            "CreateEvent": "Created",
+            "PullRequestEvent": "Worked on PR",
+            "IssuesEvent": "Updated issue"
         }
 
         action = mapping.get(
             event_type,
-            event_type
+            "Worked on"
         )
 
-        output.append(
-            f"- {action} {repo}"
+        activity.append(
+            f"- {action} {repo.spilt('/')[-1]}"
         )
 
-    return "\n".join(output)
+    return "\n".join(activity[:5])
 
 def build_weekly_section(events):
-
-    commits = 0
-
     repos = set()
+    push_events = 0
 
     for event in events:
-
         repos.add(
             event["repo"]["name"]
         )
 
         if event["type"] == "PushEvent":
-
-            commits += len(
-                event["payload"].get(
-                    "commits",
-                    []
-                )
-            )
+            push_events += 1
 
     return (
-        f"- {commits} commits\n"
+        f"- {push_events} push commits\n"
         f"- {len(repos)} repositories updated"
     )

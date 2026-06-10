@@ -8,7 +8,7 @@
 
 # 👋 Hey, I’m Vedant Dhavan
 
-🚀 **Full-Stack Developer | AI Systems Builder | Generative AI Engineer**  
+🚀 **Full-Stack Developer building AI-powered products, intelligent automation systems, and developer tools**
 🎓 **BE Computer Engineering**, Vidyavardhini’s College of Engineering & Technology  
 🌍 Mumbai, India
 
