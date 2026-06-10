@@ -10,19 +10,20 @@
 
 🚀 **Full-Stack Developer | AI Systems Builder | Generative AI Engineer**  
 🎓 **BE Computer Engineering**, Vidyavardhini’s College of Engineering & Technology  
-🌍 Mumbai, India  
+🌍 Mumbai, India
 
-I build **intelligent systems that automate real workflows** — combining  
+I build **intelligent systems that automate real workflows** — combining
 ⚡ backend engineering, 🤖 AI agents, and 🎨 immersive interfaces.
 
 ---
 
-# 🧠 What I’m Focused On
+# 🧠 What I'm Focused On
 
-- Designing **AI agent systems with real-world tool integration**
-- Building **scalable backend architectures for AI apps**
-- Creating **interactive and 3D web experiences**
-- Automating **developer and business workflows**
+- Building production-grade AI agents
+- Designing secure AI workflows
+- RAG & GraphRAG systems
+- Full-stack AI applications
+- AI evaluation and benchmarking
 
 ---
 
@@ -36,60 +37,19 @@ I build **intelligent systems that automate real workflows** — combining
 
 ---
 
-# 🚧 Now Building
+# 🚀 Featured Projects
 
-### 🔐 SecureIntent-Orchestrator  
-> Zero-trust AI orchestration system for secure multi-agent execution  
-
-- Intent validation + policy enforcement  
-- Safe tool invocation (no prompt injection leaks)  
-- Stateful agent workflows  
+<!-- PROJECTS_START -->
+Loading projects...
+<!-- PROJECTS_END -->
 
 ---
 
-### ⚙️ MCP Automation Layer  
-> Enabling AI agents to interact with real-world systems  
+# 🎯 Current Focus
 
-- Calendar, email, API integrations  
-- Structured tool interfaces (MCP servers)  
-- Human-in-the-loop checkpoints  
-
----
-
-### 🌐 Smart Collaboration Platform  
-> Real-time virtual workspace with persistent context  
-
-- Meetings + chat + shared memory  
-- User-aware AI assistance  
-- Scalable real-time infra  
-
----
-
-### 🎨 3D Web Experiences  
-> Experimental interfaces blending UI + immersion  
-
-- Three.js + React Three Fiber  
-- Interactive product & UI demos  
-- Performance-optimized WebGL scenes  
-
----
-
-# 🚀 Domains I Build In
-
-### 🤖 AI Systems
-- Multi-agent orchestration  
-- RAG pipelines  
-- Workflow automation  
-
-### 🌐 Full-Stack Systems
-- Real-time apps  
-- SaaS platforms  
-- Developer tools  
-
-### 🎨 Creative Tech
-- 3D UI/UX systems  
-- Interactive web apps  
-- Experimental interfaces  
+<!-- FOCUS_START -->
+Loading focus...
+<!-- FOCUS_END -->
 
 ---
 
@@ -107,6 +67,44 @@ I build **intelligent systems that automate real workflows** — combining
 
 ---
 
+# 📈 Recent Development Activity
+
+<!-- ACTIVITY_START -->
+Loading activity...
+<!-- ACTIVITY_END -->
+
+---
+
+# 📌 This Week
+
+<!-- WEEKLY_START -->
+Loading weekly stats...
+<!-- WEEKLY_END -->
+
+---
+
+# 🚀 Domains I Build In
+
+### 🤖 AI Systems
+- Agentic AI
+- RAG & GraphRAG
+- Workflow Automation
+- AI Evaluation Systems
+
+### 🌐 Full-Stack Systems
+- SaaS Platforms
+- Real-time Applications
+- Developer Tools
+- Backend Engineering
+
+### 🔒 AI Security
+- Zero-Trust AI Architectures
+- Policy Enforcement
+- Human-in-the-Loop Systems
+- Secure Tool Orchestration
+
+---
+
 # 🐍 Contribution Graph
 
 <p align="center">
@@ -119,11 +117,11 @@ I build **intelligent systems that automate real workflows** — combining
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-000?logo=vercel&logoColor=white)](https://vedantdhavan.vercel.app)
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/vedant-dhavan-5930ba2a3/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/vedant-dhavan/)
 
 [![GitHub](https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white)](https://github.com/VEDANTDHAVAN)
 
-📬 **Email:** vedantadhavan11@gmail.com  
+📬 **Email:** vedantadhavan11@gmail.com
 
 ---
 
