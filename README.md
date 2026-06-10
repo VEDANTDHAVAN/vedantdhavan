@@ -43,7 +43,7 @@ I build **intelligent systems that automate real workflows** — combining
 ### 🚀 vedantdhavan
 My 3D Portfolio describing my Techstack and abilities.
 
-**Score:** 220
+**Score:** 230
 🌐 Demo: https://vedantdhavan.vercel.app
 
 ### 🚀 graphrag-benchmark
@@ -78,7 +78,11 @@ Next.js Prompt Ops dashboard for migrating and evaluating prompts across LLMs, f
 # 🎯 Current Focus
 
 <!-- FOCUS_START -->
-Loading focus...
+- Agentic AI
+- GraphRAG
+- Full-Stack AI
+- Automation
+- AI Evaluation
 <!-- FOCUS_END -->
 
 ---
@@ -100,7 +104,16 @@ Loading focus...
 # 📈 Recent Development Activity
 
 <!-- ACTIVITY_START -->
-Loading activity...
+- Updated VEDANTDHAVAN/vedantdhavan
+- Updated VEDANTDHAVAN/vedantdhavan
+- Updated VEDANTDHAVAN/Trader-Sentiment-Analysis
+- Updated VEDANTDHAVAN/Trader-Sentiment-Analysis
+- Created VEDANTDHAVAN/Trader-Sentiment-Analysis
+- Created VEDANTDHAVAN/Nisarg-Resort
+- Updated VEDANTDHAVAN/industrial-ai-vision-platform
+- Updated VEDANTDHAVAN/industrial-ai-vision-platform
+- Updated VEDANTDHAVAN/industrial-ai-vision-platform
+- Updated VEDANTDHAVAN/industrial-ai-vision-platform
 <!-- ACTIVITY_END -->
 
 ---
@@ -108,7 +121,8 @@ Loading activity...
 # 📌 This Week
 
 <!-- WEEKLY_START -->
-Loading weekly stats...
+- 0 commits
+- 8 repositories updated
 <!-- WEEKLY_END -->
 
 ---
