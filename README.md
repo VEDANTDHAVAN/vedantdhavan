@@ -40,34 +40,29 @@ I build **intelligent systems that automate real workflows** — combining
 # 🚀 Featured Projects
 
 <!-- PROJECTS_START -->
-### 🚀 vedantdhavan
-My 3D Portfolio describing my Techstack and abilities.
-
-**Score:** 230
-🌐 Demo: https://vedantdhavan.vercel.app
-
 ### 🚀 graphrag-benchmark
 2M-token benchmark comparing LLM-only, Basic RAG, and NetworkX-based GraphRAG with scientific papers, accuracy evaluation, and interactive dashboard.
 
-**Score:** 210
 🌐 Demo: https://graphrag-benchmark.vercel.app
+
+### 🚀 vedantdhavan
+My 3D Portfolio describing my Techstack and abilities.
+
+🌐 Demo: https://vedantdhavan.vercel.app
 
 ### 🚀 PRismAI
 AI-powered multi-agent code review platform that analyzes GitHub pull requests for bugs, security vulnerabilities, performance bottlenecks, and code smells using context-aware AI workflows and real-time review pipelines.
 
-**Score:** 173.73
 🌐 Demo: https://agentic-code-review-assistant.vercel.app
 
 ### 🚀 TransactionFraud-Risk-Platform
 End-to-end Transaction Fraud Detection Platform with XGBoost, SHAP explainability, FastAPI, Streamlit, Docker, and MLflow for production-grade ML.
 
-**Score:** 173.71
 🌐 Demo: https://transactionfraud-risk-detection.streamlit.app/
 
 ### 🚀 prompt-ops-mini-dashboard
 Next.js Prompt Ops dashboard for migrating and evaluating prompts across LLMs, featuring async workflows, scoring logic, and clean UI patterns.
 
-**Score:** 121.56
 🌐 Demo: https://prompt-ops-mini-dashboard.vercel.app
 
 
@@ -104,16 +99,11 @@ Next.js Prompt Ops dashboard for migrating and evaluating prompts across LLMs, f
 # 📈 Recent Development Activity
 
 <!-- ACTIVITY_START -->
-- Updated VEDANTDHAVAN/vedantdhavan
-- Updated VEDANTDHAVAN/vedantdhavan
-- Updated VEDANTDHAVAN/Trader-Sentiment-Analysis
-- Updated VEDANTDHAVAN/Trader-Sentiment-Analysis
-- Created VEDANTDHAVAN/Trader-Sentiment-Analysis
-- Created VEDANTDHAVAN/Nisarg-Resort
-- Updated VEDANTDHAVAN/industrial-ai-vision-platform
-- Updated VEDANTDHAVAN/industrial-ai-vision-platform
-- Updated VEDANTDHAVAN/industrial-ai-vision-platform
-- Updated VEDANTDHAVAN/industrial-ai-vision-platform
+- Updated vedantdhavan
+- Updated Trader-Sentiment-Analysis
+- Created Nisarg-Resort
+- Updated industrial-ai-vision-platform
+- Created ai-engineering-from-scratch
 <!-- ACTIVITY_END -->
 
 ---
@@ -121,7 +111,7 @@ Next.js Prompt Ops dashboard for migrating and evaluating prompts across LLMs, f
 # 📌 This Week
 
 <!-- WEEKLY_START -->
-- 0 commits
+- 24 push commits
 - 8 repositories updated
 <!-- WEEKLY_END -->
 
