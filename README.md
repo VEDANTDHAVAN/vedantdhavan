@@ -40,7 +40,37 @@ I build **intelligent systems that automate real workflows** — combining
 # 🚀 Featured Projects
 
 <!-- PROJECTS_START -->
-Loading projects...
+### 🚀 vedantdhavan
+My 3D Portfolio describing my Techstack and abilities.
+
+**Score:** 220
+🌐 Demo: https://vedantdhavan.vercel.app
+
+### 🚀 graphrag-benchmark
+2M-token benchmark comparing LLM-only, Basic RAG, and NetworkX-based GraphRAG with scientific papers, accuracy evaluation, and interactive dashboard.
+
+**Score:** 210
+🌐 Demo: https://graphrag-benchmark.vercel.app
+
+### 🚀 PRismAI
+AI-powered multi-agent code review platform that analyzes GitHub pull requests for bugs, security vulnerabilities, performance bottlenecks, and code smells using context-aware AI workflows and real-time review pipelines.
+
+**Score:** 173.73
+🌐 Demo: https://agentic-code-review-assistant.vercel.app
+
+### 🚀 TransactionFraud-Risk-Platform
+End-to-end Transaction Fraud Detection Platform with XGBoost, SHAP explainability, FastAPI, Streamlit, Docker, and MLflow for production-grade ML.
+
+**Score:** 173.71
+🌐 Demo: https://transactionfraud-risk-detection.streamlit.app/
+
+### 🚀 prompt-ops-mini-dashboard
+Next.js Prompt Ops dashboard for migrating and evaluating prompts across LLMs, featuring async workflows, scoring logic, and clean UI patterns.
+
+**Score:** 121.56
+🌐 Demo: https://prompt-ops-mini-dashboard.vercel.app
+
+
 <!-- PROJECTS_END -->
 
 ---
