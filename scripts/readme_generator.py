@@ -72,3 +72,119 @@ def build_projects_markdown():
         output.append("\n")
 
     return "".join(output)
+
+def build_focus_section(repos):
+
+    focus_topics = {}
+
+    for repo in repos:
+
+        text = (
+            repo["name"] + " " +
+            (repo["description"] or "")
+        ).lower()
+
+        keywords = {
+            "Agentic AI": [
+                "agent",
+                "agentic",
+                "workflow"
+            ],
+            "GraphRAG": [
+                "graphrag",
+                "rag"
+            ],
+            "AI Evaluation": [
+                "benchmark",
+                "evaluation"
+            ],
+            "Full-Stack AI": [
+                "nextjs",
+                "react",
+                "fastapi"
+            ],
+            "Automation": [
+                "automation",
+                "orchestrator"
+            ]
+        }
+
+        for focus, terms in keywords.items():
+
+            for term in terms:
+
+                if term in text:
+
+                    focus_topics[focus] = (
+                        focus_topics.get(focus, 0)
+                        + 1
+                    )
+
+    ranked = sorted(
+        focus_topics.items(),
+        key=lambda x: x[1],
+        reverse=True
+    )
+
+    return "\n".join(
+        f"- {item[0]}"
+        for item in ranked[:5]
+    )
+
+def build_activity_section(events):
+
+    output = []
+
+    for event in events[:10]:
+
+        repo = event["repo"]["name"]
+
+        event_type = event["type"]
+
+        mapping = {
+            "PushEvent":
+                "Updated",
+            "CreateEvent":
+                "Created",
+            "PullRequestEvent":
+                "Worked on PR",
+            "IssuesEvent":
+                "Updated issue"
+        }
+
+        action = mapping.get(
+            event_type,
+            event_type
+        )
+
+        output.append(
+            f"- {action} {repo}"
+        )
+
+    return "\n".join(output)
+
+def build_weekly_section(events):
+
+    commits = 0
+
+    repos = set()
+
+    for event in events:
+
+        repos.add(
+            event["repo"]["name"]
+        )
+
+        if event["type"] == "PushEvent":
+
+            commits += len(
+                event["payload"].get(
+                    "commits",
+                    []
+                )
+            )
+
+    return (
+        f"- {commits} commits\n"
+        f"- {len(repos)} repositories updated"
+    )

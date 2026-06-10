@@ -58,3 +58,15 @@ def get_readme(repo_name):
 
     return base64.b64decode(content)\
         .decode("utf-8", errors="ignore")
+
+def get_events():
+
+    url = (
+        f"https://api.github.com/users/"
+        f"{USERNAME}/events"
+    )
+
+    return requests.get(
+        url,
+        headers=HEADERS
+    ).json()

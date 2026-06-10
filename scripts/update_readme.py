@@ -1,8 +1,17 @@
 from readme_generator import (
-    build_projects_markdown
+    build_projects_markdown, build_focus_section,
+    build_activity_section, build_weekly_section
 )
 
+from github_fetcher import get_repositories, get_events
+
+repos = get_repositories()
+events = get_events()
+
 projects = build_projects_markdown()
+focus = build_focus_section(repos)
+activity = build_activity_section(events)
+weekly = build_weekly_section(events)
 
 with open(
     "README.md",
@@ -40,6 +49,27 @@ readme = replace_section(
     "<!-- PROJECTS_START -->",
     "<!-- PROJECTS_END -->",
     projects
+)
+
+readme = replace_section(
+    readme,
+    "<!-- FOCUS_START -->",
+    "<!-- FOCUS_END -->",
+    focus
+)
+
+readme = replace_section(
+    readme,
+    "<!-- ACTIVITY_START -->",
+    "<!-- ACTIVITY_END -->",
+    activity
+)
+
+readme = replace_section(
+    readme,
+    "<!-- WEEKLY_START -->",
+    "<!-- WEEKLY_END -->",
+    weekly
 )
 
 with open(
