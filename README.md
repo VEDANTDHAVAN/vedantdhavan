@@ -60,10 +60,9 @@ End-to-end Transaction Fraud Detection Platform with XGBoost, SHAP explainabilit
 
 🌐 Demo: https://transactionfraud-risk-detection.streamlit.app/
 
-### 🚀 prompt-ops-mini-dashboard
-Next.js Prompt Ops dashboard for migrating and evaluating prompts across LLMs, featuring async workflows, scoring logic, and clean UI patterns.
+### 🚀 industrial-ai-vision-platform
+An end-to-end Computer Vision and MLOps project for industrial defect detection, explainability, embedding analysis, and production drift monitoring.
 
-🌐 Demo: https://prompt-ops-mini-dashboard.vercel.app
 
 
 <!-- PROJECTS_END -->
@@ -99,11 +98,11 @@ Next.js Prompt Ops dashboard for migrating and evaluating prompts across LLMs, f
 # 📈 Recent Development Activity
 
 <!-- ACTIVITY_START -->
+- Updated industrial-ai-vision-platform
 - Updated trustclaw
 - Worked on trustclaw
 - Worked on Consumer_Sentiment_Analysis
 - Updated vedantdhavan
-- Updated Trader-Sentiment-Analysis
 <!-- ACTIVITY_END -->
 
 ---
