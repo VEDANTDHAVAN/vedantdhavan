@@ -60,9 +60,10 @@ End-to-end Transaction Fraud Detection Platform with XGBoost, SHAP explainabilit
 
 🌐 Demo: https://transactionfraud-risk-detection.streamlit.app/
 
-### 🚀 industrial-ai-vision-platform
-An end-to-end Computer Vision and MLOps project for industrial defect detection, explainability, embedding analysis, and production drift monitoring.
+### 🚀 prompt-ops-mini-dashboard
+Next.js Prompt Ops dashboard for migrating and evaluating prompts across LLMs, featuring async workflows, scoring logic, and clean UI patterns.
 
+🌐 Demo: https://prompt-ops-mini-dashboard.vercel.app
 
 
 <!-- PROJECTS_END -->
@@ -110,8 +111,8 @@ An end-to-end Computer Vision and MLOps project for industrial defect detection,
 # 📌 This Week
 
 <!-- WEEKLY_START -->
-- 23 push commits
-- 10 repositories updated
+- 24 push commits
+- 8 repositories updated
 <!-- WEEKLY_END -->
 
 ---
