@@ -111,7 +111,7 @@ Next.js Prompt Ops dashboard for migrating and evaluating prompts across LLMs, f
 # 📌 This Week
 
 <!-- WEEKLY_START -->
-- 18 push commits
+- 15 push commits
 - 8 repositories updated
 <!-- WEEKLY_END -->
 
