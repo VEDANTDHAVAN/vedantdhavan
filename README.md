@@ -102,7 +102,6 @@ Next.js Prompt Ops dashboard for migrating and evaluating prompts across LLMs, f
 - Updated AMD_Hackathon
 - Worked on micrograd
 - Worked on Bindu
-- Updated industrial-ai-vision-platform
 <!-- ACTIVITY_END -->
 
 ---
@@ -110,8 +109,8 @@ Next.js Prompt Ops dashboard for migrating and evaluating prompts across LLMs, f
 # 📌 This Week
 
 <!-- WEEKLY_START -->
-- 5 push commits
-- 4 repositories updated
+- 1 push commits
+- 3 repositories updated
 <!-- WEEKLY_END -->
 
 ---
