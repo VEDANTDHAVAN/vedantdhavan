@@ -60,10 +60,10 @@ End-to-end Transaction Fraud Detection Platform with XGBoost, SHAP explainabilit
 
 🌐 Demo: https://transactionfraud-risk-detection.streamlit.app/
 
-### 🚀 prompt-ops-mini-dashboard
-Next.js Prompt Ops dashboard for migrating and evaluating prompts across LLMs, featuring async workflows, scoring logic, and clean UI patterns.
+### 🚀 VedLabs-Agency
+No description
 
-🌐 Demo: https://prompt-ops-mini-dashboard.vercel.app
+🌐 Demo: https://ved-labs-agency.vercel.app
 
 
 <!-- PROJECTS_END -->
@@ -75,8 +75,8 @@ Next.js Prompt Ops dashboard for migrating and evaluating prompts across LLMs, f
 <!-- FOCUS_START -->
 - Agentic AI
 - GraphRAG
-- Full-Stack AI
 - Automation
+- Full-Stack AI
 - AI Evaluation
 <!-- FOCUS_END -->
 
@@ -99,11 +99,11 @@ Next.js Prompt Ops dashboard for migrating and evaluating prompts across LLMs, f
 # 📈 Recent Development Activity
 
 <!-- ACTIVITY_START -->
+- Worked on VedLabs-Agency
+- Updated Studio-Lead-Automation
 - Updated RecallTabs
 - Updated trading_bot
 - Updated AMD_Hackathon
-- Worked on micrograd
-- Worked on Bindu
 <!-- ACTIVITY_END -->
 
 ---
@@ -111,8 +111,8 @@ Next.js Prompt Ops dashboard for migrating and evaluating prompts across LLMs, f
 # 📌 This Week
 
 <!-- WEEKLY_START -->
-- 5 push commits
-- 5 repositories updated
+- 11 push commits
+- 7 repositories updated
 <!-- WEEKLY_END -->
 
 ---
