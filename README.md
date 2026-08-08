@@ -112,7 +112,7 @@ No description
 
 <!-- WEEKLY_START -->
 - 15 push commits
-- 6 repositories updated
+- 5 repositories updated
 <!-- WEEKLY_END -->
 
 ---
