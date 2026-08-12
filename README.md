@@ -103,7 +103,6 @@ No description
 - Worked on VedLabs-Agency
 - Updated RecallTabs
 - Updated trading_bot
-- Updated AMD_Hackathon
 <!-- ACTIVITY_END -->
 
 ---
@@ -111,8 +110,8 @@ No description
 # 📌 This Week
 
 <!-- WEEKLY_START -->
-- 15 push commits
-- 5 repositories updated
+- 14 push commits
+- 4 repositories updated
 <!-- WEEKLY_END -->
 
 ---
