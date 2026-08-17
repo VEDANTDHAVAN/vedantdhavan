@@ -102,7 +102,6 @@ No description
 - Updated Studio-Lead-Automation
 - Worked on VedLabs-Agency
 - Updated RecallTabs
-- Updated trading_bot
 <!-- ACTIVITY_END -->
 
 ---
@@ -110,8 +109,8 @@ No description
 # 📌 This Week
 
 <!-- WEEKLY_START -->
-- 13 push commits
-- 4 repositories updated
+- 12 push commits
+- 3 repositories updated
 <!-- WEEKLY_END -->
 
 ---
