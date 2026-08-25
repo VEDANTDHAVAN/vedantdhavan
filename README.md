@@ -100,7 +100,6 @@ No description
 
 <!-- ACTIVITY_START -->
 - Updated Studio-Lead-Automation
-- Worked on VedLabs-Agency
 <!-- ACTIVITY_END -->
 
 ---
@@ -108,8 +107,8 @@ No description
 # 📌 This Week
 
 <!-- WEEKLY_START -->
-- 10 push commits
-- 2 repositories updated
+- 4 push commits
+- 1 repositories updated
 <!-- WEEKLY_END -->
 
 ---
