@@ -60,10 +60,10 @@ End-to-end Transaction Fraud Detection Platform with XGBoost, SHAP explainabilit
 
 🌐 Demo: https://transactionfraud-risk-detection.streamlit.app/
 
-### 🚀 VedLabs-Agency
-No description
+### 🚀 prompt-ops-mini-dashboard
+Next.js Prompt Ops dashboard for migrating and evaluating prompts across LLMs, featuring async workflows, scoring logic, and clean UI patterns.
 
-🌐 Demo: https://ved-labs-agency.vercel.app
+🌐 Demo: https://prompt-ops-mini-dashboard.vercel.app
 
 
 <!-- PROJECTS_END -->
