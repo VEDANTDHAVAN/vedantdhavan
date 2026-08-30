@@ -60,10 +60,10 @@ End-to-end Transaction Fraud Detection Platform with XGBoost, SHAP explainabilit
 
 🌐 Demo: https://transactionfraud-risk-detection.streamlit.app/
 
-### 🚀 prompt-ops-mini-dashboard
-Next.js Prompt Ops dashboard for migrating and evaluating prompts across LLMs, featuring async workflows, scoring logic, and clean UI patterns.
+### 🚀 AI-Website-Builder
+AI-powered website builder that creates fully responsive, SEO-friendly websites from natural language prompts using GPT-4. Build and deploy stunning sites in seconds — no code needed.
 
-🌐 Demo: https://prompt-ops-mini-dashboard.vercel.app
+🌐 Demo: https://veddev.vercel.app/
 
 
 <!-- PROJECTS_END -->
