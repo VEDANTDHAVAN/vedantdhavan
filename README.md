@@ -55,15 +55,15 @@ AI-powered multi-agent code review platform that analyzes GitHub pull requests f
 
 🌐 Demo: https://agentic-code-review-assistant.vercel.app
 
-### 🚀 TransactionFraud-Risk-Platform
-End-to-end Transaction Fraud Detection Platform with XGBoost, SHAP explainability, FastAPI, Streamlit, Docker, and MLflow for production-grade ML.
-
-🌐 Demo: https://transactionfraud-risk-detection.streamlit.app/
-
 ### 🚀 AI-Website-Builder
 AI-powered website builder that creates fully responsive, SEO-friendly websites from natural language prompts using GPT-4. Build and deploy stunning sites in seconds — no code needed.
 
 🌐 Demo: https://veddev.vercel.app/
+
+### 🚀 TransactionFraud-Risk-Platform
+End-to-end Transaction Fraud Detection Platform with XGBoost, SHAP explainability, FastAPI, Streamlit, Docker, and MLflow for production-grade ML.
+
+🌐 Demo: https://transactionfraud-risk-detection.streamlit.app/
 
 
 <!-- PROJECTS_END -->
@@ -99,6 +99,7 @@ AI-powered website builder that creates fully responsive, SEO-friendly websites 
 # 📈 Recent Development Activity
 
 <!-- ACTIVITY_START -->
+- Created property-post-maker
 - Updated Studio-Lead-Automation
 <!-- ACTIVITY_END -->
 
@@ -107,8 +108,8 @@ AI-powered website builder that creates fully responsive, SEO-friendly websites 
 # 📌 This Week
 
 <!-- WEEKLY_START -->
-- 4 push commits
-- 1 repositories updated
+- 2 push commits
+- 2 repositories updated
 <!-- WEEKLY_END -->
 
 ---
