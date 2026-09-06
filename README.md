@@ -40,15 +40,15 @@ I build **intelligent systems that automate real workflows** — combining
 # 🚀 Featured Projects
 
 <!-- PROJECTS_START -->
-### 🚀 vedantdhavan
-My 3D Portfolio describing my Techstack and abilities.
-
-🌐 Demo: https://vedantdhavan.vercel.app
-
 ### 🚀 graphrag-benchmark
 2M-token benchmark comparing LLM-only, Basic RAG, and NetworkX-based GraphRAG with scientific papers, accuracy evaluation, and interactive dashboard.
 
 🌐 Demo: https://graphrag-benchmark.vercel.app
+
+### 🚀 vedantdhavan
+My 3D Portfolio describing my Techstack and abilities.
+
+🌐 Demo: https://vedantdhavan.vercel.app
 
 ### 🚀 PRismAI
 AI-powered multi-agent code review platform that analyzes GitHub pull requests for bugs, security vulnerabilities, performance bottlenecks, and code smells using context-aware AI workflows and real-time review pipelines.
