@@ -100,7 +100,6 @@ End-to-end Transaction Fraud Detection Platform with XGBoost, SHAP explainabilit
 
 <!-- ACTIVITY_START -->
 - Updated AgencyFlow
-- Created property-post-maker
 <!-- ACTIVITY_END -->
 
 ---
@@ -108,8 +107,8 @@ End-to-end Transaction Fraud Detection Platform with XGBoost, SHAP explainabilit
 # 📌 This Week
 
 <!-- WEEKLY_START -->
-- 18 push commits
-- 2 repositories updated
+- 24 push commits
+- 1 repositories updated
 <!-- WEEKLY_END -->
 
 ---
