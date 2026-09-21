@@ -99,6 +99,7 @@ End-to-end Transaction Fraud Detection Platform with XGBoost, SHAP explainabilit
 # 📈 Recent Development Activity
 
 <!-- ACTIVITY_START -->
+- Worked on agent-harness-workshop-lightweight
 - Updated AgencyFlow
 <!-- ACTIVITY_END -->
 
@@ -107,8 +108,8 @@ End-to-end Transaction Fraud Detection Platform with XGBoost, SHAP explainabilit
 # 📌 This Week
 
 <!-- WEEKLY_START -->
-- 24 push commits
-- 1 repositories updated
+- 23 push commits
+- 2 repositories updated
 <!-- WEEKLY_END -->
 
 ---
