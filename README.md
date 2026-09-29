@@ -99,11 +99,11 @@ End-to-end Transaction Fraud Detection Platform with XGBoost, SHAP explainabilit
 # 📈 Recent Development Activity
 
 <!-- ACTIVITY_START -->
+- Worked on PR Take-Home-Assignment-The-Untested-API
+- Worked on PR Take-Home-Assignment-The-Untested-API
 - Created precision-agri-yield-prediction
 - Updated aivoa-deviation-ai
 - Updated totem-prompt-router
-- Updated nifty-recovery-event-study
-- Worked on agent-harness-workshop-lightweight
 <!-- ACTIVITY_END -->
 
 ---
@@ -111,8 +111,8 @@ End-to-end Transaction Fraud Detection Platform with XGBoost, SHAP explainabilit
 # 📌 This Week
 
 <!-- WEEKLY_START -->
-- 17 push commits
-- 6 repositories updated
+- 14 push commits
+- 8 repositories updated
 <!-- WEEKLY_END -->
 
 ---
