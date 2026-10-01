@@ -60,10 +60,10 @@ End-to-end Transaction Fraud Detection Platform with XGBoost, SHAP explainabilit
 
 🌐 Demo: https://transactionfraud-risk-detection.streamlit.app/
 
-### 🚀 property-post-maker
-Property Post Maker that turns four property details into a ready-to-share real estate creative with live preview, property image support, automatic branding/contact details, responsive design, and PNG export.
+### 🚀 AI-Website-Builder
+AI-powered website builder that creates fully responsive, SEO-friendly websites from natural language prompts using GPT-4. Build and deploy stunning sites in seconds — no code needed.
 
-🌐 Demo: https://property-post-maker-sage.vercel.app
+🌐 Demo: https://veddev.vercel.app/
 
 
 <!-- PROJECTS_END -->
@@ -99,11 +99,11 @@ Property Post Maker that turns four property details into a ready-to-share real 
 # 📈 Recent Development Activity
 
 <!-- ACTIVITY_START -->
+- Worked on RepliUI
 - Updated Take-Home-Assignment-The-Untested-API
 - Worked on PR Take-Home-Assignment-The-Untested-API
 - Created precision-agri-yield-prediction
 - Updated aivoa-deviation-ai
-- Updated totem-prompt-router
 <!-- ACTIVITY_END -->
 
 ---
@@ -112,7 +112,7 @@ Property Post Maker that turns four property details into a ready-to-share real 
 
 <!-- WEEKLY_START -->
 - 14 push commits
-- 8 repositories updated
+- 9 repositories updated
 <!-- WEEKLY_END -->
 
 ---
