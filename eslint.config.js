@@ -11,7 +11,7 @@ export default [
       'node_modules/**/*',
       '*.config.js',
       '*.config.mjs',
-      '*.config.cjs',
+      'scripts/**/*.cjs',
       '*.config.ts',
       '*.config.tsx',
       '*.min.js',
@@ -20,7 +20,7 @@ export default [
   },
   js.configs.recommended,
   {
-    files: ['**/*.{js,jsx,ts,tsx}'],
+    files: ['**/*.{js,jsx,ts,tsx,cjs}'],
     languageOptions: {
       ecmaVersion: 2021,
       sourceType: 'module',
@@ -46,6 +46,7 @@ export default [
     rules: {
       'react/react-in-jsx-scope': 'off',
       'react/prop-types': 'off',
+      'react/jsx-uses-vars': 'error',
       'no-unused-vars': ['warn', { 
         'argsIgnorePattern': '^_',
         'varsIgnorePattern': '^_'

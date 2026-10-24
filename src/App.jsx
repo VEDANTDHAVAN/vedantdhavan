@@ -1,25 +1,28 @@
 import NavBar from "./components/NavBar"
-import Contact from "./sections/Contact"
-import EducationSection from "./sections/EducationSection"
-import ExperienceSection from "./sections/ExperienceSection"
-import FeatureCards from "./sections/FeatureCards"
-import Footer from "./sections/Footer"
 import Hero from "./sections/Hero"
-import ShowcaseSection from "./sections/ShowcaseSection"
-import TechStack from "./sections/TechStack"
+import SystemsSection from "./sections/SystemsSection"
+import ProjectIndex from "./components/ProjectIndex"
+import EngineeringNotes from "./sections/EngineeringNotes"
+import AboutSection from "./sections/AboutSection"
+import Contact from "./sections/Contact"
+import Footer from "./sections/Footer"
 
 const App = () => {
   return (
     <>
-     <NavBar />
-     <Hero />
-     <ShowcaseSection />
-     <FeatureCards />
-     <EducationSection />
-     <TechStack />
-     <ExperienceSection />
-     <Contact />
-     <Footer />
+      <a className="skip-link" href="#main">
+        Skip to content
+      </a>
+      <NavBar />
+      <main id="main">
+        <Hero />
+        <SystemsSection />
+        <ProjectIndex />
+        <EngineeringNotes />
+        <AboutSection />
+        <Contact />
+      </main>
+      <Footer />
     </>
   )
 }
