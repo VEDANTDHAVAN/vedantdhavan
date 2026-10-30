@@ -112,7 +112,7 @@ AI-powered website builder that creates fully responsive, SEO-friendly websites 
 
 <!-- WEEKLY_START -->
 - 8 push commits
-- 9 repositories updated
+- 8 repositories updated
 <!-- WEEKLY_END -->
 
 ---
