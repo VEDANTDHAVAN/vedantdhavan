@@ -1,20 +1,43 @@
+/**
+ * Primary navigation for the redesigned information architecture.
+ *
+ * The original anchors (#work, #skills, #education, #experience) are NOT removed — they are
+ * still present as section ids in the DOM, so every old deep link keeps working. They are
+ * simply grouped under the new top-level entries. See `legacyNavLinks` for the original list.
+ */
 const navLinks = [
   {
-    name: "Work",
-    link: "#work",
+    name: "Overview",
+    link: "#hero",
   },
   {
-    name: "Education",
-    link: "#education",
+    name: "Systems",
+    link: "#systems",
   },
   {
-    name: "Skills",
-    link: "#skills",
+    name: "All work",
+    link: "/projects",
   },
   {
-    name: "Experience",
-    link: "#experience",
+    name: "Notes",
+    link: "#notes",
   },
+  {
+    name: "About",
+    link: "#about",
+  },
+  {
+    name: "Contact",
+    link: "#contact",
+  },
+];
+
+/** The original navigation, preserved for reference and for any deep link that used it. */
+const legacyNavLinks = [
+  { name: "Work", link: "#work" },
+  { name: "Education", link: "#education" },
+  { name: "Skills", link: "#skills" },
+  { name: "Experience", link: "#experience" },
 ];
 
 const words = [
@@ -284,7 +307,7 @@ const socialImgs = [
   },
   {
     name: "linkedin",
-    url: "https://www.linkedin.com/in/vedant-dhavan-5930ba2a3/",
+    url: "https://www.linkedin.com/in/vedant-dhavan/",
     imgPath: "/images/linkedin.png",
   },
 ];
@@ -301,4 +324,5 @@ export {
   techStackIcons,
   techStackImgs,
   navLinks,
+  legacyNavLinks,
 };

@@ -4,7 +4,47 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vedlab.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vedant Dhavan's Portfolio</title>
+    <meta name="theme-color" content="#0a0a0a" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#fafafa" media="(prefers-color-scheme: light)" />
+    <title>Vedant Dhavan</title>
+    <meta name="description" content="Interactive engineering systems map and portfolio of Vedant Dhavan — full-stack, ML, and systems work." />
+    <meta property="og:title" content="Vedant Dhavan" />
+    <meta property="og:description" content="Interactive engineering systems map and portfolio of Vedant Dhavan — full-stack, ML, and systems work." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://vedantdhavan.vercel.app/" />
+    <meta property="og:image" content="https://vedantdhavan.vercel.app/images/pic.jpg" />
+    <meta property="og:image:alt" content="Vedant Dhavan — Engineering Portfolio" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://vedantdhavan.vercel.app/images/pic.jpg" />
+    <meta name="twitter:title" content="Vedant Dhavan — Engineering Portfolio" />
+    <meta name="twitter:description" content="Interactive engineering systems map and portfolio of Vedant Dhavan — full-stack, ML, and systems work." />
+    <link rel="canonical" href="https://vedantdhavan.vercel.app/" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!--
+      Load the typeface non-blocking. The CSS @import in src/index.css is render-blocking
+      and was delaying the first paint. This preload + print-media trick lets the browser
+      paint with system fonts immediately and swap in Mona Sans once it arrives.
+    -->
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap" media="print" onload="this.media='all'" />
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap" /></noscript>
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem('theme');
+          var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+          var theme = stored || (prefersDark ? 'dark' : 'light');
+          document.documentElement.setAttribute('data-theme', theme);
+        } catch (e) {
+          document.documentElement.setAttribute('data-theme', 'light');
+        }
+      })();
+    </script>
+    <!--
+      Remove the @import of the font from src/index.css so the stylesheet itself is not
+      render-blocking. The font is now loaded above with a non-blocking swap.
+    -->
   </head>
   <body>
     <div id="root"></div>

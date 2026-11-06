@@ -1,6 +1,6 @@
 import { OrbitControls } from '@react-three/drei'
 import { Canvas } from '@react-three/fiber'
-import React, { Suspense } from 'react'
+import { Suspense } from 'react'
 import { useMediaQuery } from 'react-responsive';
 import { Room1 } from '../HeroModels/Room1';
 import HeroLights from './HeroLights';

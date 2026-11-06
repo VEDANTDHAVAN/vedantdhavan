@@ -1,4 +1,4 @@
-import React from 'react'
+
 import TitleHeader from '../components/TitleHeader';
 import { eduCards } from '../constants';
 import GlowCard from '../components/GlowCard';
