@@ -25,7 +25,7 @@ export const PROFILE = {
   phone: "+91 8850780964",
   site: "https://vedantdhavan.vercel.app",
   github: "https://github.com/VEDANTDHAVAN",
-  linkedin: "https://www.linkedin.com/in/vedant-dhavan-5930ba2a3/",
+  linkedin: "https://www.linkedin.com/in/vedant-dhavan/",
   resumeFile: "/Vedant_Dhavan_Resume.pdf",
   /** Preserved from the original footer: the resume repository link. */
   resumeRepo: "https://github.com/VEDANTDHAVAN/vedantdhavanresume",

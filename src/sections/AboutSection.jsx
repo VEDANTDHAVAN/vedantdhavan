@@ -68,10 +68,10 @@ const AboutSection = () => (
               </dd>
             </div>
             <div className="about-fact">
-              <dt>Website</dt>
+              <dt>LinkedIn</dt>
               <dd>
-                <a href={PROFILE.site} target="_blank" rel="noopener noreferrer" className="accent">
-                  {PROFILE.site.replace(/^https?:\/\//, "")} ↗
+                <a href={PROFILE.linkedin} target="_blank" rel="noopener noreferrer" className="accent">
+                  {PROFILE.linkedin.replace(/^https?:\/\//, "")} ↗
                 </a>
               </dd>
             </div>

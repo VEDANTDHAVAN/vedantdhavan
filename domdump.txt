@@ -1,0 +1,2569 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark"><head>
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+
+    <script type="module" src="/@vite/client"></script>
+
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/vedlab.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vedant Dhavan</title>
+    <meta name="description" content="Interactive engineering systems map and portfolio of Vedant Dhavan — full-stack, ML, and systems work.">
+    <meta property="og:title" content="Vedant Dhavan">
+    <meta property="og:description" content="Interactive engineering systems map and portfolio of Vedant Dhavan — full-stack, ML, and systems work.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://vedantdhavan.vercel.app/">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Vedant Dhavan — Engineering Portfolio">
+    <meta name="twitter:description" content="Interactive engineering systems map and portfolio of Vedant Dhavan — full-stack, ML, and systems work.">
+    <link rel="canonical" href="https://vedantdhavan.vercel.app/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <!--
+      Load the typeface non-blocking. The CSS @import in src/index.css is render-blocking
+      and was delaying the first paint. This preload + print-media trick lets the browser
+      paint with system fonts immediately and swap in Mona Sans once it arrives.
+    -->
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&amp;display=swap" crossorigin="">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&amp;display=swap" media="all" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap" /></noscript>
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem('theme');
+          var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+          var theme = stored || (prefersDark ? 'dark' : 'light');
+          document.documentElement.setAttribute('data-theme', theme);
+        } catch (e) {
+          document.documentElement.setAttribute('data-theme', 'light');
+        }
+      })();
+    </script>
+    <!--
+      Remove the @import of the font from src/index.css so the stylesheet itself is not
+      render-blocking. The font is now loaded above with a non-blocking swap.
+    -->
+  <style type="text/css" data-vite-dev-id="C:/Users/vedant/Projects/vedantdhavan/src/index.css">/*! tailwindcss v4.1.8 | MIT License | https://tailwindcss.com */
+@layer properties;
+@layer theme, base, components, utilities;
+@layer theme {
+  :root, :host {
+    --font-sans: "Mona Sans", system-ui, sans-serif;
+    --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+      "Courier New", monospace;
+    --color-zinc-800: oklch(27.4% 0.006 286.033);
+    --color-black: #000;
+    --color-white: #fff;
+    --spacing: 0.25rem;
+    --text-lg: 1.125rem;
+    --text-lg--line-height: calc(1.75 / 1.125);
+    --text-2xl: 1.5rem;
+    --text-2xl--line-height: calc(2 / 1.5);
+    --text-3xl: 1.875rem;
+    --text-3xl--line-height: calc(2.25 / 1.875);
+    --text-5xl: 3rem;
+    --text-5xl--line-height: 1;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    --font-weight-extrabold: 800;
+    --radius-sm: 0.25rem;
+    --radius-lg: 0.5rem;
+    --radius-xl: 0.75rem;
+    --shadow-sm: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    --default-transition-duration: 150ms;
+    --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    --default-font-family: var(--font-sans);
+    --default-mono-font-family: var(--font-mono);
+    --color-white-50: #6f6f78;
+  }
+}
+@layer base {
+  *, ::after, ::before, ::backdrop, ::file-selector-button {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0 solid;
+  }
+  html, :host {
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+    tab-size: 4;
+    font-family: var(--default-font-family, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji");
+    font-feature-settings: var(--default-font-feature-settings, normal);
+    font-variation-settings: var(--default-font-variation-settings, normal);
+    -webkit-tap-highlight-color: transparent;
+  }
+  hr {
+    height: 0;
+    color: inherit;
+    border-top-width: 1px;
+  }
+  abbr:where([title]) {
+    -webkit-text-decoration: underline dotted;
+    text-decoration: underline dotted;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: inherit;
+  }
+  a {
+    color: inherit;
+    -webkit-text-decoration: inherit;
+    text-decoration: inherit;
+  }
+  b, strong {
+    font-weight: bolder;
+  }
+  code, kbd, samp, pre {
+    font-family: var(--default-mono-font-family, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace);
+    font-feature-settings: var(--default-mono-font-feature-settings, normal);
+    font-variation-settings: var(--default-mono-font-variation-settings, normal);
+    font-size: 1em;
+  }
+  small {
+    font-size: 80%;
+  }
+  sub, sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+  }
+  sub {
+    bottom: -0.25em;
+  }
+  sup {
+    top: -0.5em;
+  }
+  table {
+    text-indent: 0;
+    border-color: inherit;
+    border-collapse: collapse;
+  }
+  :-moz-focusring {
+    outline: auto;
+  }
+  progress {
+    vertical-align: baseline;
+  }
+  summary {
+    display: list-item;
+  }
+  ol, ul, menu {
+    list-style: none;
+  }
+  img, svg, video, canvas, audio, iframe, embed, object {
+    display: block;
+    vertical-align: middle;
+  }
+  img, video {
+    max-width: 100%;
+    height: auto;
+  }
+  button, input, select, optgroup, textarea, ::file-selector-button {
+    font: inherit;
+    font-feature-settings: inherit;
+    font-variation-settings: inherit;
+    letter-spacing: inherit;
+    color: inherit;
+    border-radius: 0;
+    background-color: transparent;
+    opacity: 1;
+  }
+  :where(select:is([multiple], [size])) optgroup {
+    font-weight: bolder;
+  }
+  :where(select:is([multiple], [size])) optgroup option {
+    padding-inline-start: 20px;
+  }
+  ::file-selector-button {
+    margin-inline-end: 4px;
+  }
+  ::placeholder {
+    opacity: 1;
+  }
+  @supports (not (-webkit-appearance: -apple-pay-button))  or (contain-intrinsic-size: 1px) {
+    ::placeholder {
+      color: currentcolor;
+      @supports (color: color-mix(in lab, red, red)) {
+        color: color-mix(in oklab, currentcolor 50%, transparent);
+      }
+    }
+  }
+  textarea {
+    resize: vertical;
+  }
+  ::-webkit-search-decoration {
+    -webkit-appearance: none;
+  }
+  ::-webkit-date-and-time-value {
+    min-height: 1lh;
+    text-align: inherit;
+  }
+  ::-webkit-datetime-edit {
+    display: inline-flex;
+  }
+  ::-webkit-datetime-edit-fields-wrapper {
+    padding: 0;
+  }
+  ::-webkit-datetime-edit, ::-webkit-datetime-edit-year-field, ::-webkit-datetime-edit-month-field, ::-webkit-datetime-edit-day-field, ::-webkit-datetime-edit-hour-field, ::-webkit-datetime-edit-minute-field, ::-webkit-datetime-edit-second-field, ::-webkit-datetime-edit-millisecond-field, ::-webkit-datetime-edit-meridiem-field {
+    padding-block: 0;
+  }
+  :-moz-ui-invalid {
+    box-shadow: none;
+  }
+  button, input:where([type="button"], [type="reset"], [type="submit"]), ::file-selector-button {
+    appearance: button;
+  }
+  ::-webkit-inner-spin-button, ::-webkit-outer-spin-button {
+    height: auto;
+  }
+  [hidden]:where(:not([hidden="until-found"])) {
+    display: none !important;
+  }
+}
+@layer utilities {
+  .collapse {
+    visibility: collapse;
+  }
+  .visible {
+    visibility: visible;
+  }
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+  .fixed {
+    position: fixed;
+  }
+  .relative {
+    position: relative;
+  }
+  .z-0 {
+    z-index: 0;
+  }
+  .z-20 {
+    z-index: 20;
+  }
+  .z-50 {
+    z-index: 50;
+  }
+  .m-3 {
+    margin: calc(var(--spacing) * 3);
+  }
+  .mx-auto {
+    margin-inline: auto;
+  }
+  .my-5 {
+    margin-block: calc(var(--spacing) * 5);
+  }
+  .ms-5 {
+    margin-inline-start: calc(var(--spacing) * 5);
+  }
+  .mt-2 {
+    margin-top: calc(var(--spacing) * 2);
+  }
+  .mt-5 {
+    margin-top: calc(var(--spacing) * 5);
+  }
+  .mt-16 {
+    margin-top: calc(var(--spacing) * 16);
+  }
+  .mt-20 {
+    margin-top: calc(var(--spacing) * 20);
+  }
+  .mt-32 {
+    margin-top: calc(var(--spacing) * 32);
+  }
+  .mb-2 {
+    margin-bottom: calc(var(--spacing) * 2);
+  }
+  .mb-3 {
+    margin-bottom: calc(var(--spacing) * 3);
+  }
+  .mb-5 {
+    margin-bottom: calc(var(--spacing) * 5);
+  }
+  .contents {
+    display: contents;
+  }
+  .flex {
+    display: flex;
+  }
+  .grid {
+    display: grid;
+  }
+  .hidden {
+    display: none;
+  }
+  .table {
+    display: table;
+  }
+  .size-14 {
+    width: calc(var(--spacing) * 14);
+    height: calc(var(--spacing) * 14);
+  }
+  .h-full {
+    height: 100%;
+  }
+  .w-1 {
+    width: calc(var(--spacing) * 1);
+  }
+  .w-full {
+    width: 100%;
+  }
+  .flex-shrink {
+    flex-shrink: 1;
+  }
+  .border-collapse {
+    border-collapse: collapse;
+  }
+  .transform {
+    transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
+  }
+  .resize {
+    resize: both;
+  }
+  .list-disc {
+    list-style-type: disc;
+  }
+  .columns-1 {
+    columns: 1;
+  }
+  .break-inside-avoid-column {
+    break-inside: avoid-column;
+  }
+  .flex-col {
+    flex-direction: column;
+  }
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
+  .items-center {
+    align-items: center;
+  }
+  .items-start {
+    align-items: flex-start;
+  }
+  .justify-center {
+    justify-content: center;
+  }
+  .gap-1 {
+    gap: calc(var(--spacing) * 1);
+  }
+  .gap-3 {
+    gap: calc(var(--spacing) * 3);
+  }
+  .gap-4 {
+    gap: calc(var(--spacing) * 4);
+  }
+  .gap-5 {
+    gap: calc(var(--spacing) * 5);
+  }
+  .space-y-10 {
+    :where(& > :not(:last-child)) {
+      --tw-space-y-reverse: 0;
+      margin-block-start: calc(calc(var(--spacing) * 10) * var(--tw-space-y-reverse));
+      margin-block-end: calc(calc(var(--spacing) * 10) * calc(1 - var(--tw-space-y-reverse)));
+    }
+  }
+  .overflow-hidden {
+    overflow: hidden;
+  }
+  .rounded-full {
+    border-radius: calc(infinity * 1px);
+  }
+  .rounded-lg {
+    border-radius: var(--radius-lg);
+  }
+  .rounded-xl {
+    border-radius: var(--radius-xl);
+  }
+  .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+  }
+  .bg-\[\#0c0c1a\] {
+    background-color: #0c0c1a;
+  }
+  .bg-\[\#0f172a\] {
+    background-color: #0f172a;
+  }
+  .bg-\[\#00fcf8\] {
+    background-color: #00fcf8;
+  }
+  .bg-\[\#1f2937\] {
+    background-color: #1f2937;
+  }
+  .bg-\[\#2A2A2A\] {
+    background-color: #2A2A2A;
+  }
+  .bg-\[\#2c1050\] {
+    background-color: #2c1050;
+  }
+  .bg-\[\#8aff47\] {
+    background-color: #8aff47;
+  }
+  .bg-\[\#47e6ff\] {
+    background-color: #47e6ff;
+  }
+  .bg-\[\#102a43\] {
+    background-color: #102a43;
+  }
+  .bg-\[\#312e81\] {
+    background-color: #312e81;
+  }
+  .bg-\[\#2531b0\] {
+    background-color: #2531b0;
+  }
+  .bg-\[\#abfcff\] {
+    background-color: #abfcff;
+  }
+  .bg-\[\#edff4f\] {
+    background-color: #edff4f;
+  }
+  .bg-\[\#fc46ff\] {
+    background-color: #fc46ff;
+  }
+  .bg-zinc-800 {
+    background-color: var(--color-zinc-800);
+  }
+  .p-8 {
+    padding: calc(var(--spacing) * 8);
+  }
+  .p-10 {
+    padding: calc(var(--spacing) * 10);
+  }
+  .px-5 {
+    padding-inline: calc(var(--spacing) * 5);
+  }
+  .pl-4 {
+    padding-left: calc(var(--spacing) * 4);
+  }
+  .text-center {
+    text-align: center;
+  }
+  .text-2xl {
+    font-size: var(--text-2xl);
+    line-height: var(--tw-leading, var(--text-2xl--line-height));
+  }
+  .text-3xl {
+    font-size: var(--text-3xl);
+    line-height: var(--tw-leading, var(--text-3xl--line-height));
+  }
+  .text-5xl {
+    font-size: var(--text-5xl);
+    line-height: var(--tw-leading, var(--text-5xl--line-height));
+  }
+  .text-lg {
+    font-size: var(--text-lg);
+    line-height: var(--tw-leading, var(--text-lg--line-height));
+  }
+  .font-bold {
+    --tw-font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-bold);
+  }
+  .font-extrabold {
+    --tw-font-weight: var(--font-weight-extrabold);
+    font-weight: var(--font-weight-extrabold);
+  }
+  .font-semibold {
+    --tw-font-weight: var(--font-weight-semibold);
+    font-weight: var(--font-weight-semibold);
+  }
+  .text-wrap {
+    text-wrap: wrap;
+  }
+  .text-\[\#a3c6eb\] {
+    color: #a3c6eb;
+  }
+  .text-black {
+    color: var(--color-black);
+  }
+  .text-white {
+    color: var(--color-white);
+  }
+  .text-white-50 {
+    color: var(--color-white-50);
+  }
+  .capitalize {
+    text-transform: capitalize;
+  }
+  .italic {
+    font-style: italic;
+  }
+  .underline {
+    text-decoration-line: underline;
+  }
+  .outline {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
+  }
+  .filter {
+    filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
+  }
+  .backdrop-filter {
+    -webkit-backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
+    backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
+  }
+  .transition {
+    transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter, display, visibility, content-visibility, overlay, pointer-events;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+  .hover\:bg-white {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-white);
+      }
+    }
+  }
+  .hover\:text-black {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-black);
+      }
+    }
+  }
+  .md\:mt-40 {
+    @media (width >= 48rem) {
+      margin-top: calc(var(--spacing) * 40);
+    }
+  }
+  .md\:columns-2 {
+    @media (width >= 48rem) {
+      columns: 2;
+    }
+  }
+  .md\:gap-10 {
+    @media (width >= 48rem) {
+      gap: calc(var(--spacing) * 10);
+    }
+  }
+  .md\:px-10 {
+    @media (width >= 48rem) {
+      padding-inline: calc(var(--spacing) * 10);
+    }
+  }
+  .md\:px-20 {
+    @media (width >= 48rem) {
+      padding-inline: calc(var(--spacing) * 20);
+    }
+  }
+  .md\:text-5xl {
+    @media (width >= 48rem) {
+      font-size: var(--text-5xl);
+      line-height: var(--tw-leading, var(--text-5xl--line-height));
+    }
+  }
+  .lg\:columns-3 {
+    @media (width >= 64rem) {
+      columns: 3;
+    }
+  }
+  .xl\:mt-0 {
+    @media (width >= 80rem) {
+      margin-top: calc(var(--spacing) * 0);
+    }
+  }
+  .xl\:w-2\/6 {
+    @media (width >= 80rem) {
+      width: calc(2/6 * 100%);
+    }
+  }
+  .xl\:w-4\/6 {
+    @media (width >= 80rem) {
+      width: calc(4/6 * 100%);
+    }
+  }
+  .xl\:gap-20 {
+    @media (width >= 80rem) {
+      gap: calc(var(--spacing) * 20);
+    }
+  }
+  .xl\:space-y-32 {
+    @media (width >= 80rem) {
+      :where(& > :not(:last-child)) {
+        --tw-space-y-reverse: 0;
+        margin-block-start: calc(calc(var(--spacing) * 32) * var(--tw-space-y-reverse));
+        margin-block-end: calc(calc(var(--spacing) * 32) * calc(1 - var(--tw-space-y-reverse)));
+      }
+    }
+  }
+  .xl\:rounded-full {
+    @media (width >= 80rem) {
+      border-radius: calc(infinity * 1px);
+    }
+  }
+  .xl\:px-0 {
+    @media (width >= 80rem) {
+      padding-inline: calc(var(--spacing) * 0);
+    }
+  }
+}
+:root {
+  --paper: #faf9f7;
+  --paper-2: #f3f1ec;
+  --paper-3: #ebe8e1;
+  --paper-inv: #17171a;
+  --ink: #17171a;
+  --ink-2: #3a3a40;
+  --muted: #6f6f78;
+  --muted-2: #8b8b93;
+  --line: #e2ded6;
+  --line-2: #d3cec4;
+  --line-strong: #b9b3a7;
+  --accent: #b8442a;
+  --accent-ink: #8f3320;
+  --accent-soft: #f7ebe6;
+  --accent-line: #e6c9bf;
+  --ok: #2f6f4f;
+  --ok-soft: #e8f2ec;
+  --warn: #8a6d1f;
+  --warn-soft: #f7f0dd;
+  --err: #a12f2f;
+  --err-soft: #f8e9e9;
+  --radius-sm: 6px;
+  --radius: 10px;
+  --radius-lg: 16px;
+  --maxw: 1200px;
+  --gutter: clamp(1.25rem, 4vw, 3rem);
+  --section-y: clamp(4rem, 8vw, 7.5rem);
+  --font-sans: "Mona Sans", system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-mono: ui-monospace, "SFMono-Regular", "JetBrains Mono", Menlo, Consolas, monospace;
+  --shadow-sm: 0 1px 2px rgba(23, 23, 26, 0.04);
+  --shadow: 0 6px 24px -12px rgba(23, 23, 26, 0.18);
+  --shadow-lg: 0 24px 60px -24px rgba(23, 23, 26, 0.28);
+}
+[data-theme="dark"] {
+  --paper: #111113;
+  --paper-2: #1a1a1e;
+  --paper-3: #232328;
+  --paper-inv: #faf9f7;
+  --ink: #f0eee9;
+  --ink-2: #c8c6c0;
+  --muted: #9a9a9f;
+  --muted-2: #7a7a80;
+  --line: #2a2a30;
+  --line-2: #35353c;
+  --line-strong: #4a4a52;
+  --accent: #e0603a;
+  --accent-ink: #f07a55;
+  --accent-soft: #2a1a14;
+  --accent-line: #4a2a20;
+  --ok: #4ade80;
+  --ok-soft: #1a2e22;
+  --warn: #fbbf24;
+  --warn-soft: #2a2514;
+  --err: #f87171;
+  --err-soft: #2a1a1a;
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow: 0 6px 24px -12px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 24px 60px -24px rgba(0, 0, 0, 0.7);
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+html {
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 5.5rem;
+}
+body {
+  margin: 0;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  background-color: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.6;
+  font-synthesis-weight: none;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+h1, h2, h3, h4 {
+  margin: 0;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.12;
+  text-wrap: balance;
+}
+p {
+  margin: 0;
+  text-wrap: pretty;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+img, svg, canvas {
+  display: block;
+  max-width: 100%;
+}
+button {
+  font: inherit;
+  color: inherit;
+}
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 3px;
+}
+::selection {
+  background: var(--accent-soft);
+  color: var(--accent-ink);
+}
+.shell {
+  width: 100%;
+  max-width: var(--maxw);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+.section {
+  padding-block: var(--section-y);
+  border-top: 1px solid var(--line);
+}
+.section--flush {
+  border-top: 0;
+}
+.section-head {
+  display: grid;
+  gap: 0.75rem;
+  max-width: 62ch;
+  margin-bottom: clamp(2rem, 4vw, 3.25rem);
+}
+.stack {
+  display: flex;
+  flex-direction: column;
+}
+.cluster {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+.divider {
+  height: 1px;
+  background: var(--line);
+  border: 0;
+  margin: 0;
+}
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+.eyebrow::before {
+  content: "";
+  width: 1.5rem;
+  height: 1px;
+  background: var(--line-strong);
+  flex: none;
+}
+.h1 {
+  font-size: clamp(2.4rem, 6.2vw, 4.4rem);
+  font-weight: 600;
+  letter-spacing: -0.035em;
+}
+.h2 {
+  font-size: clamp(1.6rem, 3.4vw, 2.5rem);
+  letter-spacing: -0.03em;
+}
+.h3 {
+  font-size: clamp(1.05rem, 1.6vw, 1.3rem);
+  letter-spacing: -0.015em;
+}
+.lede {
+  font-size: clamp(1.02rem, 1.5vw, 1.2rem);
+  color: var(--ink-2);
+  line-height: 1.55;
+}
+.muted {
+  color: var(--muted);
+}
+.mono {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
+}
+.accent {
+  color: var(--accent-ink);
+}
+.portrait {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.portrait-frame {
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: var(--paper-2);
+  box-shadow: var(--shadow);
+}
+.portrait-frame .portrait {
+  display: block;
+}
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.7rem 1.15rem;
+  border-radius: var(--radius);
+  border: 1px solid transparent;
+  font-size: 0.9rem;
+  font-weight: 550;
+  letter-spacing: -0.01em;
+  cursor: pointer;
+  transition: background-color 0.18s ease, border-color 0.18s ease, color 0.18s ease, transform 0.18s ease;
+  white-space: nowrap;
+}
+.btn:active {
+  transform: translateY(1px);
+}
+.btn--primary {
+  background: var(--ink);
+  color: var(--paper);
+  border-color: var(--ink);
+}
+.btn--primary:hover {
+  background: var(--accent);
+  border-color: var(--accent);
+}
+.btn--ghost {
+  background: transparent;
+  color: var(--ink);
+  border-color: var(--line-2);
+}
+.btn--ghost:hover {
+  border-color: var(--ink);
+  background: var(--paper-2);
+}
+.btn--quiet {
+  background: transparent;
+  border-color: transparent;
+  color: var(--muted);
+  padding-inline: 0.5rem;
+}
+.btn--quiet:hover {
+  color: var(--ink);
+}
+.btn--sm {
+  padding: 0.45rem 0.8rem;
+  font-size: 0.8rem;
+}
+.btn[aria-pressed="true"] {
+  background: var(--ink);
+  color: var(--paper);
+  border-color: var(--ink);
+}
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 60;
+  background: var(--paper);
+  @supports (color: color-mix(in lab, red, red)) {
+    background: color-mix(in srgb, var(--paper) 88%, transparent);
+  }
+  backdrop-filter: saturate(1.4) blur(12px);
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+.nav.is-scrolled {
+  border-bottom-color: var(--line);
+}
+.nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  min-height: 4rem;
+}
+.nav-brand {
+  display: flex;
+  align-items: baseline;
+  gap: 0.55rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  font-size: 0.98rem;
+}
+.nav-brand-mark {
+  width: 0.55rem;
+  height: 0.55rem;
+  border-radius: 2px;
+  background: var(--accent);
+  flex: none;
+  transform: translateY(-1px);
+}
+.nav-brand-sub {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted-2);
+}
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 0.15rem;
+}
+.nav-link {
+  position: relative;
+  padding: 0.45rem 0.7rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.875rem;
+  color: var(--ink-2);
+  transition: color 0.16s ease, background-color 0.16s ease;
+}
+.nav-link:hover {
+  color: var(--ink);
+  background: var(--paper-2);
+}
+.nav-link[aria-current="true"] {
+  color: var(--ink);
+  font-weight: 550;
+}
+.nav-link[aria-current="true"]::after {
+  content: "";
+  position: absolute;
+  left: 0.7rem;
+  right: 0.7rem;
+  bottom: 0.1rem;
+  height: 1.5px;
+  background: var(--accent);
+}
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.nav-toggle {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 1px solid var(--line-2);
+  border-radius: var(--radius-sm);
+  background: transparent;
+  cursor: pointer;
+}
+.nav-toggle-bars {
+  position: relative;
+  width: 1rem;
+  height: 2px;
+  background: var(--ink);
+  border-radius: 2px;
+}
+.nav-toggle-bars::before, .nav-toggle-bars::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 1rem;
+  height: 2px;
+  background: var(--ink);
+  border-radius: 2px;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+.nav-toggle-bars::before {
+  top: -5px;
+}
+.nav-toggle-bars::after {
+  top: 5px;
+}
+.nav-toggle[aria-expanded="true"] .nav-toggle-bars {
+  background: transparent;
+}
+.nav-toggle[aria-expanded="true"] .nav-toggle-bars::before {
+  transform: translateY(5px) rotate(45deg);
+}
+.nav-toggle[aria-expanded="true"] .nav-toggle-bars::after {
+  transform: translateY(-5px) rotate(-45deg);
+}
+.nav-mobile {
+  display: none;
+  border-top: 1px solid var(--line);
+  background: var(--paper);
+}
+.nav-mobile.is-open {
+  display: block;
+}
+.nav-mobile ul {
+  display: grid;
+  padding-block: 0.5rem;
+}
+.nav-mobile a {
+  display: block;
+  padding: 0.7rem 0;
+  border-bottom: 1px solid var(--line);
+  font-size: 0.95rem;
+}
+.nav-mobile a:last-child {
+  border-bottom: 0;
+}
+@media (max-width: 900px) {
+  .nav-links, .nav-actions .btn--ghost {
+    display: none;
+  }
+  .nav-toggle {
+    display: inline-flex;
+  }
+}
+.rotator {
+  display: inline-block;
+  height: 1.5em;
+  overflow: hidden;
+  vertical-align: bottom;
+  color: var(--accent-ink);
+  font-weight: 550;
+}
+.rotator .wrapper > span {
+  height: 1.5em;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.rotator img {
+  width: 1.1em;
+  height: 1.1em;
+  object-fit: contain;
+}
+.hero {
+  padding-block: clamp(3rem, 7vw, 6rem) clamp(3rem, 6vw, 5rem);
+}
+.hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
+  gap: clamp(2rem, 5vw, 4.5rem);
+  align-items: start;
+}
+.hero-title {
+  margin-top: 1.25rem;
+}
+.hero-title em {
+  font-style: normal;
+  color: var(--accent-ink);
+}
+.hero-lede {
+  margin-top: 1.5rem;
+  max-width: 46ch;
+}
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-top: 2rem;
+}
+.hero-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1.5rem;
+  margin-top: 2.25rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--line);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+}
+.hero-meta a:hover {
+  color: var(--accent-ink);
+}
+.hero-stats {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1px;
+  background: var(--line);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+  margin-top: 2rem;
+}
+.stat {
+  background: var(--paper);
+  padding: 1rem 1.1rem;
+}
+.stat-value {
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  font-variant-numeric: tabular-nums;
+}
+.stat-label {
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-top: 0.15rem;
+}
+.hero-panel {
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: var(--paper-2);
+  padding: 1.25rem;
+}
+.hero-panel-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-bottom: 0.85rem;
+  border-bottom: 1px solid var(--line);
+}
+.hero-stack {
+  display: grid;
+  gap: 1px;
+  margin-top: 0.85rem;
+}
+.hero-stack-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.5rem 0.6rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.85rem;
+  color: var(--ink-2);
+  transition: background-color 0.16s ease, color 0.16s ease;
+}
+.hero-stack-row:hover {
+  background: var(--paper);
+  color: var(--ink);
+}
+.hero-stack-row .mono {
+  color: var(--muted-2);
+}
+.hero-3d {
+  margin-top: 1rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--paper-inv);
+}
+.hero-3d-canvas {
+  height: 260px;
+}
+.hero-3d-fallback {
+  height: 260px;
+  display: grid;
+  place-items: center;
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+}
+@media (max-width: 980px) {
+  .hero-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+.systems-toolbar {
+  display: grid;
+  gap: 1.25rem;
+  padding: 1.25rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: var(--paper-2);
+}
+.filter-row {
+  display: grid;
+  gap: 0.6rem;
+}
+.filter-label {
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.4rem 0.7rem;
+  border: 1px solid var(--line-2);
+  border-radius: 999px;
+  background: var(--paper);
+  font-size: 0.82rem;
+  color: var(--ink-2);
+  cursor: pointer;
+  transition: border-color 0.16s ease, background-color 0.16s ease, color 0.16s ease;
+}
+.chip:hover {
+  border-color: var(--ink);
+  color: var(--ink);
+}
+.chip[aria-pressed="true"] {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: var(--paper);
+}
+.chip-count {
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  color: var(--muted-2);
+  font-variant-numeric: tabular-nums;
+}
+.chip[aria-pressed="true"] .chip-count {
+  color: var(--paper);
+  @supports (color: color-mix(in lab, red, red)) {
+    color: color-mix(in srgb, var(--paper) 70%, transparent);
+  }
+}
+.chip--layer[aria-pressed="true"] {
+  background: var(--accent);
+  border-color: var(--accent);
+}
+.toolbar-foot {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
+}
+.search {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex: 1 1 16rem;
+  max-width: 22rem;
+  padding: 0.45rem 0.7rem;
+  border: 1px solid var(--line-2);
+  border-radius: var(--radius);
+  background: var(--paper);
+}
+.search input {
+  border: 0;
+  outline: 0;
+  background: transparent;
+  width: 100%;
+  font: inherit;
+  font-size: 0.875rem;
+  color: var(--ink);
+}
+.search input::placeholder {
+  color: var(--muted-2);
+}
+.result-count {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+.map-wrap {
+  margin-top: 1.75rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: var(--paper);
+  overflow: hidden;
+}
+.map-scroll {
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  padding: 1rem 1rem 1.25rem;
+}
+.map {
+  border-collapse: separate;
+  border-spacing: 0;
+  min-width: max-content;
+}
+.map th, .map td {
+  vertical-align: middle;
+}
+.map thead th:not(:first-child) {
+  width: 60px;
+  min-width: 60px;
+  padding: 0 0 0.6rem;
+}
+.map tbody th[scope="row"] {
+  width: 210px;
+  min-width: 210px;
+  padding: 0 0.75rem 0 0;
+  font-weight: 400;
+}
+.map tbody tr > td, .map tbody tr > th {
+  height: 40px;
+}
+.map-corner {
+  padding: 0 0.75rem 0.6rem 0;
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted-2);
+  font-weight: 400;
+  text-align: left;
+  vertical-align: bottom;
+}
+.map-head {
+  vertical-align: bottom;
+}
+.map-head-btn {
+  display: grid;
+  gap: 0.3rem;
+  justify-items: center;
+  width: 100%;
+  padding: 0.4rem 0.2rem;
+  border: 1px solid transparent;
+  border-radius: var(--radius-sm);
+  background: transparent;
+  cursor: pointer;
+  transition: background-color 0.16s ease, border-color 0.16s ease;
+}
+.map-head-btn:hover {
+  background: var(--paper-2);
+  border-color: var(--line);
+}
+.map-head-btn[data-active="true"] {
+  background: var(--accent-soft);
+  border-color: var(--accent-line);
+}
+.map-head-title {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-size: 0.72rem;
+  font-weight: 550;
+  letter-spacing: -0.01em;
+  color: var(--ink-2);
+  max-height: 8.5rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.map-head-btn[data-active="true"] .map-head-title {
+  color: var(--accent-ink);
+}
+.map-head-dot {
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 50%;
+  background: var(--line-strong);
+}
+.map-head-btn[data-active="true"] .map-head-dot {
+  background: var(--accent);
+}
+.map-rail-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding-right: 0.75rem;
+  border-right: 1px solid var(--line);
+  border-top: 0;
+  border-left: 0;
+  border-bottom: 0;
+  background: transparent;
+  font-size: 0.78rem;
+  color: var(--ink-2);
+  cursor: pointer;
+  text-align: left;
+  transition: color 0.16s ease;
+}
+.map-rail-row:hover {
+  color: var(--ink);
+}
+.map-rail-row[aria-pressed="true"] {
+  color: var(--accent-ink);
+  font-weight: 550;
+}
+.map-rail-row[aria-pressed="true"] .map-rail-count {
+  color: var(--accent-ink);
+}
+.map-rail-count {
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  color: var(--muted-2);
+  font-variant-numeric: tabular-nums;
+}
+.map-cell {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+.map-cell-dot {
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 3px;
+  background: var(--paper-3);
+  border: 1px solid var(--line-2);
+  transition: background-color 0.16s ease, border-color 0.16s ease, transform 0.16s ease;
+}
+.map-cell[data-on="true"] .map-cell-dot {
+  background: var(--ink);
+  border-color: var(--ink);
+}
+.map-cell[data-active="true"] .map-cell-dot {
+  background: var(--accent);
+  border-color: var(--accent);
+  transform: scale(1.2);
+}
+.map-cell[data-dim="true"] .map-cell-dot {
+  opacity: 0.28;
+}
+.map-cell:hover .map-cell-dot {
+  border-color: var(--ink);
+  transform: scale(1.2);
+}
+.map-cell:focus-visible {
+  outline-offset: -2px;
+}
+.map-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1.25rem;
+  padding: 0.85rem 1rem;
+  border-top: 1px solid var(--line);
+  background: var(--paper-2);
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+}
+.map-legend span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+.legend-dot {
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 2px;
+  background: var(--ink);
+}
+.legend-dot--off {
+  background: var(--paper-3);
+  border: 1px solid var(--line-2);
+}
+.legend-dot--accent {
+  background: var(--accent);
+}
+.map-mobile {
+  display: none;
+  margin-top: 1.75rem;
+  gap: 0.75rem;
+}
+.unverified-list {
+  display: grid;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+@media (max-width: 760px) {
+  .map-wrap {
+    display: none;
+  }
+  .map-mobile {
+    display: grid;
+  }
+}
+.sys-card {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--paper);
+  padding: 1rem 1.1rem;
+  display: grid;
+  gap: 0.6rem;
+  text-align: left;
+  width: 100%;
+  cursor: pointer;
+  transition: border-color 0.16s ease, box-shadow 0.16s ease, transform 0.16s ease;
+}
+.sys-card:hover {
+  border-color: var(--line-strong);
+  box-shadow: var(--shadow-sm);
+}
+.sys-card[data-active="true"] {
+  border-color: var(--accent-line);
+  background: var(--accent-soft);
+}
+.sys-card-top {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+.sys-card-title {
+  font-size: 0.98rem;
+  font-weight: 600;
+  letter-spacing: -0.015em;
+}
+.sys-card-summary {
+  font-size: 0.85rem;
+  color: var(--muted);
+  line-height: 1.5;
+}
+.layer-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+}
+.layer-tag {
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 0.2rem 0.45rem;
+  border-radius: 4px;
+  background: var(--paper-2);
+  border: 1px solid var(--line);
+  color: var(--ink-2);
+}
+.layer-tag--accent {
+  background: var(--accent-soft);
+  border-color: var(--accent-line);
+  color: var(--accent-ink);
+}
+.role-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 16rem), 1fr));
+  gap: 1rem;
+  margin-top: 1.75rem;
+}
+.role-tile {
+  display: grid;
+  gap: 0.4rem;
+  padding: 1.1rem 1.2rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--paper);
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 0.18s ease, box-shadow 0.18s ease, transform 0.18s ease;
+}
+.role-tile:hover {
+  border-color: var(--line-strong);
+  box-shadow: var(--shadow);
+  transform: translateY(-2px);
+}
+.role-tile-short {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent-ink);
+}
+.role-tile-title {
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+.role-tile-intro {
+  font-size: 0.82rem;
+  color: var(--muted);
+  line-height: 1.5;
+}
+.index-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 20rem), 1fr));
+  gap: 1rem;
+  margin-top: 1.75rem;
+}
+.index-card {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--paper);
+  overflow: hidden;
+  transition: border-color 0.18s ease, box-shadow 0.18s ease, transform 0.18s ease;
+}
+.index-card:hover {
+  border-color: var(--line-strong);
+  box-shadow: var(--shadow);
+  transform: translateY(-2px);
+}
+.index-card-media {
+  position: relative;
+  aspect-ratio: 16 / 10;
+  background: var(--paper-2);
+  border-bottom: 1px solid var(--line);
+  overflow: hidden;
+}
+.index-card-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.index-card-media--fallback {
+  display: grid;
+  place-items: center;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted-2);
+}
+.index-card-body {
+  display: grid;
+  gap: 0.6rem;
+  padding: 1rem 1.1rem 1.15rem;
+  align-content: start;
+}
+.index-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+.index-card-title {
+  font-size: 1.02rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+.index-card-desc {
+  font-size: 0.85rem;
+  color: var(--muted);
+  line-height: 1.55;
+}
+.index-card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.35rem;
+}
+.index-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+.index-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--line);
+  background: var(--paper);
+}
+.index-row:last-child {
+  border-bottom: 0;
+}
+.index-row-main {
+  display: grid;
+  gap: 0.15rem;
+  text-align: left;
+  background: transparent;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  flex: 1;
+  min-width: 0;
+}
+.index-row-main:hover .index-row-title {
+  color: var(--accent-ink);
+}
+.index-row-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+.index-row-domain {
+  font-size: 0.72rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.index-row-actions {
+  display: flex;
+  gap: 0.35rem;
+  flex-shrink: 0;
+}
+.badge {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.2rem 0.45rem;
+  border-radius: 4px;
+  border: 1px solid var(--line);
+  background: var(--paper-2);
+  color: var(--muted);
+  white-space: nowrap;
+}
+.badge--accent {
+  background: var(--accent-soft);
+  border-color: var(--accent-line);
+  color: var(--accent-ink);
+}
+.badge--warn {
+  background: var(--warn-soft);
+  border-color: #e6d9a8;
+  color: var(--warn);
+}
+.badge--ok {
+  background: var(--ok-soft);
+  border-color: #c3ddcd;
+  color: var(--ok);
+}
+.case-dialog {
+  width: min(56rem, calc(100vw - 2rem));
+  max-height: min(88vh, 60rem);
+  padding: 0;
+  border: 1px solid var(--line-2);
+  border-radius: var(--radius-lg);
+  background: var(--paper);
+  color: var(--ink);
+  box-shadow: var(--shadow-lg);
+  overflow: hidden;
+}
+.case-dialog::backdrop {
+  background: rgba(23, 23, 26, 0.42);
+  backdrop-filter: blur(2px);
+}
+.case-panel {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  max-height: inherit;
+}
+.case-head {
+  display: grid;
+  gap: 0.75rem;
+  padding: 1.35rem 1.5rem 1.1rem;
+  border-bottom: 1px solid var(--line);
+  background: var(--paper-2);
+}
+.case-head-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.case-title {
+  font-size: clamp(1.3rem, 2.6vw, 1.85rem);
+  letter-spacing: -0.03em;
+}
+.case-sub {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+.case-close {
+  flex: none;
+  width: 2.25rem;
+  height: 2.25rem;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--line-2);
+  border-radius: var(--radius-sm);
+  background: var(--paper);
+  cursor: pointer;
+  font-size: 1rem;
+  line-height: 1;
+}
+.case-close:hover {
+  border-color: var(--ink);
+}
+.case-body {
+  overflow-y: auto;
+  padding: 1.35rem 1.5rem 1.75rem;
+  display: grid;
+  gap: 1.5rem;
+  align-content: start;
+}
+.case-section {
+  display: grid;
+  gap: 0.5rem;
+}
+.case-section-title {
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+.case-section-title::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--line);
+}
+.case-text {
+  font-size: 0.92rem;
+  color: var(--ink-2);
+  line-height: 1.62;
+}
+.case-list {
+  display: grid;
+  gap: 0.5rem;
+}
+.case-list li {
+  position: relative;
+  padding-left: 1.1rem;
+  font-size: 0.9rem;
+  color: var(--ink-2);
+  line-height: 1.58;
+}
+.case-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.62em;
+  width: 0.35rem;
+  height: 0.35rem;
+  border-radius: 1px;
+  background: var(--accent);
+}
+.case-evidence {
+  display: grid;
+  gap: 0.5rem;
+  padding: 0.9rem 1rem;
+  border: 1px solid var(--line);
+  border-left: 2px solid var(--accent);
+  border-radius: var(--radius-sm);
+  background: var(--paper-2);
+}
+.case-evidence li {
+  font-size: 0.85rem;
+  color: var(--ink-2);
+  line-height: 1.55;
+}
+.case-note {
+  display: grid;
+  gap: 0.4rem;
+  padding: 0.9rem 1rem;
+  border: 1px solid #e6d9a8;
+  border-radius: var(--radius-sm);
+  background: var(--warn-soft);
+  font-size: 0.85rem;
+  color: #6b5416;
+}
+.case-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.case-links a[aria-disabled="true"] {
+  opacity: 0.55;
+  pointer-events: none;
+}
+.case-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+.notes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr));
+  gap: 1px;
+  background: var(--line);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+.note {
+  background: var(--paper);
+  padding: 1.4rem 1.5rem 1.6rem;
+  display: grid;
+  gap: 0.7rem;
+  align-content: start;
+}
+.note-index {
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.1em;
+  color: var(--muted-2);
+}
+.note-title {
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+.note-body {
+  font-size: 0.88rem;
+  color: var(--ink-2);
+  line-height: 1.6;
+}
+.note-source {
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+  padding-top: 0.6rem;
+  border-top: 1px solid var(--line);
+}
+.about-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
+  gap: clamp(2rem, 5vw, 4rem);
+  align-items: start;
+}
+@media (max-width: 980px) {
+  .about-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+.about-bio {
+  font-size: 1.02rem;
+  color: var(--ink-2);
+  line-height: 1.65;
+  max-width: 60ch;
+}
+.about-facts {
+  display: grid;
+  margin-top: 1.75rem;
+  border-top: 1px solid var(--line);
+}
+.about-fact {
+  display: grid;
+  grid-template-columns: 8.5rem 1fr;
+  gap: 1rem;
+  padding: 0.7rem 0;
+  border-bottom: 1px solid var(--line);
+  font-size: 0.88rem;
+}
+.about-fact dt {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  padding-top: 0.15rem;
+}
+.about-fact dd {
+  margin: 0;
+  color: var(--ink-2);
+}
+.skills-grid {
+  display: grid;
+  gap: 1.25rem;
+}
+.skill-group {
+  display: grid;
+  gap: 0.5rem;
+}
+.skill-group-title {
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+.skill-pill {
+  font-size: 0.8rem;
+  padding: 0.28rem 0.6rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  background: var(--paper-2);
+  color: var(--ink-2);
+}
+.subsection {
+  margin-top: clamp(2.5rem, 5vw, 4rem);
+  padding-top: clamp(2rem, 4vw, 3rem);
+  border-top: 1px solid var(--line);
+}
+.subsection-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+.edu-list, .exp-list {
+  display: grid;
+  gap: 1rem;
+}
+.edu-item, .exp-item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1.1rem;
+  padding: 1.1rem 1.2rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--paper);
+}
+.edu-logo, .exp-logo {
+  width: 3rem;
+  height: 3rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--line);
+  background: var(--paper-2);
+  object-fit: contain;
+  padding: 0.35rem;
+}
+.edu-body, .exp-body {
+  display: grid;
+  gap: 0.4rem;
+  align-content: start;
+}
+.edu-head, .exp-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.5rem 1rem;
+}
+.edu-title, .exp-role {
+  font-size: 0.98rem;
+  font-weight: 600;
+  letter-spacing: -0.015em;
+}
+.edu-meta, .exp-meta {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+}
+.edu-overview, .exp-desc {
+  font-size: 0.87rem;
+  color: var(--ink-2);
+  line-height: 1.58;
+}
+.edu-learnings {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  margin-top: 0.2rem;
+}
+.exp-quote {
+  margin-top: 0.35rem;
+  padding-left: 0.85rem;
+  border-left: 2px solid var(--accent-line);
+  font-size: 0.87rem;
+  color: var(--ink-2);
+  font-style: italic;
+}
+.abilities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr));
+  gap: 1px;
+  background: var(--line);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+.ability {
+  background: var(--paper);
+  padding: 1.1rem 1.2rem;
+  display: grid;
+  gap: 0.45rem;
+  align-content: start;
+}
+.ability-icon {
+  width: 2rem;
+  height: 2rem;
+  object-fit: contain;
+}
+.ability-title {
+  font-size: 0.92rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+.ability-desc {
+  font-size: 0.83rem;
+  color: var(--muted);
+  line-height: 1.55;
+}
+.contact-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr);
+  gap: clamp(2rem, 5vw, 4rem);
+  align-items: start;
+}
+@media (max-width: 900px) {
+  .contact-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+.contact-links {
+  display: grid;
+  margin-top: 1.5rem;
+  border-top: 1px solid var(--line);
+}
+.contact-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.85rem 0;
+  border-bottom: 1px solid var(--line);
+  font-size: 0.9rem;
+  transition: color 0.16s ease, padding-left 0.16s ease;
+}
+.contact-link:hover {
+  color: var(--accent-ink);
+  padding-left: 0.35rem;
+}
+.contact-link-label {
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.form {
+  display: grid;
+  gap: 1rem;
+  padding: 1.4rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: var(--paper-2);
+}
+.field {
+  display: grid;
+  gap: 0.35rem;
+}
+.field-label {
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.field-input, .field-textarea {
+  width: 100%;
+  padding: 0.6rem 0.7rem;
+  border: 1px solid var(--line-2);
+  border-radius: var(--radius-sm);
+  background: var(--paper);
+  font: inherit;
+  font-size: 0.9rem;
+  color: var(--ink);
+  transition: border-color 0.16s ease, box-shadow 0.16s ease;
+}
+.field-input:focus, .field-textarea:focus {
+  outline: 0;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-soft);
+}
+.field-textarea {
+  min-height: 8rem;
+  resize: vertical;
+}
+.field-error {
+  font-size: 0.78rem;
+  color: var(--err);
+}
+.honeypot {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.form-status {
+  display: grid;
+  gap: 0.25rem;
+  padding: 0.75rem 0.9rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.85rem;
+  border: 1px solid var(--line);
+  background: var(--paper);
+}
+.form-status--ok {
+  border-color: #c3ddcd;
+  background: var(--ok-soft);
+  color: var(--ok);
+}
+.form-status--err {
+  border-color: #e6b8b8;
+  background: var(--err-soft);
+  color: var(--err);
+}
+.form-foot {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+.form-note {
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+.footer {
+  border-top: 1px solid var(--line);
+  padding-block: 2.5rem 3rem;
+  background: var(--paper-2);
+}
+.footer-inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 1.5rem;
+  align-items: start;
+}
+.footer-brand {
+  display: grid;
+  gap: 0.5rem;
+}
+.footer-name {
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+.footer-note {
+  font-size: 0.8rem;
+  color: var(--muted);
+  max-width: 42ch;
+}
+.footer-socials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+.footer-social {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.4rem 0.7rem;
+  border: 1px solid var(--line-2);
+  border-radius: var(--radius-sm);
+  background: var(--paper);
+  font-size: 0.8rem;
+  color: var(--ink-2);
+  transition: border-color 0.16s ease, color 0.16s ease;
+}
+.footer-social:hover {
+  border-color: var(--ink);
+  color: var(--ink);
+}
+.footer-social img {
+  width: 1rem;
+  height: 1rem;
+  object-fit: contain;
+}
+.footer-legal {
+  grid-column: 1 / -1;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--line);
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -3rem;
+  z-index: 100;
+  padding: 0.6rem 0.9rem;
+  background: var(--ink);
+  color: var(--paper);
+  border-radius: var(--radius-sm);
+  font-size: 0.85rem;
+  transition: top 0.18s ease;
+}
+.skip-link:focus {
+  top: 1rem;
+}
+.empty-state {
+  padding: 2.5rem 1.5rem;
+  border: 1px dashed var(--line-2);
+  border-radius: var(--radius);
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+@layer utilities {
+  .flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .flex-col-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.slide {
+  display: inline-block;
+  flex-direction: column;
+  transition: all cubic-bezier(0.71, 0.03, 0.34, 1);
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  animation: wordSlider 21s infinite cubic-bezier(0.9, 0.01, 0.3, 0.99);
+}
+@keyframes wordSlider {
+  0% {
+    transform: translateY(0.5%);
+  }
+  12.5% {
+    transform: translateY(-12.5%);
+  }
+  25% {
+    transform: translateY(-25%);
+  }
+  37.5% {
+    transform: translateY(-37.5%);
+  }
+  50% {
+    transform: translateY(-50%);
+  }
+  62.5% {
+    transform: translateY(-62.5%);
+  }
+  75% {
+    transform: translateY(-75%);
+  }
+  87.5% {
+    transform: translateY(-87.5%);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+.skeleton {
+  background: linear-gradient(90deg, var(--ink) 0 25%, var(--ink) 50% 75%, var(--ink) 100%);
+  @supports (color: color-mix(in lab, red, red)) {
+    background: linear-gradient(90deg, color-mix(in srgb, var(--ink) 6%, transparent) 0 25%, color-mix(in srgb, var(--ink) 12%, transparent) 50% 75%, color-mix(in srgb, var(--ink) 6%, transparent) 100%);
+  }
+  background-size: 200% 100%;
+  animation: skeleton-shimmer 1.4s linear infinite;
+  border-radius: 0.5rem;
+}
+@keyframes skeleton-shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+@media print {
+  .nav, .footer, .case-dialog {
+    display: none !important;
+  }
+  body {
+    background: #fff;
+  }
+}
+@property --tw-rotate-x {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-rotate-y {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-rotate-z {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-skew-x {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-skew-y {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-space-y-reverse {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-border-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
+@property --tw-font-weight {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-outline-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
+@property --tw-blur {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-brightness {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-contrast {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-grayscale {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-hue-rotate {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-invert {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-opacity {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-saturate {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-sepia {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-drop-shadow {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-drop-shadow-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-drop-shadow-alpha {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 100%;
+}
+@property --tw-drop-shadow-size {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-blur {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-brightness {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-contrast {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-grayscale {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-hue-rotate {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-invert {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-opacity {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-saturate {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-sepia {
+  syntax: "*";
+  inherits: false;
+}
+@layer properties {
+  @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
+    *, ::before, ::after, ::backdrop {
+      --tw-rotate-x: initial;
+      --tw-rotate-y: initial;
+      --tw-rotate-z: initial;
+      --tw-skew-x: initial;
+      --tw-skew-y: initial;
+      --tw-space-y-reverse: 0;
+      --tw-border-style: solid;
+      --tw-font-weight: initial;
+      --tw-outline-style: solid;
+      --tw-blur: initial;
+      --tw-brightness: initial;
+      --tw-contrast: initial;
+      --tw-grayscale: initial;
+      --tw-hue-rotate: initial;
+      --tw-invert: initial;
+      --tw-opacity: initial;
+      --tw-saturate: initial;
+      --tw-sepia: initial;
+      --tw-drop-shadow: initial;
+      --tw-drop-shadow-color: initial;
+      --tw-drop-shadow-alpha: 100%;
+      --tw-drop-shadow-size: initial;
+      --tw-backdrop-blur: initial;
+      --tw-backdrop-brightness: initial;
+      --tw-backdrop-contrast: initial;
+      --tw-backdrop-grayscale: initial;
+      --tw-backdrop-hue-rotate: initial;
+      --tw-backdrop-invert: initial;
+      --tw-backdrop-opacity: initial;
+      --tw-backdrop-saturate: initial;
+      --tw-backdrop-sepia: initial;
+    }
+  }
+}
+</style></head>
+  <body>
+    <div id="root"><a class="skip-link" href="#main">Skip to content</a><header class="nav "><div class="shell nav-inner"><a class="nav-brand" href="#hero"><span class="nav-brand-mark" aria-hidden="true"></span><span>Vedant Dhavan</span><span class="nav-brand-sub">Engineering portfolio</span></a><nav class="nav-links" aria-label="Primary"><a class="nav-link" href="#hero" aria-current="true">Overview</a><a class="nav-link" href="#systems">Systems</a><a class="nav-link" href="/projects">All work</a><a class="nav-link" href="#notes">Notes</a><a class="nav-link" href="#about">About</a><a class="nav-link" href="#contact">Contact</a><a class="nav-link" href="/roles/sde">SDE</a><a class="nav-link" href="/roles/ai-engineer">AI Engineer</a><a class="nav-link" href="/roles/fde">FDE</a><a class="nav-link" href="/roles/ml-engineer">ML Engineer</a><a class="nav-link" href="/roles/full-stack">Full-Stack</a></nav><div class="nav-actions"><button type="button" class="btn btn--ghost btn--sm theme-toggle" aria-label="Switch to light theme" title="Switch to light theme"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path></svg></button><a class="btn btn--ghost btn--sm" href="https://github.com/VEDANTDHAVAN" target="_blank" rel="noopener noreferrer">GitHub</a><a class="btn btn--primary btn--sm" href="/Vedant_Dhavan_Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a><button type="button" class="nav-toggle" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open menu"><span class="nav-toggle-bars" aria-hidden="true"></span></button></div></div><div id="mobile-nav" class="nav-mobile "><div class="shell"><ul><li><a href="#hero">Overview</a></li><li><a href="#systems">Systems</a></li><li><a href="/projects">All work</a></li><li><a href="#notes">Notes</a></li><li><a href="#about">About</a></li><li><a href="#contact">Contact</a></li><li><a href="/roles/sde">Software Development Engineer</a></li><li><a href="/roles/ai-engineer">AI Engineer</a></li><li><a href="/roles/fde">Forward Deployed Engineer</a></li><li><a href="/roles/ml-engineer">Machine Learning Engineer</a></li><li><a href="/roles/full-stack">Full-Stack Engineer</a></li><li><a href="https://github.com/VEDANTDHAVAN" target="_blank" rel="noopener noreferrer">GitHub ↗</a></li><li><a href="/Vedant_Dhavan_Resume.pdf" target="_blank" rel="noopener noreferrer">Resume ↗</a></li></ul></div></div></header><main id="main"><section id="hero" class="hero"><div class="shell hero-grid"><div><p class="eyebrow">Engineering portfolio</p><h1 class="h1 hero-title">I build systems.<br>I <em>solve</em> problems.</h1><p class="lede hero-lede">From product interfaces and backend infrastructure to AI agents and machine-learning systems. Currently shaping <span class="rotator" aria-hidden="true"><span class="wrapper"><span><img alt="" loading="lazy" width="18" height="18" src="/images/ideas.svg">Ideas</span><span><img alt="" loading="lazy" width="18" height="18" src="/images/concepts.svg">Concepts</span><span><img alt="" loading="lazy" width="18" height="18" src="/images/designs.svg">Designs</span><span><img alt="" loading="lazy" width="18" height="18" src="/images/code.svg">Code</span><span><img alt="" loading="lazy" width="18" height="18" src="/images/ideas.svg">Ideas</span><span><img alt="" loading="lazy" width="18" height="18" src="/images/concepts.svg">Concepts</span><span><img alt="" loading="lazy" width="18" height="18" src="/images/designs.svg">Designs</span><span><img alt="" loading="lazy" width="18" height="18" src="/images/code.svg">Code</span></span></span> <span class="sr-only">ideas, concepts, designs and code into working systems.</span></p><div class="hero-actions"><a class="btn btn--primary" href="#systems">Explore Systems</a><a class="btn btn--ghost" href="https://github.com/VEDANTDHAVAN" target="_blank" rel="noopener noreferrer">GitHub</a><a class="btn btn--ghost" href="/Vedant_Dhavan_Resume.pdf" target="_blank" rel="noopener noreferrer">View Resume</a></div><dl class="hero-stats"><div class="stat"><dd class="stat-value" style="margin: 0px;">2</dd><dt class="stat-label">Years of Experience</dt></div><div class="stat"><dd class="stat-value" style="margin: 0px;">10</dd><dt class="stat-label">Completed Projects</dt></div><div class="stat"><dd class="stat-value" style="margin: 0px;">10</dd><dt class="stat-label">Certifications</dt></div><div class="stat"><dd class="stat-value" style="margin: 0px;">20</dd><dt class="stat-label">Skills Learned</dt></div></dl><div class="hero-meta"><a href="mailto:vedantadhavan11@gmail.com">vedantadhavan11@gmail.com</a><a href="https://github.com/VEDANTDHAVAN" target="_blank" rel="noopener noreferrer">github.com/VEDANTDHAVAN</a><a href="https://www.linkedin.com/in/vedant-dhavan/" target="_blank" rel="noopener noreferrer">LinkedIn</a><span>India</span></div></div><aside class="hero-panel" aria-label="Capability stack"><div class="hero-panel-head"><img class="portrait" alt="Vedant Dhavan" loading="eager" fetchpriority="high" decoding="async" width="1748" height="1304" src="/images/pic.jpg" style="width: clamp(96px, 16vw, 168px); height: clamp(96px, 16vw, 168px); object-fit: cover; object-position: 42% 22%; border-radius: 50%; border: 1px solid var(--line); flex-shrink: 0;"><div><h2 class="h3">System layers</h2><span class="mono muted">in this portfolio</span></div></div><div class="hero-stack"><a class="hero-stack-row" href="#systems"><span>Interfaces &amp; Product</span><span class="mono">23 systems</span></a><a class="hero-stack-row" href="#systems"><span>Agents &amp; Orchestration</span><span class="mono">7 systems</span></a><a class="hero-stack-row" href="#systems"><span>LLMs &amp; Models</span><span class="mono">14 systems</span></a><a class="hero-stack-row" href="#systems"><span>Retrieval &amp; Vector Search</span><span class="mono">8 systems</span></a><a class="hero-stack-row" href="#systems"><span>Tools &amp; Execution</span><span class="mono">7 systems</span></a><a class="hero-stack-row" href="#systems"><span>Data &amp; Storage</span><span class="mono">16 systems</span></a><a class="hero-stack-row" href="#systems"><span>APIs &amp; Backend Services</span><span class="mono">15 systems</span></a><a class="hero-stack-row" href="#systems"><span>Infrastructure &amp; Deployment</span><span class="mono">4 systems</span></a></div><button type="button" class="btn btn--ghost btn--sm" aria-pressed="false" style="margin-top: 1rem;">Show 3D room</button></aside></div></section><section id="roles" class="section"><div class="shell"><div class="section-head"><p class="eyebrow">Role focus</p><h2 class="h2">Explore by role.</h2><p class="lede">Tailored views for the roles I am targeting. Each page highlights the most relevant projects, strengths and engineering evidence.</p></div><div class="role-grid"><a class="role-tile" href="/roles/sde"><span class="role-tile-short">SDE</span><span class="role-tile-title">Software Development Engineer</span><span class="role-tile-intro">I build and ship full-stack products end to end: React/Next.js interfaces, Node and FastAPI services, relation…</span></a><a class="role-tile" href="/roles/ai-engineer"><span class="role-tile-short">AI Engineer</span><span class="role-tile-title">AI Engineer</span><span class="role-tile-intro">I design and ship LLM-powered systems: agent loops with tool calling, RAG and GraphRAG retrieval, prompt pipel…</span></a><a class="role-tile" href="/roles/fde"><span class="role-tile-short">FDE</span><span class="role-tile-title">Forward Deployed Engineer</span><span class="role-tile-intro">I take unproven models and workflows to usable end-to-end products: integrating LLMs into real user surfaces, …</span></a><a class="role-tile" href="/roles/ml-engineer"><span class="role-tile-short">ML Engineer</span><span class="role-tile-title">Machine Learning Engineer</span><span class="role-tile-intro">I build ML systems with training, evaluation and serving: fraud detection with XGBoost and SHAP explainability…</span></a><a class="role-tile" href="/roles/full-stack"><span class="role-tile-short">Full-Stack</span><span class="role-tile-title">Full-Stack Engineer</span><span class="role-tile-intro">I ship products across the whole stack: React/Next.js UIs, APIs, databases, auth and deployment. From collabor…</span></a></div></div></section><section id="featured" class="section"><div class="shell"><div class="section-head"><p class="eyebrow">Selected work</p><h2 class="h2">Featured projects.</h2><p class="lede">A small set of the strongest systems. Open any card for the full case study, or browse the complete inventory under “All work.”</p></div><div class="index-grid"><article class="index-card"><div class="index-card-media"><img alt="VedLab screenshot" loading="lazy" src="/images/project1.png"></div><div class="index-card-body"><div class="index-card-top"><h3 class="index-card-title">VedLab</h3><span class="badge badge--accent">Featured</span></div><p class="mono muted">Real-time Collaboration / Design Systems</p><p class="index-card-desc">A real-time collaborative design canvas on the T3 stack, with live cursors, comments and persistent project data.</p><div class="layer-tags"><span class="layer-tag">Realtime</span><span class="layer-tag">Collaboration</span><span class="layer-tag">Design Systems</span><span class="layer-tag">Full-Stack</span></div><div class="index-card-actions"><button type="button" class="btn btn--ghost btn--sm">Case study</button><a class="btn btn--quiet btn--sm" href="https://github.com/VEDANTDHAVAN/vedlab" target="_blank" rel="noopener noreferrer">Repository ↗</a><a class="btn btn--quiet btn--sm" href="https://vedlab.vercel.app" target="_blank" rel="noopener noreferrer">Live ↗</a></div></div></article><article class="index-card"><div class="index-card-media"><img alt="VedDev screenshot" loading="lazy" src="/images/project10.png"></div><div class="index-card-body"><div class="index-card-top"><h3 class="index-card-title">VedDev</h3><span class="badge badge--accent">Featured</span></div><p class="mono muted">Generative AI / Website Builder</p><p class="index-card-desc">A prompt-to-site builder that produces a previewable, deployable web experience from natural language.</p><div class="layer-tags"><span class="layer-tag">Generative AI</span><span class="layer-tag">Website Builder</span><span class="layer-tag">Preview</span><span class="layer-tag">Deployment</span></div><div class="index-card-actions"><button type="button" class="btn btn--ghost btn--sm">Case study</button><a class="btn btn--quiet btn--sm" href="https://github.com/VEDANTDHAVAN/AI-Website-Builder" target="_blank" rel="noopener noreferrer">Repository ↗</a><a class="btn btn--quiet btn--sm" href="https://veddev.vercel.app" target="_blank" rel="noopener noreferrer">Live ↗</a></div></div></article><article class="index-card"><div class="index-card-media"><img alt="Omnigen screenshot" loading="lazy" src="/images/project7.png"></div><div class="index-card-body"><div class="index-card-top"><h3 class="index-card-title">Omnigen</h3><span class="badge badge--accent">Featured</span></div><p class="mono muted">Generative AI SaaS / Multi-modal Generation</p><p class="index-card-desc">A multi-modal generative AI SaaS — text, image and code generation behind subscription and auth.</p><div class="layer-tags"><span class="layer-tag">Generative AI</span><span class="layer-tag">SaaS</span><span class="layer-tag">Multi-modal</span><span class="layer-tag">Auth</span></div><div class="index-card-actions"><button type="button" class="btn btn--ghost btn--sm">Case study</button><a class="btn btn--quiet btn--sm" href="https://github.com/VEDANTDHAVAN/multimodelai-saas" target="_blank" rel="noopener noreferrer">Repository ↗</a><a class="btn btn--quiet btn--sm" href="https://multimodelai-saas.vercel.app" target="_blank" rel="noopener noreferrer">Live ↗</a></div></div></article><article class="index-card"><div class="index-card-media"><img alt="Orchestrion screenshot" loading="lazy" src="/images/project11.png"></div><div class="index-card-body"><div class="index-card-top"><h3 class="index-card-title">Orchestrion</h3><span class="badge badge--accent">Featured</span></div><p class="mono muted">Agentic Workflow Orchestration</p><p class="index-card-desc">Workflow orchestration that lets technical teams author flows in code and run them at no-code speed.</p><div class="layer-tags"><span class="layer-tag">Agentic AI</span><span class="layer-tag">Workflow</span><span class="layer-tag">Automation</span><span class="layer-tag">DevOps</span></div><div class="index-card-actions"><button type="button" class="btn btn--ghost btn--sm">Case study</button><a class="btn btn--quiet btn--sm" href="https://github.com/VEDANTDHAVAN/Orchestrion" target="_blank" rel="noopener noreferrer">Repository ↗</a><a class="btn btn--quiet btn--sm" href="https://orchestrion.vercel.app" target="_blank" rel="noopener noreferrer">Live ↗</a></div></div></article><article class="index-card"><div class="index-card-media"><img alt="SecureIntent Orchestrator screenshot" loading="lazy" src="/images/project14.png"></div><div class="index-card-body"><div class="index-card-top"><h3 class="index-card-title">SecureIntent Orchestrator</h3><span class="badge badge--accent">Featured</span></div><p class="mono muted">AI Security / Human-in-the-loop Automation</p><p class="index-card-desc">A Gmail-embedded, human-in-the-loop automation that turns incoming mail into an explainable action plan.</p><div class="layer-tags"><span class="layer-tag">AI Security</span><span class="layer-tag">Human-in-the-loop</span><span class="layer-tag">Automation</span><span class="layer-tag">Gmail</span></div><div class="index-card-actions"><button type="button" class="btn btn--ghost btn--sm">Case study</button><a class="btn btn--quiet btn--sm" href="https://github.com/VEDANTDHAVAN/SecureIntent-Orchestrator" target="_blank" rel="noopener noreferrer">Repository ↗</a></div></div></article><article class="index-card"><div class="index-card-media"><img alt="GraphRAG Benchmark screenshot" loading="lazy" src="/images/project13.png"></div><div class="index-card-body"><div class="index-card-top"><h3 class="index-card-title">GraphRAG Benchmark</h3><span class="badge badge--accent">Featured</span></div><p class="mono muted">GenAI Evaluation / Graph Retrieval</p><p class="index-card-desc">A controlled benchmark of LLM-only vs. basic RAG vs. GraphRAG pipelines across a 2M-token scientific-paper corpus.</p><div class="layer-tags"><span class="layer-tag">GraphRAG</span><span class="layer-tag">RAG</span><span class="layer-tag">Evaluation</span><span class="layer-tag">Retrieval</span></div><div class="index-card-actions"><button type="button" class="btn btn--ghost btn--sm">Case study</button><a class="btn btn--quiet btn--sm" href="https://github.com/VEDANTDHAVAN/graphrag-benchmark" target="_blank" rel="noopener noreferrer">Repository ↗</a><a class="btn btn--quiet btn--sm" href="https://graphrag-benchmark.vercel.app" target="_blank" rel="noopener noreferrer">Live ↗</a></div></div></article><article class="index-card"><div class="index-card-media"><img alt="Transaction Fraud Risk Platform screenshot" loading="lazy" src="/images/project16.png"></div><div class="index-card-body"><div class="index-card-top"><h3 class="index-card-title">Transaction Fraud Risk Platform</h3><span class="badge badge--accent">Featured</span></div><p class="mono muted">FinTech / Fraud Detection</p><p class="index-card-desc">An end-to-end fraud detection platform: XGBoost risk scoring with SHAP explanations, served over FastAPI and tracked in MLflow.</p><div class="layer-tags"><span class="layer-tag">Python</span><span class="layer-tag">Pandas</span><span class="layer-tag">Scikit-learn</span><span class="layer-tag">XGBoost</span></div><div class="index-card-actions"><button type="button" class="btn btn--ghost btn--sm">Case study</button><a class="btn btn--quiet btn--sm" href="https://github.com/VEDANTDHAVAN/TransactionFraud-Risk-Platform" target="_blank" rel="noopener noreferrer">Repository ↗</a><a class="btn btn--quiet btn--sm" href="https://transactionfraud-risk-detection.streamlit.app/" target="_blank" rel="noopener noreferrer">Live ↗</a></div></div></article></div></div></section><section id="systems" class="section"><div class="shell"><div class="section-head"><p class="eyebrow">The map</p><h2 class="h2">Systems map.</h2><p class="lede">Every project here is shown as a system: which engineering layers it actually implements, and which roles that makes it relevant for. A layer is only drawn where the implementation evidences it.</p></div><div class="systems-toolbar"><div class="filter-row"><span class="filter-label" id="role-filter-label">Explore by role</span><div class="chips" role="group" aria-labelledby="role-filter-label"><button type="button" class="chip" aria-pressed="true" title="Every system in the portfolio, regardless of role.">All<span class="chip-count">29</span></button><button type="button" class="chip" aria-pressed="false" title="Interfaces, APIs, data models and background workers.">SDE<span class="chip-count">14</span></button><button type="button" class="chip" aria-pressed="false" title="Agent loops, LLM workflows, retrieval and guardrails.">AI Engineer<span class="chip-count">18</span></button><button type="button" class="chip" aria-pressed="false" title="Taking an unproven model or workflow to something usable end to end.">FDE<span class="chip-count">21</span></button><button type="button" class="chip" aria-pressed="false" title="Training, evaluation, drift and inference endpoints.">ML Engineer<span class="chip-count">9</span></button><button type="button" class="chip" aria-pressed="false" title="Shipped products spanning frontend, backend and deployment.">Full-Stack<span class="chip-count">13</span></button></div></div><div class="filter-row"><span class="filter-label" id="layer-filter-label">Highlight a layer</span><div class="chips" role="group" aria-labelledby="layer-filter-label"><button type="button" class="chip chip--layer" aria-pressed="false">Interfaces<span class="chip-count">23</span></button><button type="button" class="chip chip--layer" aria-pressed="false">Agents<span class="chip-count">7</span></button><button type="button" class="chip chip--layer" aria-pressed="false">LLMs<span class="chip-count">14</span></button><button type="button" class="chip chip--layer" aria-pressed="false">Retrieval<span class="chip-count">8</span></button><button type="button" class="chip chip--layer" aria-pressed="false">Tools<span class="chip-count">7</span></button><button type="button" class="chip chip--layer" aria-pressed="false">Data<span class="chip-count">16</span></button><button type="button" class="chip chip--layer" aria-pressed="false">Backend<span class="chip-count">15</span></button><button type="button" class="chip chip--layer" aria-pressed="false">Infra<span class="chip-count">4</span></button></div></div><div class="toolbar-foot"><div class="search"><span aria-hidden="true">⌕</span><input placeholder="Search systems, tech, domains…" aria-label="Search systems" type="search" value=""></div><span class="result-count" aria-live="polite">29 of 29 systems</span></div></div><div class="map-wrap"><div class="map-scroll"><table class="map" style="border-collapse: separate; border-spacing: 0px;"><caption class="sr-only">Systems map. Rows are system layers, columns are projects. A filled cell means the project implements that layer.</caption><thead><tr><th class="map-corner" scope="col">Layer / System</th><th class="map-head" scope="col"><button type="button" class="map-head-btn" data-active="false" title="VedLab — A real-time collaborative design canvas on the T3 stack, with live cursors, comments and persistent project data."><span class="map-head-title">VedLab</span><span class="map-head-dot" aria-hidden="true"></span></button></th><th class="map-head" scope="col"><button type="button" class="map-head-btn" data-active="false" title="Fabric Fusion — A storefront with a 3D garment viewer, letting customers try textures and designs before buying."><span class="map-head-title">Fabric Fusion</span><span class="map-head-dot" aria-hidden="true"></span></button></th><th class="map-head" scope="col"><button type="button" class="map-head-btn" data-active="false" title="HealSpace — A therapy discovery and booking platform matching people with nearby therapists."><span class="map-head-title">HealSpace</span><span class="map-head-dot" aria-hidden="true"></span></button></th><th class="map-head" scope="col"><button type="button" class="map-head-btn" data-active="false" title="VedDev — A prompt-to-site builder that produces a previewable, deployable web experience from natural language."><span class="map-head-title">VedDev</span><span class="map-head-dot" aria-hidden="true"></span></button></th><th class="map-head" scope="col"><button type="button" class="map-head-btn" data-active="false" title="Omnigen — A multi-modal generative AI SaaS — text, image and code generation behind subscription and auth."><span class="map-head-title">Omnigen</span><span class="map-head-dot" aria-hidden="true"></span></button></th><th class="map-head" scope="col"><button type="button" class="map-head-btn" data-active="false" title="Orchestrion — Workflow orchestration that lets technical teams author flows in code and run them at no-code speed."><span class="map-head-title">Orchestrion</span><span class="map-head-dot" aria-hidden="true"></span></button></th><th class="map-head" scope="col"><button type="button" class="map-head-btn" data-active="false" title="SecureIntent Orchestrator — A Gmail-embedded, human-in-the-loop automation that turns incoming mail into an explainable action plan."><span class="map-head-title">SecureIntent Orchestrator</span><span class="map-head-dot" aria-hidden="true"></span></button></th><th class="map-head" scope="col"><button type="button" class="map-head-btn" data-active="false" title="Agentic Code Review Assistant — A multi-agent PR review pipeline that streams findings and posts only human-approved comments."><span class="map-head-title">Agentic Code Review Assistant</span><span class="map-head-dot" aria-hidden="true"></span></button></th><th class="map-head" scope="col"><button type="button" class="map-head-btn" data-active="false" title="GraphRAG Benchmark — A controlled benchmark of LLM-only vs. basic RAG vs. GraphRAG pipelines across a 2M-token scientific-paper corpus."><span class="map-head-title">GraphRAG Benchmark</span><span class="map-head-dot" aria-hidden="true"></span></button></th><th class="map-head" scope="col"><button type="button" class="map-head-btn" data-active="false" title="Prompt Ops Mini Dashboard — A lightweight dashboard for side-by-side model and prompt output comparison."><span class="map-head-title">Prompt Ops Mini Dashboard</span><span class="map-head-dot" aria-hidden="true"></span></button></th><th class="map-head" scope="col"><button type="button" class="map-head-btn" data-active="false" title="ContextAI — A RAG chatbot grounding answers in retrieved product-review context, with multi-chat sessions and streamed responses."><span class="map-head-title">ContextAI</span><span class="map-head-dot" aria-hidden="true"></span></button></th><th class="map-head" scope="col"><button type="button" class="map-head-btn" data-active="false" title="Consumer Sentiment Analysis — An NLP sentiment classifier over Amazon reviews, exposed through a Streamlit app for single, CSV and URL-driven review analysis."><span class="map-head-title">Consumer Sentiment Analysis</span><span class="map-head-dot" aria-hidden="true"></span></button></th><th class="map-head" scope="col"><button type="button" class="map-head-btn" data-active="false" title="Audio CNN Visualizer — An ESC-50 audio CNN trained and served on Modal, with a Next.js surface that visualizes predictions."><span class="map-head-title">Audio CNN Visualizer</span><span class="map-head-dot" aria-hidden="true"></span></button></th><th class="map-head" scope="col"><button type="button" class="map-head-btn" data-active="false" title="Web Scraper CLI Tool — A modular scraping utility extracting structured text and metadata, with CLI and dashboard workflows."><span class="map-head-title">Web Scraper CLI Tool</span><span class="map-head-dot" aria-hidden="true"></span></button></th><th class="map-head" scope="col"><button type="button" class="map-head-btn" data-active="false" title="Transaction Fraud Risk Platform — An end-to-end fraud detection platform: XGBoost risk scoring with SHAP explanations, served over FastAPI and tracked in MLflow."><span class="map-head-title">Transaction Fraud Risk Platform</span><span class="map-head-dot" aria-hidden="true"></span></button></th><th class="map-head" scope="col"><button type="button" class="map-head-btn" data-active="false" title="MyPI — A provider-agnostic coding-agent CLI with a bounded tool-calling loop across multiple model providers."><span class="map-head-title">MyPI</span><span class="map-head-dot" aria-hidden="true"></span></button></th><th class="map-head" scope="col"><button type="button" class="map-head-btn" data-active="false" title="RecallTabs — A browser-memory platform: a Chrome extension captures tabs, a FastAPI service indexes them, and pgvector retrieval answers questions over saved context."><span class="map-head-title">RecallTabs</span><span class="map-head-dot" aria-hidden="true"></span></button></th><th class="map-head" scope="col"><button type="button" class="map-head-btn" data-active="false" title="Industrial AI Vision Platform — A casting defect-detection platform measuring its own drift: clean-set accuracy, drifted-set accuracy, and Grad-CAM explanations, all in MLflow."><span class="map-head-title">Industrial AI Vision Platform</span><span class="map-head-dot" aria-hidden="true"></span></button></th><th class="map-head" scope="col"><button type="button" class="map-head-btn" data-active="false" title="Studio Lead Automation — Lead intake where the LLM extracts and the rules decide — structured records to Sheets, notification to Slack, follow-up email drafted."><span class="map-head-title">Studio Lead Automation</span><span class="map-head-dot" aria-hidden="true"></span></button></th><th class="map-head" scope="col"><button type="button" class="map-head-btn" data-active="false" title="Engram — Temporal agent memory with hybrid vector + BM25 retrieval fused by RRF, plus context budgeting and artifact parking."><span class="map-head-title">Engram</span><span class="map-head-dot" aria-hidden="true"></span></button></th><th class="map-head" scope="col"><button type="button" class="map-head-btn" data-active="false" title="SentinelRAG — An evidence-first RAG system that classifies domain risk, audits retrieval and refuses when evidence is insufficient."><span class="map-head-title">SentinelRAG</span><span class="map-head-dot" aria-hidden="true"></span></button></th><th class="map-head" scope="col"><button type="button" class="map-head-btn" data-active="false" title="RepliUI — Capture → typed WebsiteSpec → generate → validate → targeted edits, with a bounded self-repair loop."><span class="map-head-title">RepliUI</span><span class="map-head-dot" aria-hidden="true"></span></button></th><th class="map-head" scope="col"><button type="button" class="map-head-btn" data-active="false" title="BSE Trades Dashboard — Mock feed → BullMQ worker → PostgreSQL → Redis Pub/Sub → Socket.IO → React. Real-time fan-out end to end."><span class="map-head-title">BSE Trades Dashboard</span><span class="map-head-dot" aria-hidden="true"></span></button></th><th class="map-head" scope="col"><button type="button" class="map-head-btn" data-active="false" title="AgencyFlow — A shipped multi-tenant-style agency PM tool: React + Express + PostgreSQL + queues + realtime + refresh-token auth."><span class="map-head-title">AgencyFlow</span><span class="map-head-dot" aria-hidden="true"></span></button></th><th class="map-head" scope="col"><button type="button" class="map-head-btn" data-active="false" title="AIVOA.AI — Document → LangGraph extraction → editable deviation form → human review → PostgreSQL."><span class="map-head-title">AIVOA.AI</span><span class="map-head-dot" aria-hidden="true"></span></button></th><th class="map-head" scope="col"><button type="button" class="map-head-btn" data-active="false" title="NIFTY Event Study — A deliberately narrow event study: 53 events, a fixed OOS split, no threshold or holding-period optimization."><span class="map-head-title">NIFTY Event Study</span><span class="map-head-dot" aria-hidden="true"></span></button></th><th class="map-head" scope="col"><button type="button" class="map-head-btn" data-active="false" title="Property Post Maker — Four fields in, a 1080×1350 branded creative out — all client-side, exported as PNG."><span class="map-head-title">Property Post Maker</span><span class="map-head-dot" aria-hidden="true"></span></button></th><th class="map-head" scope="col"><button type="button" class="map-head-btn" data-active="false" title="Trading Bot — A Python CLI for MARKET and LIMIT order placement against the Binance USDT-M Futures Testnet."><span class="map-head-title">Trading Bot</span><span class="map-head-dot" aria-hidden="true"></span></button></th><th class="map-head" scope="col"><button type="button" class="map-head-btn" data-active="false" title="Trader Sentiment Analysis — Statistical and ML analysis of trader performance under Bitcoin Fear &amp; Greed conditions."><span class="map-head-title">Trader Sentiment Analysis</span><span class="map-head-dot" aria-hidden="true"></span></button></th></tr></thead><tbody><tr><th scope="row" style="padding: 0px; border: 0px; font-weight: 400;"><button type="button" class="map-rail-row" aria-pressed="false"><span>Interfaces &amp; Product</span><span class="map-rail-count">23</span></button></th><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="true" data-active="false" aria-label="VedLab implements Interfaces &amp; Product"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="true" data-active="false" aria-label="Fabric Fusion implements Interfaces &amp; Product"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="true" data-active="false" aria-label="HealSpace implements Interfaces &amp; Product"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="true" data-active="false" aria-label="VedDev implements Interfaces &amp; Product"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="true" data-active="false" aria-label="Omnigen implements Interfaces &amp; Product"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="true" data-active="false" aria-label="Orchestrion implements Interfaces &amp; Product"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="true" data-active="false" aria-label="SecureIntent Orchestrator implements Interfaces &amp; Product"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="true" data-active="false" aria-label="Agentic Code Review Assistant implements Interfaces &amp; Product"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="true" data-active="false" aria-label="GraphRAG Benchmark implements Interfaces &amp; Product"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="true" data-active="false" aria-label="Prompt Ops Mini Dashboard implements Interfaces &amp; Product"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="true" data-active="false" aria-label="ContextAI implements Interfaces &amp; Product"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="true" data-active="false" aria-label="Consumer Sentiment Analysis implements Interfaces &amp; Product"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="true" data-active="false" aria-label="Audio CNN Visualizer implements Interfaces &amp; Product"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="Web Scraper CLI Tool does not implement Interfaces &amp; Product"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="true" data-active="false" aria-label="Transaction Fraud Risk Platform implements Interfaces &amp; Product"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="MyPI does not implement Interfaces &amp; Product"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="true" data-active="false" aria-label="RecallTabs implements Interfaces &amp; Product"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="true" data-active="false" aria-label="Industrial AI Vision Platform implements Interfaces &amp; Product"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="Studio Lead Automation does not implement Interfaces &amp; Product"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="Engram does not implement Interfaces &amp; Product"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="true" data-active="false" aria-label="SentinelRAG implements Interfaces &amp; Product"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="true" data-active="false" aria-label="RepliUI implements Interfaces &amp; Product"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="true" data-active="false" aria-label="BSE Trades Dashboard implements Interfaces &amp; Product"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="true" data-active="false" aria-label="AgencyFlow implements Interfaces &amp; Product"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="true" data-active="false" aria-label="AIVOA.AI implements Interfaces &amp; Product"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="true" data-active="false" aria-label="NIFTY Event Study implements Interfaces &amp; Product"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="true" data-active="false" aria-label="Property Post Maker implements Interfaces &amp; Product"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="Trading Bot does not implement Interfaces &amp; Product"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="Trader Sentiment Analysis does not implement Interfaces &amp; Product"><span class="map-cell-dot" aria-hidden="true"></span></button></td></tr><tr><th scope="row" style="padding: 0px; border: 0px; font-weight: 400;"><button type="button" class="map-rail-row" aria-pressed="false"><span>Agents &amp; Orchestration</span><span class="map-rail-count">7</span></button></th><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="VedLab does not implement Agents &amp; Orchestration"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="Fabric Fusion does not implement Agents &amp; Orchestration"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="HealSpace does not implement Agents &amp; Orchestration"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="VedDev does not implement Agents &amp; Orchestration"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="Omnigen does not implement Agents &amp; Orchestration"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="true" data-active="false" aria-label="Orchestrion implements Agents &amp; Orchestration"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="true" data-active="false" aria-label="SecureIntent Orchestrator implements Agents &amp; Orchestration"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="true" data-active="false" aria-label="Agentic Code Review Assistant implements Agents &amp; Orchestration"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="GraphRAG Benchmark does not implement Agents &amp; Orchestration"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="Prompt Ops Mini Dashboard does not implement Agents &amp; Orchestration"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="ContextAI does not implement Agents &amp; Orchestration"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="Consumer Sentiment Analysis does not implement Agents &amp; Orchestration"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="Audio CNN Visualizer does not implement Agents &amp; Orchestration"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="Web Scraper CLI Tool does not implement Agents &amp; Orchestration"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="Transaction Fraud Risk Platform does not implement Agents &amp; Orchestration"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="true" data-active="false" aria-label="MyPI implements Agents &amp; Orchestration"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="RecallTabs does not implement Agents &amp; Orchestration"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="Industrial AI Vision Platform does not implement Agents &amp; Orchestration"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="Studio Lead Automation does not implement Agents &amp; Orchestration"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="Engram does not implement Agents &amp; Orchestration"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="true" data-active="false" aria-label="SentinelRAG implements Agents &amp; Orchestration"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="true" data-active="false" aria-label="RepliUI implements Agents &amp; Orchestration"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="BSE Trades Dashboard does not implement Agents &amp; Orchestration"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="AgencyFlow does not implement Agents &amp; Orchestration"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="true" data-active="false" aria-label="AIVOA.AI implements Agents &amp; Orchestration"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="NIFTY Event Study does not implement Agents &amp; Orchestration"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="Property Post Maker does not implement Agents &amp; Orchestration"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="Trading Bot does not implement Agents &amp; Orchestration"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="Trader Sentiment Analysis does not implement Agents &amp; Orchestration"><span class="map-cell-dot" aria-hidden="true"></span></button></td></tr><tr><th scope="row" style="padding: 0px; border: 0px; font-weight: 400;"><button type="button" class="map-rail-row" aria-pressed="false"><span>LLMs &amp; Models</span><span class="map-rail-count">14</span></button></th><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="VedLab does not implement LLMs &amp; Models"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="Fabric Fusion does not implement LLMs &amp; Models"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="HealSpace does not implement LLMs &amp; Models"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="true" data-active="false" aria-label="VedDev implements LLMs &amp; Models"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="true" data-active="false" aria-label="Omnigen implements LLMs &amp; Models"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="true" data-active="false" aria-label="Orchestrion implements LLMs &amp; Models"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="true" data-active="false" aria-label="SecureIntent Orchestrator implements LLMs &amp; Models"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="true" data-active="false" aria-label="Agentic Code Review Assistant implements LLMs &amp; Models"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="true" data-active="false" aria-label="GraphRAG Benchmark implements LLMs &amp; Models"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="Prompt Ops Mini Dashboard does not implement LLMs &amp; Models"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="true" data-active="false" aria-label="ContextAI implements LLMs &amp; Models"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="Consumer Sentiment Analysis does not implement LLMs &amp; Models"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="Audio CNN Visualizer does not implement LLMs &amp; Models"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="Web Scraper CLI Tool does not implement LLMs &amp; Models"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="Transaction Fraud Risk Platform does not implement LLMs &amp; Models"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="true" data-active="false" aria-label="MyPI implements LLMs &amp; Models"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="true" data-active="false" aria-label="RecallTabs implements LLMs &amp; Models"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="Industrial AI Vision Platform does not implement LLMs &amp; Models"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="true" data-active="false" aria-label="Studio Lead Automation implements LLMs &amp; Models"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="true" data-active="false" aria-label="Engram implements LLMs &amp; Models"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="true" data-active="false" aria-label="SentinelRAG implements LLMs &amp; Models"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="true" data-active="false" aria-label="RepliUI implements LLMs &amp; Models"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="BSE Trades Dashboard does not implement LLMs &amp; Models"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="AgencyFlow does not implement LLMs &amp; Models"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="true" data-active="false" aria-label="AIVOA.AI implements LLMs &amp; Models"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="NIFTY Event Study does not implement LLMs &amp; Models"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="Property Post Maker does not implement LLMs &amp; Models"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="Trading Bot does not implement LLMs &amp; Models"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="Trader Sentiment Analysis does not implement LLMs &amp; Models"><span class="map-cell-dot" aria-hidden="true"></span></button></td></tr><tr><th scope="row" style="padding: 0px; border: 0px; font-weight: 400;"><button type="button" class="map-rail-row" aria-pressed="false"><span>Retrieval &amp; Vector Search</span><span class="map-rail-count">8</span></button></th><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="VedLab does not implement Retrieval &amp; Vector Search"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="Fabric Fusion does not implement Retrieval &amp; Vector Search"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="HealSpace does not implement Retrieval &amp; Vector Search"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="VedDev does not implement Retrieval &amp; Vector Search"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="Omnigen does not implement Retrieval &amp; Vector Search"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="Orchestrion does not implement Retrieval &amp; Vector Search"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="SecureIntent Orchestrator does not implement Retrieval &amp; Vector Search"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="Agentic Code Review Assistant does not implement Retrieval &amp; Vector Search"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="true" data-active="false" aria-label="GraphRAG Benchmark implements Retrieval &amp; Vector Search"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="Prompt Ops Mini Dashboard does not implement Retrieval &amp; Vector Search"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="true" data-active="false" aria-label="ContextAI implements Retrieval &amp; Vector Search"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="true" data-active="false" aria-label="Consumer Sentiment Analysis implements Retrieval &amp; Vector Search"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="Audio CNN Visualizer does not implement Retrieval &amp; Vector Search"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="Web Scraper CLI Tool does not implement Retrieval &amp; Vector Search"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="true" data-active="false" aria-label="Transaction Fraud Risk Platform implements Retrieval &amp; Vector Search"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="MyPI does not implement Retrieval &amp; Vector Search"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="true" data-active="false" aria-label="RecallTabs implements Retrieval &amp; Vector Search"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="true" data-active="false" aria-label="Industrial AI Vision Platform implements Retrieval &amp; Vector Search"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="Studio Lead Automation does not implement Retrieval &amp; Vector Search"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="true" data-active="false" aria-label="Engram implements Retrieval &amp; Vector Search"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="true" data-active="false" aria-label="SentinelRAG implements Retrieval &amp; Vector Search"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="RepliUI does not implement Retrieval &amp; Vector Search"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="BSE Trades Dashboard does not implement Retrieval &amp; Vector Search"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="AgencyFlow does not implement Retrieval &amp; Vector Search"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="AIVOA.AI does not implement Retrieval &amp; Vector Search"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="NIFTY Event Study does not implement Retrieval &amp; Vector Search"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="Property Post Maker does not implement Retrieval &amp; Vector Search"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="Trading Bot does not implement Retrieval &amp; Vector Search"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="Trader Sentiment Analysis does not implement Retrieval &amp; Vector Search"><span class="map-cell-dot" aria-hidden="true"></span></button></td></tr><tr><th scope="row" style="padding: 0px; border: 0px; font-weight: 400;"><button type="button" class="map-rail-row" aria-pressed="false"><span>Tools &amp; Execution</span><span class="map-rail-count">7</span></button></th><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="VedLab does not implement Tools &amp; Execution"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="Fabric Fusion does not implement Tools &amp; Execution"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="HealSpace does not implement Tools &amp; Execution"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="VedDev does not implement Tools &amp; Execution"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="Omnigen does not implement Tools &amp; Execution"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="true" data-active="false" aria-label="Orchestrion implements Tools &amp; Execution"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="SecureIntent Orchestrator does not implement Tools &amp; Execution"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="Agentic Code Review Assistant does not implement Tools &amp; Execution"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="GraphRAG Benchmark does not implement Tools &amp; Execution"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="Prompt Ops Mini Dashboard does not implement Tools &amp; Execution"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="ContextAI does not implement Tools &amp; Execution"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="Consumer Sentiment Analysis does not implement Tools &amp; Execution"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="Audio CNN Visualizer does not implement Tools &amp; Execution"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="true" data-active="false" aria-label="Web Scraper CLI Tool implements Tools &amp; Execution"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="Transaction Fraud Risk Platform does not implement Tools &amp; Execution"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="true" data-active="false" aria-label="MyPI implements Tools &amp; Execution"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="RecallTabs does not implement Tools &amp; Execution"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="Industrial AI Vision Platform does not implement Tools &amp; Execution"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="true" data-active="false" aria-label="Studio Lead Automation implements Tools &amp; Execution"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="true" data-active="false" aria-label="Engram implements Tools &amp; Execution"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="SentinelRAG does not implement Tools &amp; Execution"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="true" data-active="false" aria-label="RepliUI implements Tools &amp; Execution"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="BSE Trades Dashboard does not implement Tools &amp; Execution"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="AgencyFlow does not implement Tools &amp; Execution"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="AIVOA.AI does not implement Tools &amp; Execution"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="NIFTY Event Study does not implement Tools &amp; Execution"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="Property Post Maker does not implement Tools &amp; Execution"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="true" data-active="false" aria-label="Trading Bot implements Tools &amp; Execution"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="Trader Sentiment Analysis does not implement Tools &amp; Execution"><span class="map-cell-dot" aria-hidden="true"></span></button></td></tr><tr><th scope="row" style="padding: 0px; border: 0px; font-weight: 400;"><button type="button" class="map-rail-row" aria-pressed="false"><span>Data &amp; Storage</span><span class="map-rail-count">16</span></button></th><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="true" data-active="false" aria-label="VedLab implements Data &amp; Storage"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="Fabric Fusion does not implement Data &amp; Storage"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="HealSpace does not implement Data &amp; Storage"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="VedDev does not implement Data &amp; Storage"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="true" data-active="false" aria-label="Omnigen implements Data &amp; Storage"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="Orchestrion does not implement Data &amp; Storage"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="SecureIntent Orchestrator does not implement Data &amp; Storage"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="true" data-active="false" aria-label="Agentic Code Review Assistant implements Data &amp; Storage"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="true" data-active="false" aria-label="GraphRAG Benchmark implements Data &amp; Storage"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="Prompt Ops Mini Dashboard does not implement Data &amp; Storage"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="ContextAI does not implement Data &amp; Storage"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="true" data-active="false" aria-label="Consumer Sentiment Analysis implements Data &amp; Storage"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="true" data-active="false" aria-label="Audio CNN Visualizer implements Data &amp; Storage"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="Web Scraper CLI Tool does not implement Data &amp; Storage"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="true" data-active="false" aria-label="Transaction Fraud Risk Platform implements Data &amp; Storage"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="MyPI does not implement Data &amp; Storage"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="true" data-active="false" aria-label="RecallTabs implements Data &amp; Storage"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="true" data-active="false" aria-label="Industrial AI Vision Platform implements Data &amp; Storage"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="Studio Lead Automation does not implement Data &amp; Storage"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="true" data-active="false" aria-label="Engram implements Data &amp; Storage"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="true" data-active="false" aria-label="SentinelRAG implements Data &amp; Storage"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="RepliUI does not implement Data &amp; Storage"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="true" data-active="false" aria-label="BSE Trades Dashboard implements Data &amp; Storage"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="true" data-active="false" aria-label="AgencyFlow implements Data &amp; Storage"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="true" data-active="false" aria-label="AIVOA.AI implements Data &amp; Storage"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="true" data-active="false" aria-label="NIFTY Event Study implements Data &amp; Storage"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="Property Post Maker does not implement Data &amp; Storage"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="Trading Bot does not implement Data &amp; Storage"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="true" data-active="false" aria-label="Trader Sentiment Analysis implements Data &amp; Storage"><span class="map-cell-dot" aria-hidden="true"></span></button></td></tr><tr><th scope="row" style="padding: 0px; border: 0px; font-weight: 400;"><button type="button" class="map-rail-row" aria-pressed="false"><span>APIs &amp; Backend Services</span><span class="map-rail-count">15</span></button></th><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="true" data-active="false" aria-label="VedLab implements APIs &amp; Backend Services"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="Fabric Fusion does not implement APIs &amp; Backend Services"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="HealSpace does not implement APIs &amp; Backend Services"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="VedDev does not implement APIs &amp; Backend Services"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="true" data-active="false" aria-label="Omnigen implements APIs &amp; Backend Services"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="Orchestrion does not implement APIs &amp; Backend Services"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="SecureIntent Orchestrator does not implement APIs &amp; Backend Services"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="true" data-active="false" aria-label="Agentic Code Review Assistant implements APIs &amp; Backend Services"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="true" data-active="false" aria-label="GraphRAG Benchmark implements APIs &amp; Backend Services"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="Prompt Ops Mini Dashboard does not implement APIs &amp; Backend Services"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="ContextAI does not implement APIs &amp; Backend Services"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="Consumer Sentiment Analysis does not implement APIs &amp; Backend Services"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="true" data-active="false" aria-label="Audio CNN Visualizer implements APIs &amp; Backend Services"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="true" data-active="false" aria-label="Web Scraper CLI Tool implements APIs &amp; Backend Services"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="true" data-active="false" aria-label="Transaction Fraud Risk Platform implements APIs &amp; Backend Services"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="MyPI does not implement APIs &amp; Backend Services"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="true" data-active="false" aria-label="RecallTabs implements APIs &amp; Backend Services"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="true" data-active="false" aria-label="Industrial AI Vision Platform implements APIs &amp; Backend Services"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="true" data-active="false" aria-label="Studio Lead Automation implements APIs &amp; Backend Services"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="Engram does not implement APIs &amp; Backend Services"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="SentinelRAG does not implement APIs &amp; Backend Services"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="true" data-active="false" aria-label="RepliUI implements APIs &amp; Backend Services"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="true" data-active="false" aria-label="BSE Trades Dashboard implements APIs &amp; Backend Services"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="true" data-active="false" aria-label="AgencyFlow implements APIs &amp; Backend Services"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="true" data-active="false" aria-label="AIVOA.AI implements APIs &amp; Backend Services"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="NIFTY Event Study does not implement APIs &amp; Backend Services"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="Property Post Maker does not implement APIs &amp; Backend Services"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="true" data-active="false" aria-label="Trading Bot implements APIs &amp; Backend Services"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="Trader Sentiment Analysis does not implement APIs &amp; Backend Services"><span class="map-cell-dot" aria-hidden="true"></span></button></td></tr><tr><th scope="row" style="padding: 0px; border: 0px; font-weight: 400;"><button type="button" class="map-rail-row" aria-pressed="false"><span>Infrastructure &amp; Deployment</span><span class="map-rail-count">4</span></button></th><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="VedLab does not implement Infrastructure &amp; Deployment"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="Fabric Fusion does not implement Infrastructure &amp; Deployment"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="HealSpace does not implement Infrastructure &amp; Deployment"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="VedDev does not implement Infrastructure &amp; Deployment"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="Omnigen does not implement Infrastructure &amp; Deployment"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="Orchestrion does not implement Infrastructure &amp; Deployment"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="SecureIntent Orchestrator does not implement Infrastructure &amp; Deployment"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="true" data-active="false" aria-label="Agentic Code Review Assistant implements Infrastructure &amp; Deployment"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="GraphRAG Benchmark does not implement Infrastructure &amp; Deployment"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="Prompt Ops Mini Dashboard does not implement Infrastructure &amp; Deployment"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="ContextAI does not implement Infrastructure &amp; Deployment"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="Consumer Sentiment Analysis does not implement Infrastructure &amp; Deployment"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="Audio CNN Visualizer does not implement Infrastructure &amp; Deployment"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="Web Scraper CLI Tool does not implement Infrastructure &amp; Deployment"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="true" data-active="false" aria-label="Transaction Fraud Risk Platform implements Infrastructure &amp; Deployment"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="MyPI does not implement Infrastructure &amp; Deployment"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="RecallTabs does not implement Infrastructure &amp; Deployment"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="Industrial AI Vision Platform does not implement Infrastructure &amp; Deployment"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="Studio Lead Automation does not implement Infrastructure &amp; Deployment"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="Engram does not implement Infrastructure &amp; Deployment"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="SentinelRAG does not implement Infrastructure &amp; Deployment"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="RepliUI does not implement Infrastructure &amp; Deployment"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="true" data-active="false" aria-label="BSE Trades Dashboard implements Infrastructure &amp; Deployment"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="true" data-active="false" aria-label="AgencyFlow implements Infrastructure &amp; Deployment"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="AIVOA.AI does not implement Infrastructure &amp; Deployment"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="NIFTY Event Study does not implement Infrastructure &amp; Deployment"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="Property Post Maker does not implement Infrastructure &amp; Deployment"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="Trading Bot does not implement Infrastructure &amp; Deployment"><span class="map-cell-dot" aria-hidden="true"></span></button></td><td class="map-cell-col" style="padding: 0px;"><button type="button" class="map-cell" data-on="false" data-active="false" aria-label="Trader Sentiment Analysis does not implement Infrastructure &amp; Deployment"><span class="map-cell-dot" aria-hidden="true"></span></button></td></tr></tbody></table></div><div class="map-legend"><span><span class="legend-dot" aria-hidden="true"></span> Layer evidenced</span><span><span class="legend-dot legend-dot--off" aria-hidden="true"></span> Not implemented</span><span><span class="legend-dot legend-dot--accent" aria-hidden="true"></span> Selected</span><span>Select a layer name to filter · select a column to open the case study</span></div></div><div class="map-mobile"><button type="button" class="sys-card" data-active="false"><span class="sys-card-top"><span class="sys-card-title">VedLab</span><span class="mono muted">Realtime</span></span><span class="sys-card-summary">A real-time collaborative design canvas on the T3 stack, with live cursors, comments and persistent project data.</span><span class="layer-tags"><span class="layer-tag ">Interfaces</span><span class="layer-tag ">Backend</span><span class="layer-tag ">Data</span></span></button><button type="button" class="sys-card" data-active="false"><span class="sys-card-top"><span class="sys-card-title">Fabric Fusion</span><span class="mono muted">3D Web</span></span><span class="sys-card-summary">A storefront with a 3D garment viewer, letting customers try textures and designs before buying.</span><span class="layer-tags"><span class="layer-tag ">Interfaces</span></span></button><button type="button" class="sys-card" data-active="false"><span class="sys-card-top"><span class="sys-card-title">HealSpace</span><span class="mono muted">Full-Stack</span></span><span class="sys-card-summary">A therapy discovery and booking platform matching people with nearby therapists.</span><span class="layer-tags"><span class="layer-tag ">Interfaces</span></span></button><button type="button" class="sys-card" data-active="false"><span class="sys-card-top"><span class="sys-card-title">VedDev</span><span class="mono muted">AI</span></span><span class="sys-card-summary">A prompt-to-site builder that produces a previewable, deployable web experience from natural language.</span><span class="layer-tags"><span class="layer-tag ">Interfaces</span><span class="layer-tag ">LLMs</span></span></button><button type="button" class="sys-card" data-active="false"><span class="sys-card-top"><span class="sys-card-title">Omnigen</span><span class="mono muted">AI</span></span><span class="sys-card-summary">A multi-modal generative AI SaaS — text, image and code generation behind subscription and auth.</span><span class="layer-tags"><span class="layer-tag ">Interfaces</span><span class="layer-tag ">LLMs</span><span class="layer-tag ">Backend</span><span class="layer-tag ">Data</span></span></button><button type="button" class="sys-card" data-active="false"><span class="sys-card-top"><span class="sys-card-title">Orchestrion</span><span class="mono muted">AI</span></span><span class="sys-card-summary">Workflow orchestration that lets technical teams author flows in code and run them at no-code speed.</span><span class="layer-tags"><span class="layer-tag ">Interfaces</span><span class="layer-tag ">Agents</span><span class="layer-tag ">LLMs</span><span class="layer-tag ">Tools</span></span></button><button type="button" class="sys-card" data-active="false"><span class="sys-card-top"><span class="sys-card-title">SecureIntent Orchestrator</span><span class="mono muted">AI</span></span><span class="sys-card-summary">A Gmail-embedded, human-in-the-loop automation that turns incoming mail into an explainable action plan.</span><span class="layer-tags"><span class="layer-tag ">Interfaces</span><span class="layer-tag ">Agents</span><span class="layer-tag ">LLMs</span></span></button><button type="button" class="sys-card" data-active="false"><span class="sys-card-top"><span class="sys-card-title">Agentic Code Review Assistant</span><span class="mono muted">Developer Tools</span></span><span class="sys-card-summary">A multi-agent PR review pipeline that streams findings and posts only human-approved comments.</span><span class="layer-tags"><span class="layer-tag ">Interfaces</span><span class="layer-tag ">Agents</span><span class="layer-tag ">LLMs</span><span class="layer-tag ">Backend</span><span class="layer-tag ">Data</span><span class="layer-tag ">Infra</span></span></button><button type="button" class="sys-card" data-active="false"><span class="sys-card-top"><span class="sys-card-title">GraphRAG Benchmark</span><span class="mono muted">Machine Learning</span></span><span class="sys-card-summary">A controlled benchmark of LLM-only vs. basic RAG vs. GraphRAG pipelines across a 2M-token scientific-paper corpus.</span><span class="layer-tags"><span class="layer-tag ">Interfaces</span><span class="layer-tag ">Retrieval</span><span class="layer-tag ">LLMs</span><span class="layer-tag ">Data</span><span class="layer-tag ">Backend</span></span></button><button type="button" class="sys-card" data-active="false"><span class="sys-card-top"><span class="sys-card-title">Prompt Ops Mini Dashboard</span><span class="mono muted">AI</span></span><span class="sys-card-summary">A lightweight dashboard for side-by-side model and prompt output comparison.</span><span class="layer-tags"><span class="layer-tag ">Interfaces</span></span></button><button type="button" class="sys-card" data-active="false"><span class="sys-card-top"><span class="sys-card-title">ContextAI</span><span class="mono muted">AI</span></span><span class="sys-card-summary">A RAG chatbot grounding answers in retrieved product-review context, with multi-chat sessions and streamed responses.</span><span class="layer-tags"><span class="layer-tag ">Interfaces</span><span class="layer-tag ">Retrieval</span><span class="layer-tag ">LLMs</span></span></button><button type="button" class="sys-card" data-active="false"><span class="sys-card-top"><span class="sys-card-title">Consumer Sentiment Analysis</span><span class="mono muted">Machine Learning</span></span><span class="sys-card-summary">An NLP sentiment classifier over Amazon reviews, exposed through a Streamlit app for single, CSV and URL-driven review analysis.</span><span class="layer-tags"><span class="layer-tag ">Interfaces</span><span class="layer-tag ">Retrieval</span><span class="layer-tag ">Data</span></span></button><button type="button" class="sys-card" data-active="false"><span class="sys-card-top"><span class="sys-card-title">Audio CNN Visualizer</span><span class="mono muted">Machine Learning</span></span><span class="sys-card-summary">An ESC-50 audio CNN trained and served on Modal, with a Next.js surface that visualizes predictions.</span><span class="layer-tags"><span class="layer-tag ">Interfaces</span><span class="layer-tag ">Backend</span><span class="layer-tag ">Data</span></span></button><button type="button" class="sys-card" data-active="false"><span class="sys-card-top"><span class="sys-card-title">Web Scraper CLI Tool</span><span class="mono muted">Developer Tools</span></span><span class="sys-card-summary">A modular scraping utility extracting structured text and metadata, with CLI and dashboard workflows.</span><span class="layer-tags"><span class="layer-tag ">Tools</span><span class="layer-tag ">Backend</span></span></button><button type="button" class="sys-card" data-active="false"><span class="sys-card-top"><span class="sys-card-title">Transaction Fraud Risk Platform</span><span class="mono muted">Machine Learning</span></span><span class="sys-card-summary">An end-to-end fraud detection platform: XGBoost risk scoring with SHAP explanations, served over FastAPI and tracked in MLflow.</span><span class="layer-tags"><span class="layer-tag ">Interfaces</span><span class="layer-tag ">Retrieval</span><span class="layer-tag ">Data</span><span class="layer-tag ">Backend</span><span class="layer-tag ">Infra</span></span></button><button type="button" class="sys-card" data-active="false"><span class="sys-card-top"><span class="sys-card-title">MyPI</span><span class="mono muted">AI</span></span><span class="sys-card-summary">A provider-agnostic coding-agent CLI with a bounded tool-calling loop across multiple model providers.</span><span class="layer-tags"><span class="layer-tag ">LLMs</span><span class="layer-tag ">Agents</span><span class="layer-tag ">Tools</span></span></button><button type="button" class="sys-card" data-active="false"><span class="sys-card-top"><span class="sys-card-title">RecallTabs</span><span class="mono muted">AI</span></span><span class="sys-card-summary">A browser-memory platform: a Chrome extension captures tabs, a FastAPI service indexes them, and pgvector retrieval answers questions over saved context.</span><span class="layer-tags"><span class="layer-tag ">Interfaces</span><span class="layer-tag ">LLMs</span><span class="layer-tag ">Retrieval</span><span class="layer-tag ">Backend</span><span class="layer-tag ">Data</span></span></button><button type="button" class="sys-card" data-active="false"><span class="sys-card-top"><span class="sys-card-title">Industrial AI Vision Platform</span><span class="mono muted">Machine Learning</span></span><span class="sys-card-summary">A casting defect-detection platform measuring its own drift: clean-set accuracy, drifted-set accuracy, and Grad-CAM explanations, all in MLflow.</span><span class="layer-tags"><span class="layer-tag ">Interfaces</span><span class="layer-tag ">Retrieval</span><span class="layer-tag ">Data</span><span class="layer-tag ">Backend</span></span></button><button type="button" class="sys-card" data-active="false"><span class="sys-card-top"><span class="sys-card-title">Studio Lead Automation</span><span class="mono muted">AI</span></span><span class="sys-card-summary">Lead intake where the LLM extracts and the rules decide — structured records to Sheets, notification to Slack, follow-up email drafted.</span><span class="layer-tags"><span class="layer-tag ">Backend</span><span class="layer-tag ">LLMs</span><span class="layer-tag ">Tools</span></span></button><button type="button" class="sys-card" data-active="false"><span class="sys-card-top"><span class="sys-card-title">Engram</span><span class="mono muted">AI</span></span><span class="sys-card-summary">Temporal agent memory with hybrid vector + BM25 retrieval fused by RRF, plus context budgeting and artifact parking.</span><span class="layer-tags"><span class="layer-tag ">Retrieval</span><span class="layer-tag ">Data</span><span class="layer-tag ">LLMs</span><span class="layer-tag ">Tools</span></span></button><button type="button" class="sys-card" data-active="false"><span class="sys-card-top"><span class="sys-card-title">SentinelRAG</span><span class="mono muted">AI</span></span><span class="sys-card-summary">An evidence-first RAG system that classifies domain risk, audits retrieval and refuses when evidence is insufficient.</span><span class="layer-tags"><span class="layer-tag ">Interfaces</span><span class="layer-tag ">Agents</span><span class="layer-tag ">Retrieval</span><span class="layer-tag ">LLMs</span><span class="layer-tag ">Data</span></span></button><button type="button" class="sys-card" data-active="false"><span class="sys-card-top"><span class="sys-card-title">RepliUI</span><span class="mono muted">AI</span></span><span class="sys-card-summary">Capture → typed WebsiteSpec → generate → validate → targeted edits, with a bounded self-repair loop.</span><span class="layer-tags"><span class="layer-tag ">Interfaces</span><span class="layer-tag ">Agents</span><span class="layer-tag ">LLMs</span><span class="layer-tag ">Tools</span><span class="layer-tag ">Backend</span></span></button><button type="button" class="sys-card" data-active="false"><span class="sys-card-top"><span class="sys-card-title">BSE Trades Dashboard</span><span class="mono muted">Full-Stack</span></span><span class="sys-card-summary">Mock feed → BullMQ worker → PostgreSQL → Redis Pub/Sub → Socket.IO → React. Real-time fan-out end to end.</span><span class="layer-tags"><span class="layer-tag ">Interfaces</span><span class="layer-tag ">Backend</span><span class="layer-tag ">Data</span><span class="layer-tag ">Infra</span></span></button><button type="button" class="sys-card" data-active="false"><span class="sys-card-top"><span class="sys-card-title">AgencyFlow</span><span class="mono muted">Full-Stack</span></span><span class="sys-card-summary">A shipped multi-tenant-style agency PM tool: React + Express + PostgreSQL + queues + realtime + refresh-token auth.</span><span class="layer-tags"><span class="layer-tag ">Interfaces</span><span class="layer-tag ">Backend</span><span class="layer-tag ">Data</span><span class="layer-tag ">Infra</span></span></button><button type="button" class="sys-card" data-active="false"><span class="sys-card-top"><span class="sys-card-title">AIVOA.AI</span><span class="mono muted">Full-Stack</span></span><span class="sys-card-summary">Document → LangGraph extraction → editable deviation form → human review → PostgreSQL.</span><span class="layer-tags"><span class="layer-tag ">Interfaces</span><span class="layer-tag ">Agents</span><span class="layer-tag ">LLMs</span><span class="layer-tag ">Data</span><span class="layer-tag ">Backend</span></span></button><button type="button" class="sys-card" data-active="false"><span class="sys-card-top"><span class="sys-card-title">NIFTY Event Study</span><span class="mono muted">Machine Learning</span></span><span class="sys-card-summary">A deliberately narrow event study: 53 events, a fixed OOS split, no threshold or holding-period optimization.</span><span class="layer-tags"><span class="layer-tag ">Interfaces</span><span class="layer-tag ">Data</span></span></button><button type="button" class="sys-card" data-active="false"><span class="sys-card-top"><span class="sys-card-title">Property Post Maker</span><span class="mono muted">Full-Stack</span></span><span class="sys-card-summary">Four fields in, a 1080×1350 branded creative out — all client-side, exported as PNG.</span><span class="layer-tags"><span class="layer-tag ">Interfaces</span></span></button><button type="button" class="sys-card" data-active="false"><span class="sys-card-top"><span class="sys-card-title">Trading Bot</span><span class="mono muted">Full-Stack</span></span><span class="sys-card-summary">A Python CLI for MARKET and LIMIT order placement against the Binance USDT-M Futures Testnet.</span><span class="layer-tags"><span class="layer-tag ">Tools</span><span class="layer-tag ">Backend</span></span></button><button type="button" class="sys-card" data-active="false"><span class="sys-card-top"><span class="sys-card-title">Trader Sentiment Analysis</span><span class="mono muted">Machine Learning</span></span><span class="sys-card-summary">Statistical and ML analysis of trader performance under Bitcoin Fear &amp; Greed conditions.</span><span class="layer-tags"><span class="layer-tag ">Data</span></span></button></div></div></section><section id="notes" class="section"><div class="shell"><div class="section-head"><p class="eyebrow">Engineering notes</p><h2 class="h2">Decisions worth writing down.</h2><p class="lede">Short notes on engineering decisions, each traceable to a specific repository. These summarise what the code does — they are not invented case studies.</p></div><div class="notes-grid"><article class="note"><span class="note-index">01</span><h3 class="note-title">Provider-agnostic coding agents</h3><p class="note-body">Binding an agent to one model provider means every provider change becomes a rewrite. MyPI resolves a backend through a provider registry (Groq, Vercel AI Gateway, Anthropic SDK, OpenAI-compatible), so adding a backend is a registration step rather than a change to the agent loop.</p><p class="note-source">Source: MyPI — src/providers/*, src/index.ts</p></article><article class="note"><span class="note-index">02</span><h3 class="note-title">Normalising tool calls across providers</h3><p class="note-body">Tool-calling schemas differ between providers. MyPI keeps a single tool registry (read, write, edit, delete, list, stats, find, search, grep, bash) and maps it per provider, so the loop has one contract to satisfy regardless of which model is answering.</p><p class="note-source">Source: MyPI — src/tools/index.ts</p></article><article class="note"><span class="note-index">03</span><h3 class="note-title">Bounding an agent loop</h3><p class="note-body">An agent loop that can keep requesting tools is an unbounded cost. Two limits apply: the turn budget (20 by default) and per-tool output caps — 2000 lines / 50KB for shell, 200 and 100 results for search and grep. A large tool result is truncated rather than allowed to consume the whole context.</p><p class="note-source">Source: MyPI — src/agent/loop.ts</p></article><article class="note"><span class="note-index">04</span><h3 class="note-title">Separating probabilistic interpretation from deterministic decisions</h3><p class="note-body">In Studio Lead Automation the model extracts typed fields from a free-text inquiry; it does not decide whether the lead qualifies. That decision is scored by deterministic Python rules (budget, deadline, project type, contact details) with visible thresholds. The same email always produces the same verdict, and the rule is readable by someone who does not write Python.</p><p class="note-source">Source: Studio Lead Automation — README qualification rules</p></article><article class="note"><span class="note-index">05</span><h3 class="note-title">Why hybrid retrieval beats embedding-only search</h3><p class="note-body">Engram fuses dense and sparse results with RRF instead of relying on embeddings alone. Dense retrieval handles paraphrase; sparse (BM25) handles exact terms. Storing temporal metadata alongside each memory makes time-aware questions answerable, which pure similarity search cannot do.</p><p class="note-source">Source: Engram — packages/providers, packages/retrieval</p></article><article class="note"><span class="note-index">06</span><h3 class="note-title">Context budgeting and artifact parking</h3><p class="note-body">Engram treats context as a budget. Large tool outputs are parked as restorable artifacts and inlined only on demand, so they stay available without paying their token cost on every turn of the conversation.</p><p class="note-source">Source: Engram — artifact mechanism</p></article><article class="note"><span class="note-index">07</span><h3 class="note-title">Measuring a model under distribution shift</h3><p class="note-body">The industrial vision platform reports clean-set accuracy (99.72%) and drifted-set accuracy (58.60–62.94%) side by side rather than only the headline number, and uses embedding drift distance as an early signal that the input distribution has moved — visible before accuracy has had time to fall.</p><p class="note-source">Source: industrial-ai-vision-platform — README results</p></article><article class="note"><span class="note-index">08</span><h3 class="note-title">Refusing to answer is a valid outcome</h3><p class="note-body">SentinelRAG classifies the domain, audits what was actually retrieved, and applies a domain-specific confidence threshold before generating. The thresholds differ by domain because the cost of a wrong answer does not. Failed retrievals and traces are persisted so each bad answer informs the next iteration.</p><p class="note-source">Source: auto-rag-guardrail — SentinelRAG agent chain</p></article><article class="note"><span class="note-index">09</span><h3 class="note-title">Holding the comparison constant</h3><p class="note-body">GraphRAG Benchmark runs the same question set and corpus through LLM-only, basic RAG and GraphRAG pipelines, so the pipeline is the only variable. Cost and token usage are measured alongside accuracy, because an accuracy gain has to be reported with what it costs.</p><p class="note-source">Source: graphrag-benchmark — README</p></article><article class="note"><span class="note-index">10</span><h3 class="note-title">Capturing structure, not pixels</h3><p class="note-body">RepliUI loads a page in Playwright at two widths (1440×900 and 390×844) and reduces the captured DOM and visual signals to a typed WebsiteSpec before generating. The model works from structure rather than a screenshot, and the self-repair loop is capped at three attempts so a stuck case terminates instead of looping.</p><p class="note-source">Source: RepliUI — README</p></article><article class="note"><span class="note-index">11</span><h3 class="note-title">Decoupling ingestion from delivery</h3><p class="note-body">The BSE Trades Dashboard pulls take up to 15 minutes, so nothing live can be built directly on the upstream feed. Ingestion runs as a BullMQ worker, persists to PostgreSQL, then publishes to Redis Pub/Sub; Socket.IO fans it out to the browser. Because the write happens before the publish, the live view and the stored history cannot disagree.</p><p class="note-source">Source: BSE-Trades-Dashboard — README architecture</p></article><article class="note"><span class="note-index">12</span><h3 class="note-title">Approval before irreversible action</h3><p class="note-body">SecureIntent Orchestrator interprets an email into a structured action plan and requires explicit approval before executing it. The interpretation is shown as a readable plan rather than acted on silently, so a misreading can be corrected before it costs anything.</p><p class="note-source">Source: SecureIntent-Orchestrator — README</p></article><article class="note"><span class="note-index">13</span><h3 class="note-title">A score you cannot defend is not a product</h3><p class="note-body">The fraud platform pairs every XGBoost risk score with a SHAP explanation, and tracks runs in MLflow. That makes the output contestable by the person being flagged and auditable later — and makes a model promotion decision reproducible from the run that produced the model.</p><p class="note-source">Source: TransactionFraud-Risk-Platform — README</p></article><article class="note"><span class="note-index">14</span><h3 class="note-title">Designing an experiment so the answer is worth having</h3><p class="note-body">The NIFTY event study fixes its development/OOS split at a fixed date in advance and performs no threshold or holding-period optimization. With only 53 events (38 development, 15 OOS), that restraint is the point: it is what keeps the out-of-sample period genuinely held out.</p><p class="note-source">Source: nifty-recovery-event-study — README</p></article><article class="note"><span class="note-index">15</span><h3 class="note-title">Choosing not to add a backend</h3><p class="note-body">Property Post Maker renders a 1080×1350 creative and exports it as a PNG entirely in the browser — no API, no database. For a task that is fundamentally a rendering problem, adding server infrastructure would be cost without benefit.</p><p class="note-source">Source: property-post-maker — README</p></article><article class="note"><span class="note-index">16</span><h3 class="note-title">Real-time collaboration is a persistence problem</h3><p class="note-body">VedLab persists each project rather than holding state only in memory, so a collaborator joining late still sees the full document. Real-time cursors and comments are a layer on top of that persisted state, not a replacement for it.</p><p class="note-source">Source: vedlab — README</p></article></div></div></section><section id="about" class="section"><div class="shell"><div class="portrait-frame" style="margin-bottom: 2.5rem;"><img class="portrait" alt="Vedant Dhavan" loading="eager" decoding="async" width="1748" height="1304" src="/images/pic.jpg"></div><div class="section-head"><p class="eyebrow">About</p><h2 class="h2">Building systems end to end.</h2></div><div class="about-grid"><div><p class="about-bio">Software Engineer passionate about building scalable products at the intersection of Full-Stack Development, AI/ML, and intelligent automation. Experienced in developing end-to-end applications, designing robust backend architectures, and integrating AI into production systems. Driven by curiosity, continuous learning, and building technology that delivers meaningful impact.</p><p class="about-bio muted" style="margin-top: 0.75rem;">Bachelors in Computer Engineering | Full-Stack Developer | Machine Learning Enthusiast</p><dl class="about-facts"><div class="about-fact"><dt>Location</dt><dd>India</dd></div><div class="about-fact"><dt>Email</dt><dd><a href="mailto:vedantadhavan11@gmail.com" class="accent">vedantadhavan11@gmail.com</a></dd></div><div class="about-fact"><dt>Phone</dt><dd><a href="tel:+918850780964">+91 8850780964</a></dd></div><div class="about-fact"><dt>LinkedIn</dt><dd><a href="https://www.linkedin.com/in/vedant-dhavan/" target="_blank" rel="noopener noreferrer" class="accent">www.linkedin.com/in/vedant-dhavan/ ↗</a></dd></div><div class="about-fact"><dt>GitHub</dt><dd><a href="https://github.com/VEDANTDHAVAN" target="_blank" rel="noopener noreferrer" class="accent">github.com/VEDANTDHAVAN ↗</a></dd></div></dl><div class="subsection" id="skills"><div class="subsection-head"><h3 class="h3">Technical skills</h3><span class="mono muted">grouped, not a wall of badges</span></div><div class="skills-grid"><div class="skill-group"><span class="skill-group-title">Languages</span><div class="skill-list"><span class="skill-pill">Python</span><span class="skill-pill">JavaScript</span><span class="skill-pill">TypeScript</span><span class="skill-pill">C++</span><span class="skill-pill">SQL</span></div></div><div class="skill-group"><span class="skill-group-title">Frontend</span><div class="skill-list"><span class="skill-pill">React.js</span><span class="skill-pill">Next.js</span><span class="skill-pill">Tailwind CSS</span></div></div><div class="skill-group"><span class="skill-group-title">Backend</span><div class="skill-list"><span class="skill-pill">Node.js</span><span class="skill-pill">Express.js</span><span class="skill-pill">FastAPI</span><span class="skill-pill">REST APIs</span><span class="skill-pill">JWT Authentication</span></div></div><div class="skill-group"><span class="skill-group-title">Databases</span><div class="skill-list"><span class="skill-pill">PostgreSQL</span><span class="skill-pill">MongoDB</span></div></div><div class="skill-group"><span class="skill-group-title">Tools</span><div class="skill-list"><span class="skill-pill">Git</span><span class="skill-pill">Docker</span><span class="skill-pill">Vercel</span></div></div><div class="skill-group"><span class="skill-group-title">AI &amp; ML</span><div class="skill-list"><span class="skill-pill">LLMs</span><span class="skill-pill">RAG</span><span class="skill-pill">AI Agents</span><span class="skill-pill">CNNs</span><span class="skill-pill">Computer Vision</span><span class="skill-pill">Sentiment Analysis</span></div></div></div></div><div class="subsection"><div class="subsection-head"><h3 class="h3">Soft skills</h3></div><div class="skill-list"><span class="skill-pill">Leadership</span><span class="skill-pill">Teamwork</span><span class="skill-pill">Communication</span><span class="skill-pill">Problem Solving</span><span class="skill-pill">Adaptability</span><span class="skill-pill">Ownership</span></div></div></div><aside><div id="experience"><div class="subsection-head" style="margin-bottom: 1.25rem; margin-top: 0px;"><h3 class="h3">Experience</h3></div><div class="exp-list"><article class="exp-item"><img class="exp-logo" alt="" loading="lazy" width="48" height="48" src="/images/exp1.png"><div class="exp-body"><div class="exp-head"><span class="exp-role">AI Engineer Intern</span><span class="exp-meta">Internship</span></div><span class="mono muted">BreakoutAI</span><p class="exp-desc">Developed scalable AI backend services, RAG pipelines, and LLM integrations using Python, FastAPI, REST APIs, and vector databases for production deployments.</p></div></article><article class="exp-item"><img class="exp-logo" alt="" loading="lazy" width="48" height="48" src="/images/client1.jpg"><div class="exp-body"><div class="exp-head"><span class="exp-role">Full Stack Developer</span><span class="exp-meta">Dec 2024 - jan 2025</span></div><span class="mono muted">Prodigy InfoTech · 1 Month</span><p class="exp-desc">I can’t say enough good things about Vedant. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.</p><a class="btn btn--quiet btn--sm" href="https://prodigyinfotech.dev/" target="_blank" rel="noopener noreferrer" style="justify-self: start; padding-inline: 0px;">Visit company site ↗</a></div></article><article class="exp-item"><img class="exp-logo" alt="" loading="lazy" width="48" height="48" src="/images/client2.jpg"><div class="exp-body"><div class="exp-head"><span class="exp-role">MERN Stack Developer</span><span class="exp-meta">Feb 2025 - May 2025</span></div><span class="mono muted">Devlok Avenue · 1 Month</span><p class="exp-desc">Working with Vedant was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.</p><a class="btn btn--quiet btn--sm" href="https://devlokavenue.in/" target="_blank" rel="noopener noreferrer" style="justify-self: start; padding-inline: 0px;">Visit company site ↗</a></div></article></div></div><div id="education"><div class="subsection-head" style="margin-bottom: 1.25rem;"><h3 class="h3">Education</h3></div><div class="edu-list"><article class="edu-item"><img class="edu-logo" alt="" loading="lazy" width="48" height="48" src="/images/edu1.jpg"><div class="edu-body"><div class="edu-head"><span class="edu-title">Vidyavardhini's College of Engineering and Technology</span><span class="edu-meta">2023 – 2027</span></div><span class="mono muted">Bachelor in Computer Engineering</span><span class="badge badge--accent" style="justify-self: start;">CGPA: 8.09</span><p class="edu-overview">Currently pursuing a Bachelor's degree in Computer Engineering, focusing on software development, machine learning, and scalable system design.</p><ul class="case-list" style="margin-top: 0.35rem;"><li>Gained strong problem-solving and analytical thinking through subjects like Data Structures, Algorithms, and System Design.</li><li>Built real-world software projects using React, Next.js, MongoDB, and backend tools like Node.js &amp; Express.</li><li>Explored emerging technologies like AI/ML, Blockchain, and RAG, developing practical knowledge in LLMs and scalable architecture.</li></ul></div></article><article class="edu-item"><img class="edu-logo" alt="" loading="lazy" width="48" height="48" src="/images/edu2.jpg"><div class="edu-body"><div class="edu-head"><span class="edu-title">Mithibai College of Science and Commerce</span><span class="edu-meta">2021 – 2023</span></div><span class="mono muted">11th and 12th in Science Stream</span><span class="badge badge--accent" style="justify-self: start;">75.6% · MHTCET 95.5%ile · JEE-Mains 74.35%ile</span><p class="edu-overview">Completed higher secondary education in the science stream with a foundation in Physics, Chemistry, and Mathematics, preparing for engineering studies.</p><ul class="case-list" style="margin-top: 0.35rem;"><li>Strengthened core foundations in Physics, Chemistry, and Mathematics essential for engineering logic.</li><li>Developed time management and conceptual clarity while preparing for competitive entrance exams.</li><li>Initiated self-learning in programming and tech fundamentals outside the curriculum.</li></ul></div></article><article class="edu-item"><img class="edu-logo" alt="" loading="lazy" width="48" height="48" src="/images/edu3.jpg"><div class="edu-body"><div class="edu-head"><span class="edu-title">Oxford International School</span><span class="edu-meta">2011 – 2021</span></div><span class="mono muted">ICSE Schooling till 10th Grade</span><span class="badge badge--accent" style="justify-self: start;">95.5%</span><p class="edu-overview">Completed schooling under the ICSE board, building strong fundamentals in Mathematics, Science, English, and Logical Reasoning.</p><ul class="case-list" style="margin-top: 0.35rem;"><li>Built a solid base in English communication, Science, Mathematics, and Logical Reasoning.</li><li>Participated in co-curricular activities that shaped creativity, discipline, and team spirit.</li><li>Learned basic programming logic and digital literacy, which sparked an early interest in software development.</li></ul></div></article></div></div></aside></div><div class="subsection"><div class="subsection-head"><h3 class="h3">How I work</h3><span class="mono muted">9 areas</span></div><div class="abilities-grid"><div class="ability"><img class="ability-icon" alt="" loading="lazy" src="/images/curious.png"><span class="ability-title">🚀 Curious Learner</span><p class="ability-desc">Always exploring new tech like Web3, AI, and RAG to stay ahead in the game.</p></div><div class="ability"><img class="ability-icon" alt="" loading="lazy" src="/images/fullstack.png"><span class="ability-title">🌐 Full-Stack Developer</span><p class="ability-desc">Skilled in building robust apps using MERN stack, Next.js, and modern frameworks.</p></div><div class="ability"><img class="ability-icon" alt="" loading="lazy" src="/images/mindset.png"><span class="ability-title">🛠 Project-First Mindset</span><p class="ability-desc">I build real-world solutions through hands-on development.</p></div><div class="ability"><img class="ability-icon" alt="" loading="lazy" src="/images/hackathon.png"><span class="ability-title">⚡ Hackathon Enthusiast</span><p class="ability-desc">Thrives in fast-paced environments, solving impactful problems with innovation.</p></div><div class="ability"><img class="ability-icon" alt="" loading="lazy" src="/images/uiux.png"><span class="ability-title">🎨 Design-Aware Coder</span><p class="ability-desc">Focused on clean UI and smooth UX—loves bringing ideas to life beautifully.</p></div><div class="ability"><img class="ability-icon" alt="" loading="lazy" src="/images/tools.png"><span class="ability-title">🧰 Tool-Savvy Engineer</span><p class="ability-desc">Proficient with cutting-edge tools.</p></div><div class="ability"><img class="ability-icon" alt="" loading="lazy" src="/images/crossplatform.png"><span class="ability-title"> 📱 Cross-Platform Creator</span><p class="ability-desc">Builds across web, mobile, and desktop.</p></div><div class="ability"><img class="ability-icon" alt="" loading="lazy" src="/images/growth.png"><span class="ability-title"> 🧠 Product-Driven Thinker</span><p class="ability-desc">Crafts solutions with user needs at the core.</p></div><div class="ability"><img class="ability-icon" alt="" loading="lazy" src="/images/icon.png"><span class="ability-title"> 🤖 AI-Integrated Builder</span><p class="ability-desc">Merges AI with real-world apps.</p></div></div></div><div class="subsection"><div class="subsection-head"><h3 class="h3">Development toolkit</h3></div><div class="cluster"><span class="skill-pill">React Developer</span><span class="skill-pill">Python Developer</span><span class="skill-pill">Backend Developer</span><span class="skill-pill">Interactive Developer</span><span class="skill-pill">Project Manager</span></div></div></div></section><section id="contact" class="section"><div class="shell"><div class="section-head"><p class="eyebrow">Contact</p><h2 class="h2">Let's connect.</h2><p class="lede">Whether you're hiring, reviewing a system, or just want to compare notes on an engineering problem — the form below reaches me directly.</p></div><div class="contact-grid"><div><div class="contact-links"><a class="contact-link" href="mailto:vedantadhavan11@gmail.com"><span class="contact-link-label">Email</span><span>vedantadhavan11@gmail.com</span></a><a class="contact-link" href="https://github.com/VEDANTDHAVAN" target="_blank" rel="noopener noreferrer"><span class="contact-link-label">GitHub</span><span>github.com/VEDANTDHAVAN</span></a><a class="contact-link" href="https://www.linkedin.com/in/vedant-dhavan/" target="_blank" rel="noopener noreferrer"><span class="contact-link-label">LinkedIn</span><span>linkedin.com/in/vedant-dhavan</span></a><a class="contact-link" href="tel:+918850780964"><span class="contact-link-label">Phone</span><span>+91 8850780964</span></a><a class="contact-link" href="https://vedantdhavan.vercel.app" target="_blank" rel="noopener noreferrer"><span class="contact-link-label">Website</span><span>vedantdhavan.vercel.app</span></a></div><div class="subsection" style="margin-top: 2rem;"><div class="cluster"><a class="footer-social" href="https://github.com/VEDANTDHAVAN" target="_blank" rel="noopener noreferrer" aria-label="github"><img alt="" loading="lazy" width="16" height="16" src="/images/github.png"><span style="text-transform: capitalize;">github</span></a><a class="footer-social" href="https://www.instagram.com/dhavanvedant_2006" target="_blank" rel="noopener noreferrer" aria-label="insta"><img alt="" loading="lazy" width="16" height="16" src="/images/insta.png"><span style="text-transform: capitalize;">insta</span></a><a class="footer-social" href="https://x.com/w35y4y" target="_blank" rel="noopener noreferrer" aria-label="x"><img alt="" loading="lazy" width="16" height="16" src="/images/x.png"><span style="text-transform: capitalize;">x</span></a><a class="footer-social" href="https://www.linkedin.com/in/vedant-dhavan/" target="_blank" rel="noopener noreferrer" aria-label="linkedin"><img alt="" loading="lazy" width="16" height="16" src="/images/linkedin.png"><span style="text-transform: capitalize;">linkedin</span></a></div></div></div><form class="form" novalidate=""><div class="field"><label class="field-label" for="contact-name">Your name</label><input class="field-input" id="contact-name" autocomplete="name" placeholder="Your name" maxlength="100" aria-invalid="false" required="" type="text" value="" name="name"></div><div class="field"><label class="field-label" for="contact-email">Email</label><input class="field-input" id="contact-email" autocomplete="email" placeholder="you@company.com" maxlength="254" aria-invalid="false" required="" type="email" value="" name="email"></div><div class="field"><label class="field-label" for="contact-message">Message</label><textarea class="field-textarea" id="contact-message" name="message" placeholder="What are you working on?" rows="5" maxlength="3000" aria-invalid="false" required=""></textarea></div><div class="honeypot" aria-hidden="true"><label for="contact-company">Company</label><input id="contact-company" tabindex="-1" autocomplete="off" type="text" value="" name="company"></div><div class="form-status " role="status" aria-live="polite" hidden=""></div><div class="form-foot"><button class="btn btn--primary" type="submit">Send message</button><span class="form-note">Sent through the site's own API — nothing is stored in the browser.</span></div></form></div></div></section></main><footer class="footer"><div class="shell footer-inner"><div class="footer-brand"><span class="footer-name">Vedant Atul Dhavan</span><p class="footer-note">Full-Stack &amp; AI/ML engineer building systems across product interfaces, backend infrastructure, agents and machine learning.</p><div class="footer-socials"><a class="footer-social" href="https://github.com/VEDANTDHAVAN" target="_blank" rel="noopener noreferrer" aria-label="github"><img alt="" loading="lazy" width="16" height="16" src="/images/github.png">github</a><a class="footer-social" href="https://www.instagram.com/dhavanvedant_2006" target="_blank" rel="noopener noreferrer" aria-label="insta"><img alt="" loading="lazy" width="16" height="16" src="/images/insta.png">insta</a><a class="footer-social" href="https://x.com/w35y4y" target="_blank" rel="noopener noreferrer" aria-label="x"><img alt="" loading="lazy" width="16" height="16" src="/images/x.png">x</a><a class="footer-social" href="https://www.linkedin.com/in/vedant-dhavan/" target="_blank" rel="noopener noreferrer" aria-label="linkedin"><img alt="" loading="lazy" width="16" height="16" src="/images/linkedin.png">linkedin</a></div></div><div class="footer-brand" style="justify-items: end;"><a class="btn btn--ghost btn--sm" href="/Vedant_Dhavan_Resume.pdf" target="_blank" rel="noopener noreferrer">View Resume ↗</a><a class="btn btn--quiet btn--sm" href="mailto:vedantadhavan11@gmail.com">Contact</a></div><div class="footer-legal"><span>* 2026 Vedant Atul Dhavan. All Rights Reserved.</span><span>Designed as a systems map — not a card grid.</span></div></div></footer></div>
+    <script type="module" src="/src/main.jsx?t=1793511802059"></script>
+  
+</body></html>

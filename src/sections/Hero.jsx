@@ -18,7 +18,7 @@ const Hero = () => {
     <section id="hero" className="hero">
       <div className="shell hero-grid">
         <div>
-          <p className="eyebrow">Systems, not projects</p>
+          <p className="eyebrow">Engineering portfolio</p>
 
           <h1 className="h1 hero-title">
             I build systems.
@@ -91,13 +91,14 @@ const Hero = () => {
         <aside className="hero-panel" aria-label="Capability stack">
           <div className="hero-panel-head">
             <img
-              className="portrait"
-              src="/images/pic.jpg"
-              alt="Vedant Dhavan"
-              loading="eager"
-              decoding="async"
-              width="1748"
-              height="1304"
+                            className="portrait"
+                            src="/images/pic.jpg"
+                            alt="Vedant Dhavan"
+                            loading="eager"
+                            fetchpriority="high"
+                            decoding="async"
+                            width="1748"
+                            height="1304"
               style={{
                 width: "clamp(96px, 16vw, 168px)",
                 height: "clamp(96px, 16vw, 168px)",

@@ -340,48 +340,6 @@ const PRESERVED = [
     },
   },
   {
-    id: "mcp-tools",
-    title: "MCP Tools",
-    category: "Developer Tools",
-    domain: "Agent Tooling / Model Context Protocol",
-    href: "https://github.com/VEDANTDHAVAN/MCP_TOOLS",
-    image: "/images/project6.png",
-    imageClass: "bg-[#edff4f]",
-    featured: false,
-    tech: ["MCP", "Agent Tooling", "Automation", "Social Posting"],
-    description:
-      "A custom MCP-based automation project that lets an AI assistant interpret natural commands and invoke external tools such as social posting workflows.",
-    summary:
-      "An MCP-based automation project exposing external tools such as social posting to an assistant.",
-    // No systemIds: the repository returns HTTP 404 and its implementation cannot be verified.
-    systemIds: [],
-    roles: ["ai-engineer"],
-    stage: "unverified",
-    unverified: [
-      "The linked repository returns HTTP 404 (checked on GitHub and on the raw README URLs for both main and master) — the project could not be verified.",
-      "No system-layer connection is claimed for this entry because nothing about its implementation could be confirmed.",
-    ],
-    evidence: [
-      "Original portfolio description preserved verbatim; no repository evidence available.",
-    ],
-    caseStudy: {
-      problem: "Not documented — the linked repository is unreachable.",
-      contribution: "Not documented — the linked repository is unreachable.",
-      design:
-        "Documented from the original portfolio description only: an assistant interprets natural commands and invokes external tools such as social posting workflows.",
-      decisions: [],
-      challenges: "Not documented — the linked repository is unreachable.",
-      tech: ["MCP", "Agent Tooling", "Automation", "Social Posting"],
-      links: [
-        {
-          label: "Repository (unavailable)",
-          href: "https://github.com/VEDANTDHAVAN/MCP_TOOLS",
-          unavailable: true,
-        },
-      ],
-    },
-  },
-  {
     id: "graphrag-benchmark",
     title: "GraphRAG Benchmark",
     category: "Machine Learning",

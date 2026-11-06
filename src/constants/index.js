@@ -16,7 +16,7 @@ const navLinks = [
   },
   {
     name: "All work",
-    link: "#work",
+    link: "/projects",
   },
   {
     name: "Notes",
@@ -307,7 +307,7 @@ const socialImgs = [
   },
   {
     name: "linkedin",
-    url: "https://www.linkedin.com/in/vedant-dhavan-5930ba2a3/",
+    url: "https://www.linkedin.com/in/vedant-dhavan/",
     imgPath: "/images/linkedin.png",
   },
 ];

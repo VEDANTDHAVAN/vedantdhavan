@@ -130,7 +130,7 @@ const SystemsSection = () => {
       <div className="shell">
         <SectionHeading
           eyebrow="The map"
-          title="Systems, not projects."
+          title="Systems map."
           lede="Every project here is shown as a system: which engineering layers it actually implements, and which roles that makes it relevant for. A layer is only drawn where the implementation evidences it."
         />
 

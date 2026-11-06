@@ -128,7 +128,7 @@ Original filter categories (derived, must keep working): `All`, `Realtime`, `3D 
 | `https://github.com/VEDANTDHAVAN` | socials |
 | `https://www.instagram.com/dhavanvedant_2006` | socials |
 | `https://x.com/w35y4y` | socials |
-| `https://www.linkedin.com/in/vedant-dhavan-5930ba2a3/` | socials |
+| `https://www.linkedin.com/in/vedant-dhavan/` | socials |
 | `https://github.com/VEDANTDHAVAN/vedantdhavanresume` | footer "visit repo" — doubles as the resume link |
 | `https://prodigyinfotech.dev/` | experience card 1 |
 | `https://devlokavenue.in/` | experience card 2 |

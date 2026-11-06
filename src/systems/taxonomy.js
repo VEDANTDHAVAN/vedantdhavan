@@ -1,5 +1,5 @@
 /**
- * System layer taxonomy for the "Systems, Not Projects" map.
+ * System layer taxonomy for the engineering map.
  *
  * `key` values are stable identifiers used by the SVG map, the case-study views and the
  * filter state. Every `systemIds` list elsewhere in the codebase refers to these keys.
@@ -170,7 +170,7 @@ const GROUP_BY_ID = {
   "trading-bot": "Workflow Automation",
 
   // Developer tools.
-  "mcp-tools": "Developer Tools",
+
   "prompt-ops-dashboard": "Developer Tools",
 
   // Real-time and 3D web.

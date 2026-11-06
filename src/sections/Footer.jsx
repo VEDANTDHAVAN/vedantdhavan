@@ -34,19 +34,17 @@ const Footer = () => (
       <div className="footer-brand" style={{ justifyItems: "end" }}>
         <a
           className="btn btn--ghost btn--sm"
-          href={PROFILE.resumeRepo}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Resume repo ↗
-        </a>
-        <a
-          className="btn btn--quiet btn--sm"
           href={PROFILE.resumeFile}
           target="_blank"
           rel="noopener noreferrer"
         >
-          Download PDF
+          View Resume ↗
+        </a>
+        <a
+          className="btn btn--quiet btn--sm"
+          href={`mailto:${PROFILE.email}`}
+        >
+          Contact
         </a>
       </div>
 
