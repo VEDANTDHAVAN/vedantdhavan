@@ -46,7 +46,7 @@ I build **intelligent systems that automate real workflows** — combining
 🌐 Demo: https://graphrag-benchmark.vercel.app
 
 ### 🚀 vedantdhavan
-My 3D Portfolio describing my Techstack and abilities.
+Architectural portfolio showcasing my journey.
 
 🌐 Demo: https://vedantdhavan.vercel.app
 
@@ -99,11 +99,11 @@ AI-powered website builder that creates fully responsive, SEO-friendly websites 
 # 📈 Recent Development Activity
 
 <!-- ACTIVITY_START -->
+- Created vedantdhavan
 - Updated MLProblems
 - Worked on unvibecode
 - Updated RecallTabs
 - Created Celebrare-Gallery
-- Updated Edgenroots-Formula-Engine
 <!-- ACTIVITY_END -->
 
 ---
@@ -112,7 +112,7 @@ AI-powered website builder that creates fully responsive, SEO-friendly websites 
 
 <!-- WEEKLY_START -->
 - 19 push commits
-- 8 repositories updated
+- 9 repositories updated
 <!-- WEEKLY_END -->
 
 ---
