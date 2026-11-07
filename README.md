@@ -1,9 +1,9 @@
 <p align="center">
-
 <img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&size=28&duration=3000&color=00F7FF&center=true&vCenter=true&width=900&lines=Hi+I'm+Vedant+Dhavan;Full+Stack+Developer;AI+Systems+Builder;Generative+AI+Engineer;3D+Web+Enthusiast" />
-
 </p>
-
+<p align="center">
+  <img src="koi/koi.gif" width="256" alt="My koi" />
+</p>
 ---
 
 # 👋 Hey, I’m Vedant Dhavan
